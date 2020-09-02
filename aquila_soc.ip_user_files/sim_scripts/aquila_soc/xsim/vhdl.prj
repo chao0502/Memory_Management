@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/aquila_soc/ip/aquila_soc_axi_uartlite_0_0/sim/aquila_soc_axi_uartlite_0_0.vhd" \
+"../../../bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_bb3d_psr0_0.vhd" \
+"../../../bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_bb3d_psr_aclk_0.vhd" \
+"../../../bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_bb3d_psr_aclk1_0.vhd" \
+"../../../bd/aquila_soc/ip/aquila_soc_rst_mig_7series_0_200M_0/sim/aquila_soc_rst_mig_7series_0_200M_0.vhd" \
+
+nosort

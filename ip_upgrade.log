@@ -1,0 +1,95 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Sep  1 10:26:38 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_smartconnect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_smartconnect_0_0 (xilinx.com:ip:smartconnect:1.0) from (Rev. 9) to (Rev. 10)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'aquila_soc_smartconnect_0_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'aquila_soc_smartconnect_0_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Sep  1 10:26:38 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_rst_mig_7series_0_200M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_rst_mig_7series_0_200M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Sep  1 10:26:38 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_mig_7series_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_mig_7series_0_0 from xilinx.com:ip:mig_7series:4.1 to xilinx.com:ip:mig_7series:4.2
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Sep  1 10:26:38 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 21) to (Rev. 22)
+

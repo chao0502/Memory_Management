@@ -1,0 +1,331 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6B02FAA5ED193792",
+      "device": "xc7k325tffg900-2",
+      "name": "aquila_soc",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "aquila_0": "",
+      "axi_uartlite_0": "",
+      "mig_7series_0": "",
+      "rst_mig_7series_0_200M": "",
+      "axi_smc": ""
+    },
+    "interface_ports": {
+      "ddr3_sdram": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "default"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "default"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "default"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "default"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "default"
+          }
+        }
+      },
+      "sys_diff_clock": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      },
+      "rs232_uart": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:uart_rtl:1.0"
+      }
+    },
+    "ports": {
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "aquila_0": {
+        "vlnv": "xilinx.com:user:aquila:1.0",
+        "xci_name": "aquila_soc_aquila_0_1",
+        "parameters": {
+          "C_M_DMEM_PORT_RUSER_WIDTH": {
+            "value": "0"
+          },
+          "C_M_DMEM_PORT_WUSER_WIDTH": {
+            "value": "0"
+          },
+          "C_M_IMEM_PORT_ARUSER_WIDTH": {
+            "value": "1"
+          },
+          "C_M_IMEM_PORT_AWUSER_WIDTH": {
+            "value": "1"
+          },
+          "C_M_IMEM_PORT_BUSER_WIDTH": {
+            "value": "1"
+          },
+          "C_M_IMEM_PORT_RUSER_WIDTH": {
+            "value": "0"
+          },
+          "C_M_IMEM_PORT_WUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      },
+      "axi_uartlite_0": {
+        "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
+        "xci_name": "aquila_soc_axi_uartlite_0_0",
+        "parameters": {
+          "C_BAUDRATE": {
+            "value": "115200"
+          },
+          "UARTLITE_BOARD_INTERFACE": {
+            "value": "rs232_uart"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "mig_7series_0": {
+        "vlnv": "xilinx.com:ip:mig_7series:4.2",
+        "xci_name": "aquila_soc_mig_7series_0_0",
+        "parameters": {
+          "BOARD_MIG_PARAM": {
+            "value": "ddr3_sdram"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "XML_INPUT_FILE": {
+            "value": "board.prj"
+          }
+        }
+      },
+      "rst_mig_7series_0_200M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "aquila_soc_rst_mig_7series_0_200M_0"
+      },
+      "axi_smc": {
+        "vlnv": "xilinx.com:ip:smartconnect:1.0",
+        "xci_name": "aquila_soc_smartconnect_0_0",
+        "parameters": {
+          "NUM_CLKS": {
+            "value": "2"
+          },
+          "NUM_SI": {
+            "value": "2"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bridges": [
+              "M00_AXI"
+            ]
+          },
+          "S01_AXI": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bridges": [
+              "M00_AXI"
+            ]
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "axi_uartlite_0_UART": {
+        "interface_ports": [
+          "rs232_uart",
+          "axi_uartlite_0/UART"
+        ]
+      },
+      "aquila_0_M_ICACHE_PORT": {
+        "interface_ports": [
+          "aquila_0/M_IMEM_PORT",
+          "axi_smc/S00_AXI"
+        ]
+      },
+      "aquila_0_M_DEVICE_PORT": {
+        "interface_ports": [
+          "aquila_0/M_DEVICE_PORT",
+          "axi_uartlite_0/S_AXI"
+        ]
+      },
+      "mig_7series_0_DDR3": {
+        "interface_ports": [
+          "ddr3_sdram",
+          "mig_7series_0/DDR3"
+        ]
+      },
+      "sys_diff_clock_1": {
+        "interface_ports": [
+          "sys_diff_clock",
+          "mig_7series_0/SYS_CLK"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "axi_smc/M00_AXI",
+          "mig_7series_0/S_AXI"
+        ]
+      },
+      "aquila_0_M_DCACHE_PORT": {
+        "interface_ports": [
+          "aquila_0/M_DMEM_PORT",
+          "axi_smc/S01_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "reset_1": {
+        "ports": [
+          "reset",
+          "mig_7series_0/sys_rst"
+        ]
+      },
+      "mig_7series_0_mmcm_locked": {
+        "ports": [
+          "mig_7series_0/mmcm_locked",
+          "rst_mig_7series_0_200M/dcm_locked"
+        ]
+      },
+      "mig_7series_0_ui_clk_sync_rst": {
+        "ports": [
+          "mig_7series_0/ui_clk_sync_rst",
+          "rst_mig_7series_0_200M/ext_reset_in"
+        ]
+      },
+      "rst_mig_7series_0_200M_peripheral_aresetn": {
+        "ports": [
+          "rst_mig_7series_0_200M/peripheral_aresetn",
+          "aquila_0/device_aresetn",
+          "aquila_0/mem_aresetn",
+          "axi_uartlite_0/s_axi_aresetn",
+          "mig_7series_0/aresetn",
+          "axi_smc/aresetn"
+        ]
+      },
+      "mig_7series_0_ui_clk": {
+        "ports": [
+          "mig_7series_0/ui_clk",
+          "axi_smc/aclk"
+        ]
+      },
+      "mig_7series_0_ui_addn_clk_0": {
+        "ports": [
+          "mig_7series_0/ui_addn_clk_0",
+          "aquila_0/device_aclk",
+          "aquila_0/mem_aclk",
+          "axi_uartlite_0/s_axi_aclk",
+          "rst_mig_7series_0_200M/slowest_sync_clk",
+          "axi_smc/aclk1"
+        ]
+      }
+    },
+    "addressing": {
+      "/aquila_0": {
+        "address_spaces": {
+          "M_DMEM_PORT": {
+            "range": "4G",
+            "width": "32",
+            "segments": {
+              "SEG_mig_7series_0_memaddr": {
+                "address_block": "/mig_7series_0/memmap/memaddr",
+                "offset": "0x80000000",
+                "range": "1G"
+              }
+            }
+          },
+          "M_DEVICE_PORT": {
+            "range": "4G",
+            "width": "32",
+            "segments": {
+              "SEG_axi_uartlite_0_Reg": {
+                "address_block": "/axi_uartlite_0/S_AXI/Reg",
+                "offset": "0xC0000000",
+                "range": "64K"
+              }
+            }
+          },
+          "M_IMEM_PORT": {
+            "range": "4G",
+            "width": "32",
+            "segments": {
+              "SEG_mig_7series_0_memaddr": {
+                "address_block": "/mig_7series_0/memmap/memaddr",
+                "offset": "0x80000000",
+                "range": "1G"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

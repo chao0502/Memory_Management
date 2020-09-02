@@ -1,0 +1,23 @@
+$date
+        2020-Jan-15 21:30:50
+$end
+$version
+        Vivado v2018.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " aquila_soc_i/aquila_0/inst/aquila_core/instr_from_cache [31:0] $end
+$var reg 32 B aquila_soc_i/aquila_0/inst/aquila_core/instr_addr [31:0] $end
+$var reg 32 b aquila_soc_i/aquila_0/inst/aquila_core/p_i_instr [31:0] $end
+$var reg 32 $" aquila_soc_i/aquila_0/inst/aquila_core/instr_from_tcm [31:0] $end
+$var reg 1 D" aquila_soc_i/aquila_0/inst/aquila_core/instr_ready $end
+$var reg 1 E" aquila_soc_i/aquila_0/inst/aquila_core/instr_sel $end
+$var reg 1 F" aquila_soc_i/aquila_0/inst/aquila_core/p_i_ready $end
+$var reg 1 G" aquila_soc_i/aquila_0/inst/aquila_core/p_i_strobe $end
+$var reg 1 H" _TRIGGER $end
+$var reg 1 I" _WINDOW $end
+$var reg 1 J" _GAP $end
+$upscope $end
+$enddefinitions $end
