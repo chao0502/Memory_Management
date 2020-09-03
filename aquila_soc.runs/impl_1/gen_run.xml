@@ -1,74 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1598939317">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1599113041">
+  <File Type="PA-TCL" Name="aquila_soc_wrapper.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="aquila_soc_wrapper_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="aquila_soc_wrapper_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="aquila_soc_wrapper_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="aquila_soc_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="aquila_soc_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="aquila_soc_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="aquila_soc_wrapper_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="aquila_soc_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="aquila_soc_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="aquila_soc_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="aquila_soc_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="aquila_soc_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="aquila_soc_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="aquila_soc_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="aquila_soc_wrapper_physopt.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="aquila_soc_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="aquila_soc_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="aquila_soc_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="aquila_soc_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="aquila_soc_wrapper_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="aquila_soc_wrapper.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="aquila_soc_wrapper_route_status.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="aquila_soc_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIN" Name="aquila_soc_wrapper.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="aquila_soc_wrapper_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="aquila_soc_wrapper.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="aquila_soc_wrapper_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="aquila_soc_wrapper.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="aquila_soc_wrapper_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="aquila_soc_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="aquila_soc_wrapper_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="aquila_soc_wrapper_clock_utilization_routed.rpt"/>
   <File Type="BG-DRC" Name="aquila_soc_wrapper.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="aquila_soc_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="aquila_soc_wrapper.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="aquila_soc_wrapper_bus_skew_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-BGN" Name="aquila_soc_wrapper.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="aquila_soc_wrapper.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="aquila_soc_wrapper.ltx"/>
-  <File Type="BITSTR-MMI" Name="aquila_soc_wrapper.mmi"/>
-  <File Type="BITSTR-BMM" Name="aquila_soc_wrapper_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="aquila_soc_wrapper.nky"/>
-  <File Type="BITSTR-RBT" Name="aquila_soc_wrapper.rbt"/>
-  <File Type="BITSTR-MSK" Name="aquila_soc_wrapper.msk"/>
-  <File Type="BG-BIN" Name="aquila_soc_wrapper.bin"/>
-  <File Type="BG-BIT" Name="aquila_soc_wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="aquila_soc_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="aquila_soc_wrapper_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="aquila_soc_wrapper_bus_skew_postroute_physopted.rpt"/>
   <File Type="RDI-RDI" Name="aquila_soc_wrapper.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="aquila_soc_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="aquila_soc_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="aquila_soc_wrapper_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="aquila_soc_wrapper_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="aquila_soc_wrapper_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW" Name="aquila_soc_wrapper_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="aquila_soc_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="aquila_soc_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="aquila_soc_wrapper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="aquila_soc_wrapper_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="aquila_soc_wrapper_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="aquila_soc_wrapper_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="aquila_soc_wrapper_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="aquila_soc_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="aquila_soc_wrapper_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR" Name="aquila_soc_wrapper_power_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="aquila_soc_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="aquila_soc_wrapper_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="aquila_soc_wrapper_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-RPX" Name="aquila_soc_wrapper_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="aquila_soc_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="aquila_soc_wrapper_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="aquila_soc_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="aquila_soc_wrapper_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="aquila_soc_wrapper_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="aquila_soc_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="aquila_soc_wrapper_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="aquila_soc_wrapper_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="aquila_soc_wrapper_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="aquila_soc_wrapper_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="aquila_soc_wrapper_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="aquila_soc_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="aquila_soc_wrapper_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="aquila_soc_wrapper_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="aquila_soc_wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="aquila_soc_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="aquila_soc_wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="aquila_soc_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="aquila_soc_wrapper_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="aquila_soc_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="aquila_soc_wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="aquila_soc_wrapper_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="aquila_soc_wrapper_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="aquila_soc_wrapper.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="aquila_soc_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="aquila_soc_wrapper_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="aquila_soc_wrapper_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="aquila_soc_wrapper_timing_summary_init.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="aquila_soc_wrapper_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="aquila_soc_wrapper_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="aquila_soc_wrapper_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="aquila_soc_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/aquila_soc/aquila_soc.bd">
@@ -128,9 +109,8 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="aquila_soc_aquila_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="aquila_soc_rst_mig_7series_0_200M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="aquila_soc_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="aquila_soc_aquila_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="aquila_soc_smartconnect_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="aquila_soc_mig_7series_0_0"/>
 </GenRun>

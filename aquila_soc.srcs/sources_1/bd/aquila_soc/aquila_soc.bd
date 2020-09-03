@@ -9,11 +9,11 @@
       "validated": "true"
     },
     "design_tree": {
-      "aquila_0": "",
       "axi_uartlite_0": "",
       "mig_7series_0": "",
       "rst_mig_7series_0_200M": "",
-      "axi_smc": ""
+      "axi_smc": "",
+      "aquila_0": ""
     },
     "interface_ports": {
       "ddr3_sdram": {
@@ -104,33 +104,6 @@
       }
     },
     "components": {
-      "aquila_0": {
-        "vlnv": "xilinx.com:user:aquila:1.0",
-        "xci_name": "aquila_soc_aquila_0_1",
-        "parameters": {
-          "C_M_DMEM_PORT_RUSER_WIDTH": {
-            "value": "0"
-          },
-          "C_M_DMEM_PORT_WUSER_WIDTH": {
-            "value": "0"
-          },
-          "C_M_IMEM_PORT_ARUSER_WIDTH": {
-            "value": "1"
-          },
-          "C_M_IMEM_PORT_AWUSER_WIDTH": {
-            "value": "1"
-          },
-          "C_M_IMEM_PORT_BUSER_WIDTH": {
-            "value": "1"
-          },
-          "C_M_IMEM_PORT_RUSER_WIDTH": {
-            "value": "0"
-          },
-          "C_M_IMEM_PORT_WUSER_WIDTH": {
-            "value": "0"
-          }
-        }
-      },
       "axi_uartlite_0": {
         "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
         "xci_name": "aquila_soc_axi_uartlite_0_0",
@@ -173,7 +146,7 @@
             "value": "2"
           },
           "NUM_SI": {
-            "value": "2"
+            "value": "3"
           }
         },
         "interface_ports": {
@@ -191,9 +164,43 @@
               "M00_AXI"
             ]
           },
+          "S02_AXI": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bridges": [
+              "M00_AXI"
+            ]
+          },
           "M00_AXI": {
             "mode": "Master",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        }
+      },
+      "aquila_0": {
+        "vlnv": "xilinx.com:user:aquila:1.0",
+        "xci_name": "aquila_soc_aquila_0_1",
+        "parameters": {
+          "C_M_DMEM_PORT_RUSER_WIDTH": {
+            "value": "0"
+          },
+          "C_M_DMEM_PORT_WUSER_WIDTH": {
+            "value": "0"
+          },
+          "C_M_IMEM_PORT_ARUSER_WIDTH": {
+            "value": "1"
+          },
+          "C_M_IMEM_PORT_AWUSER_WIDTH": {
+            "value": "1"
+          },
+          "C_M_IMEM_PORT_BUSER_WIDTH": {
+            "value": "1"
+          },
+          "C_M_IMEM_PORT_RUSER_WIDTH": {
+            "value": "0"
+          },
+          "C_M_IMEM_PORT_WUSER_WIDTH": {
+            "value": "0"
           }
         }
       }
@@ -211,24 +218,6 @@
           "axi_smc/S00_AXI"
         ]
       },
-      "aquila_0_M_DEVICE_PORT": {
-        "interface_ports": [
-          "aquila_0/M_DEVICE_PORT",
-          "axi_uartlite_0/S_AXI"
-        ]
-      },
-      "mig_7series_0_DDR3": {
-        "interface_ports": [
-          "ddr3_sdram",
-          "mig_7series_0/DDR3"
-        ]
-      },
-      "sys_diff_clock_1": {
-        "interface_ports": [
-          "sys_diff_clock",
-          "mig_7series_0/SYS_CLK"
-        ]
-      },
       "smartconnect_0_M00_AXI": {
         "interface_ports": [
           "axi_smc/M00_AXI",
@@ -239,6 +228,24 @@
         "interface_ports": [
           "aquila_0/M_DMEM_PORT",
           "axi_smc/S01_AXI"
+        ]
+      },
+      "aquila_0_M_DEVICE_PORT": {
+        "interface_ports": [
+          "aquila_0/M_DEVICE_PORT",
+          "axi_uartlite_0/S_AXI"
+        ]
+      },
+      "sys_diff_clock_1": {
+        "interface_ports": [
+          "sys_diff_clock",
+          "mig_7series_0/SYS_CLK"
+        ]
+      },
+      "mig_7series_0_DDR3": {
+        "interface_ports": [
+          "ddr3_sdram",
+          "mig_7series_0/DDR3"
         ]
       }
     },
@@ -264,27 +271,27 @@
       "rst_mig_7series_0_200M_peripheral_aresetn": {
         "ports": [
           "rst_mig_7series_0_200M/peripheral_aresetn",
-          "aquila_0/device_aresetn",
-          "aquila_0/mem_aresetn",
           "axi_uartlite_0/s_axi_aresetn",
           "mig_7series_0/aresetn",
-          "axi_smc/aresetn"
+          "axi_smc/aresetn",
+          "aquila_0/device_aresetn",
+          "aquila_0/mem_aresetn"
+        ]
+      },
+      "mig_7series_0_ui_addn_clk_0": {
+        "ports": [
+          "mig_7series_0/ui_addn_clk_0",
+          "axi_uartlite_0/s_axi_aclk",
+          "rst_mig_7series_0_200M/slowest_sync_clk",
+          "axi_smc/aclk1",
+          "aquila_0/device_aclk",
+          "aquila_0/mem_aclk"
         ]
       },
       "mig_7series_0_ui_clk": {
         "ports": [
           "mig_7series_0/ui_clk",
           "axi_smc/aclk"
-        ]
-      },
-      "mig_7series_0_ui_addn_clk_0": {
-        "ports": [
-          "mig_7series_0/ui_addn_clk_0",
-          "aquila_0/device_aclk",
-          "aquila_0/mem_aclk",
-          "axi_uartlite_0/s_axi_aclk",
-          "rst_mig_7series_0_200M/slowest_sync_clk",
-          "axi_smc/aclk1"
         ]
       }
     },

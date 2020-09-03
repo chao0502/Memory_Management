@@ -164,6 +164,8 @@ proc create_hier_cell_switchboards { parentCell nameHier } {
   create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:sc_rtl:1.0 M00_SC_W
   create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:sc_rtl:1.0 M01_SC_B
   create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:sc_rtl:1.0 M01_SC_R
+  create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:sc_rtl:1.0 M02_SC_B
+  create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:sc_rtl:1.0 M02_SC_R
   create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:sc_rtl:1.0 S00_SC_AR
   create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:sc_rtl:1.0 S00_SC_AW
   create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:sc_rtl:1.0 S00_SC_B
@@ -172,6 +174,9 @@ proc create_hier_cell_switchboards { parentCell nameHier } {
   create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:sc_rtl:1.0 S01_SC_AR
   create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:sc_rtl:1.0 S01_SC_AW
   create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:sc_rtl:1.0 S01_SC_W
+  create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:sc_rtl:1.0 S02_SC_AR
+  create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:sc_rtl:1.0 S02_SC_AW
+  create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:sc_rtl:1.0 S02_SC_W
 
   # Create pins
   create_bd_pin -dir I -type clk aclk
@@ -182,9 +187,10 @@ proc create_hier_cell_switchboards { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.M00_S00_CONNECTIVITY {1} \
    CONFIG.M00_S01_CONNECTIVITY {1} \
+   CONFIG.M00_S02_CONNECTIVITY {0} \
    CONFIG.M_PIPELINES {1} \
    CONFIG.NUM_MI {1} \
-   CONFIG.NUM_SI {2} \
+   CONFIG.NUM_SI {3} \
    CONFIG.PAYLD_WIDTH {138} \
    CONFIG.S_LATENCY {0} \
    CONFIG.S_PIPELINES {0} \
@@ -195,9 +201,10 @@ proc create_hier_cell_switchboards { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.M00_S00_CONNECTIVITY {1} \
    CONFIG.M00_S01_CONNECTIVITY {1} \
+   CONFIG.M00_S02_CONNECTIVITY {0} \
    CONFIG.M_PIPELINES {1} \
    CONFIG.NUM_MI {1} \
-   CONFIG.NUM_SI {2} \
+   CONFIG.NUM_SI {3} \
    CONFIG.PAYLD_WIDTH {138} \
    CONFIG.S_LATENCY {0} \
    CONFIG.S_PIPELINES {0} \
@@ -208,10 +215,11 @@ proc create_hier_cell_switchboards { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.M00_S00_CONNECTIVITY {1} \
    CONFIG.M01_S00_CONNECTIVITY {1} \
+   CONFIG.M02_S00_CONNECTIVITY {0} \
    CONFIG.M_PIPELINES {1} \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {3} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {6} \
+   CONFIG.PAYLD_WIDTH {7} \
    CONFIG.S_LATENCY {0} \
    CONFIG.S_PIPELINES {0} \
  ] $b_switchboard
@@ -221,10 +229,11 @@ proc create_hier_cell_switchboards { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.M00_S00_CONNECTIVITY {1} \
    CONFIG.M01_S00_CONNECTIVITY {1} \
+   CONFIG.M02_S00_CONNECTIVITY {0} \
    CONFIG.M_PIPELINES {1} \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {3} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {532} \
+   CONFIG.PAYLD_WIDTH {533} \
    CONFIG.S_LATENCY {0} \
    CONFIG.S_PIPELINES {0} \
  ] $r_switchboard
@@ -234,9 +243,10 @@ proc create_hier_cell_switchboards { parentCell nameHier } {
   set_property -dict [ list \
    CONFIG.M00_S00_CONNECTIVITY {1} \
    CONFIG.M00_S01_CONNECTIVITY {1} \
+   CONFIG.M00_S02_CONNECTIVITY {0} \
    CONFIG.M_PIPELINES {1} \
    CONFIG.NUM_MI {1} \
-   CONFIG.NUM_SI {2} \
+   CONFIG.NUM_SI {3} \
    CONFIG.PAYLD_WIDTH {592} \
    CONFIG.S_LATENCY {0} \
    CONFIG.S_PIPELINES {0} \
@@ -251,12 +261,17 @@ proc create_hier_cell_switchboards { parentCell nameHier } {
   connect_bd_intf_net -intf_net S01_SC_AR_1 [get_bd_intf_pins S01_SC_AR] [get_bd_intf_pins ar_switchboard/S01_SC]
   connect_bd_intf_net -intf_net S01_SC_AW_1 [get_bd_intf_pins S01_SC_AW] [get_bd_intf_pins aw_switchboard/S01_SC]
   connect_bd_intf_net -intf_net S01_SC_W_1 [get_bd_intf_pins S01_SC_W] [get_bd_intf_pins w_switchboard/S01_SC]
+  connect_bd_intf_net -intf_net S02_SC_AR_1 [get_bd_intf_pins S02_SC_AR] [get_bd_intf_pins ar_switchboard/S02_SC]
+  connect_bd_intf_net -intf_net S02_SC_AW_1 [get_bd_intf_pins S02_SC_AW] [get_bd_intf_pins aw_switchboard/S02_SC]
+  connect_bd_intf_net -intf_net S02_SC_W_1 [get_bd_intf_pins S02_SC_W] [get_bd_intf_pins w_switchboard/S02_SC]
   connect_bd_intf_net -intf_net ar_switchboard_M00_SC [get_bd_intf_pins M00_SC_AR] [get_bd_intf_pins ar_switchboard/M00_SC]
   connect_bd_intf_net -intf_net aw_switchboard_M00_SC [get_bd_intf_pins M00_SC_AW] [get_bd_intf_pins aw_switchboard/M00_SC]
   connect_bd_intf_net -intf_net b_switchboard_M00_SC [get_bd_intf_pins M00_SC_B] [get_bd_intf_pins b_switchboard/M00_SC]
   connect_bd_intf_net -intf_net b_switchboard_M01_SC [get_bd_intf_pins M01_SC_B] [get_bd_intf_pins b_switchboard/M01_SC]
+  connect_bd_intf_net -intf_net b_switchboard_M02_SC [get_bd_intf_pins M02_SC_B] [get_bd_intf_pins b_switchboard/M02_SC]
   connect_bd_intf_net -intf_net r_switchboard_M00_SC [get_bd_intf_pins M00_SC_R] [get_bd_intf_pins r_switchboard/M00_SC]
   connect_bd_intf_net -intf_net r_switchboard_M01_SC [get_bd_intf_pins M01_SC_R] [get_bd_intf_pins r_switchboard/M01_SC]
+  connect_bd_intf_net -intf_net r_switchboard_M02_SC [get_bd_intf_pins M02_SC_R] [get_bd_intf_pins r_switchboard/M02_SC]
   connect_bd_intf_net -intf_net w_switchboard_M00_SC [get_bd_intf_pins M00_SC_W] [get_bd_intf_pins w_switchboard/M00_SC]
 
   # Create port connections
@@ -447,7 +462,7 @@ proc create_hier_cell_s01_nodes { parentCell nameHier } {
    CONFIG.NUM_MI {1} \
    CONFIG.NUM_OUTSTANDING {2} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {6} \
+   CONFIG.PAYLD_WIDTH {7} \
    CONFIG.S00_NUM_BYTES {64} \
    CONFIG.S01_NUM_BYTES {64} \
    CONFIG.S02_NUM_BYTES {64} \
@@ -464,7 +479,7 @@ proc create_hier_cell_s01_nodes { parentCell nameHier } {
    CONFIG.S13_NUM_BYTES {64} \
    CONFIG.S14_NUM_BYTES {64} \
    CONFIG.S15_NUM_BYTES {64} \
-   CONFIG.SC_ROUTE_WIDTH {2} \
+   CONFIG.SC_ROUTE_WIDTH {3} \
    CONFIG.S_LATENCY {1} \
    CONFIG.USER_WIDTH {1} \
  ] $s01_b_node
@@ -498,7 +513,7 @@ proc create_hier_cell_s01_nodes { parentCell nameHier } {
    CONFIG.NUM_MI {1} \
    CONFIG.NUM_OUTSTANDING {2} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {532} \
+   CONFIG.PAYLD_WIDTH {533} \
    CONFIG.S00_NUM_BYTES {64} \
    CONFIG.S01_NUM_BYTES {64} \
    CONFIG.S02_NUM_BYTES {64} \
@@ -515,7 +530,7 @@ proc create_hier_cell_s01_nodes { parentCell nameHier } {
    CONFIG.S13_NUM_BYTES {64} \
    CONFIG.S14_NUM_BYTES {64} \
    CONFIG.S15_NUM_BYTES {64} \
-   CONFIG.SC_ROUTE_WIDTH {2} \
+   CONFIG.SC_ROUTE_WIDTH {3} \
    CONFIG.S_LATENCY {1} \
    CONFIG.USER_BITS_PER_BYTE {0} \
  ] $s01_r_node
@@ -909,7 +924,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
    CONFIG.NUM_MI {1} \
    CONFIG.NUM_OUTSTANDING {2} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {6} \
+   CONFIG.PAYLD_WIDTH {7} \
    CONFIG.S00_NUM_BYTES {64} \
    CONFIG.S01_NUM_BYTES {64} \
    CONFIG.S02_NUM_BYTES {64} \
@@ -926,7 +941,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
    CONFIG.S13_NUM_BYTES {64} \
    CONFIG.S14_NUM_BYTES {64} \
    CONFIG.S15_NUM_BYTES {64} \
-   CONFIG.SC_ROUTE_WIDTH {2} \
+   CONFIG.SC_ROUTE_WIDTH {3} \
    CONFIG.S_LATENCY {1} \
    CONFIG.USER_WIDTH {1} \
  ] $s00_b_node
@@ -960,7 +975,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
    CONFIG.NUM_MI {1} \
    CONFIG.NUM_OUTSTANDING {2} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {532} \
+   CONFIG.PAYLD_WIDTH {533} \
    CONFIG.S00_NUM_BYTES {64} \
    CONFIG.S01_NUM_BYTES {64} \
    CONFIG.S02_NUM_BYTES {64} \
@@ -977,7 +992,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
    CONFIG.S13_NUM_BYTES {64} \
    CONFIG.S14_NUM_BYTES {64} \
    CONFIG.S15_NUM_BYTES {64} \
-   CONFIG.SC_ROUTE_WIDTH {2} \
+   CONFIG.SC_ROUTE_WIDTH {3} \
    CONFIG.S_LATENCY {1} \
    CONFIG.USER_BITS_PER_BYTE {0} \
  ] $s00_r_node
@@ -1269,7 +1284,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
    CONFIG.M_SEND_PIPELINE {0} \
    CONFIG.NUM_MI {1} \
    CONFIG.NUM_OUTSTANDING {2} \
-   CONFIG.NUM_SI {2} \
+   CONFIG.NUM_SI {3} \
    CONFIG.PAYLD_WIDTH {138} \
    CONFIG.S00_NUM_BYTES {64} \
    CONFIG.S01_NUM_BYTES {64} \
@@ -1319,7 +1334,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
    CONFIG.M_SEND_PIPELINE {0} \
    CONFIG.NUM_MI {1} \
    CONFIG.NUM_OUTSTANDING {2} \
-   CONFIG.NUM_SI {2} \
+   CONFIG.NUM_SI {3} \
    CONFIG.PAYLD_WIDTH {138} \
    CONFIG.S00_NUM_BYTES {64} \
    CONFIG.S01_NUM_BYTES {64} \
@@ -1367,10 +1382,10 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
    CONFIG.M15_NUM_BYTES {64} \
    CONFIG.MAX_PAYLD_BYTES {64} \
    CONFIG.M_PIPELINE {0} \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {3} \
    CONFIG.NUM_OUTSTANDING {2} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {6} \
+   CONFIG.PAYLD_WIDTH {7} \
    CONFIG.S00_NUM_BYTES {64} \
    CONFIG.S01_NUM_BYTES {64} \
    CONFIG.S02_NUM_BYTES {64} \
@@ -1387,7 +1402,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
    CONFIG.S13_NUM_BYTES {64} \
    CONFIG.S14_NUM_BYTES {64} \
    CONFIG.S15_NUM_BYTES {64} \
-   CONFIG.SC_ROUTE_WIDTH {2} \
+   CONFIG.SC_ROUTE_WIDTH {3} \
    CONFIG.USER_WIDTH {1} \
  ] $m00_b_node
 
@@ -1416,10 +1431,10 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
    CONFIG.M15_NUM_BYTES {64} \
    CONFIG.MAX_PAYLD_BYTES {64} \
    CONFIG.M_PIPELINE {0} \
-   CONFIG.NUM_MI {2} \
+   CONFIG.NUM_MI {3} \
    CONFIG.NUM_OUTSTANDING {2} \
    CONFIG.NUM_SI {1} \
-   CONFIG.PAYLD_WIDTH {532} \
+   CONFIG.PAYLD_WIDTH {533} \
    CONFIG.S00_NUM_BYTES {64} \
    CONFIG.S01_NUM_BYTES {64} \
    CONFIG.S02_NUM_BYTES {64} \
@@ -1436,7 +1451,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
    CONFIG.S13_NUM_BYTES {64} \
    CONFIG.S14_NUM_BYTES {64} \
    CONFIG.S15_NUM_BYTES {64} \
-   CONFIG.SC_ROUTE_WIDTH {2} \
+   CONFIG.SC_ROUTE_WIDTH {3} \
    CONFIG.USER_BITS_PER_BYTE {0} \
    CONFIG.USER_WIDTH {0} \
  ] $m00_r_node
@@ -1468,7 +1483,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
    CONFIG.M_SEND_PIPELINE {0} \
    CONFIG.NUM_MI {1} \
    CONFIG.NUM_OUTSTANDING {2} \
-   CONFIG.NUM_SI {2} \
+   CONFIG.NUM_SI {3} \
    CONFIG.PAYLD_WIDTH {592} \
    CONFIG.S00_NUM_BYTES {64} \
    CONFIG.S01_NUM_BYTES {64} \
@@ -1582,9 +1597,9 @@ proc create_hier_cell_m00_exit_pipeline { parentCell nameHier } {
    CONFIG.NUM_WRITE_OUTSTANDING {2} \
    CONFIG.RDATA_WIDTH {512} \
    CONFIG.READ_WRITE_MODE {READ_WRITE} \
-   CONFIG.SSC000_ROUTE {0b01} \
-   CONFIG.SSC001_ROUTE {0b10} \
-   CONFIG.SSC_ROUTE_WIDTH {2} \
+   CONFIG.SSC000_ROUTE {0b001} \
+   CONFIG.SSC001_ROUTE {0b010} \
+   CONFIG.SSC_ROUTE_WIDTH {3} \
    CONFIG.S_ID_WIDTH {1} \
    CONFIG.WDATA_WIDTH {512} \
  ] $m00_exit
@@ -1644,6 +1659,8 @@ proc create_hier_cell_clk_map { parentCell nameHier } {
   create_bd_pin -dir O -from 0 -to 0 -type rst S00_ARESETN
   create_bd_pin -dir O -type clk S01_ACLK
   create_bd_pin -dir O -from 0 -to 0 -type rst S01_ARESETN
+  create_bd_pin -dir O -type clk S02_ACLK
+  create_bd_pin -dir O -from 0 -to 0 -type rst S02_ARESETN
   create_bd_pin -dir I -type clk aclk
   create_bd_pin -dir I -type clk aclk1
   create_bd_pin -dir I -type rst aresetn
@@ -1677,12 +1694,12 @@ proc create_hier_cell_clk_map { parentCell nameHier } {
 
   # Create port connections
   connect_bd_net -net clk_map_aclk1_net [get_bd_pins S00_ACLK] [get_bd_pins S01_ACLK] [get_bd_pins aclk1] [get_bd_pins psr0/slowest_sync_clk] [get_bd_pins psr_aclk1/slowest_sync_clk]
-  connect_bd_net -net clk_map_aclk_net [get_bd_pins M00_ACLK] [get_bd_pins aclk] [get_bd_pins swbd_aclk] [get_bd_pins psr_aclk/slowest_sync_clk]
+  connect_bd_net -net clk_map_aclk_net [get_bd_pins M00_ACLK] [get_bd_pins S02_ACLK] [get_bd_pins aclk] [get_bd_pins swbd_aclk] [get_bd_pins psr_aclk/slowest_sync_clk]
   connect_bd_net -net clk_map_aresetn_net [get_bd_pins aresetn] [get_bd_pins psr0/aux_reset_in] [get_bd_pins psr_aclk/aux_reset_in] [get_bd_pins psr_aclk1/aux_reset_in]
   connect_bd_net -net one_dout [get_bd_pins one/dout] [get_bd_pins psr0/ext_reset_in]
   connect_bd_net -net psr0_interconnect_aresetn [get_bd_pins psr0/interconnect_aresetn] [get_bd_pins psr_aclk/ext_reset_in] [get_bd_pins psr_aclk1/ext_reset_in]
   connect_bd_net -net psr_aclk1_interconnect_aresetn [get_bd_pins S00_ARESETN] [get_bd_pins S01_ARESETN] [get_bd_pins psr_aclk1/interconnect_aresetn]
-  connect_bd_net -net psr_aclk_interconnect_aresetn [get_bd_pins M00_ARESETN] [get_bd_pins swbd_aresetn] [get_bd_pins psr_aclk/interconnect_aresetn]
+  connect_bd_net -net psr_aclk_interconnect_aresetn [get_bd_pins M00_ARESETN] [get_bd_pins S02_ARESETN] [get_bd_pins swbd_aresetn] [get_bd_pins psr_aclk/interconnect_aresetn]
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -1741,11 +1758,12 @@ proc create_root_design { parentCell } {
    CONFIG.NUM_READ_OUTSTANDING {2} \
    CONFIG.NUM_WRITE_OUTSTANDING {2} \
    ] $S01_AXI
+  set S02_AXI [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S02_AXI ]
 
   # Create ports
   set aclk [ create_bd_port -dir I -type clk aclk ]
   set_property -dict [ list \
-   CONFIG.ASSOCIATED_BUSIF {M00_AXI} \
+   CONFIG.ASSOCIATED_BUSIF {M00_AXI:S02_AXI} \
  ] $aclk
   set aclk1 [ create_bd_port -dir I -type clk aclk1 ]
   set_property -dict [ list \
@@ -1783,7 +1801,7 @@ proc create_root_design { parentCell } {
    CONFIG.SC_RUSER_BITS_PER_BYTE {0} \
    CONFIG.SC_WDATA_WIDTH {512} \
    CONFIG.SC_WUSER_BITS_PER_BYTE {0} \
-   CONFIG.SSC_ROUTE_WIDTH {2} \
+   CONFIG.SSC_ROUTE_WIDTH {3} \
  ] $m00_sc2axi
 
   # Create instance: s00_axi2sc, and set properties
@@ -1804,7 +1822,7 @@ proc create_root_design { parentCell } {
    CONFIG.SC_RUSER_BITS_PER_BYTE {0} \
    CONFIG.SC_WDATA_WIDTH {512} \
    CONFIG.SC_WUSER_BITS_PER_BYTE {0} \
-   CONFIG.SSC_ROUTE_WIDTH {2} \
+   CONFIG.SSC_ROUTE_WIDTH {3} \
  ] $s00_axi2sc
 
   # Create instance: s00_entry_pipeline
@@ -1831,7 +1849,7 @@ proc create_root_design { parentCell } {
    CONFIG.SC_RUSER_BITS_PER_BYTE {0} \
    CONFIG.SC_WDATA_WIDTH {512} \
    CONFIG.SC_WUSER_BITS_PER_BYTE {0} \
-   CONFIG.SSC_ROUTE_WIDTH {2} \
+   CONFIG.SSC_ROUTE_WIDTH {3} \
  ] $s01_axi2sc
 
   # Create instance: s01_entry_pipeline

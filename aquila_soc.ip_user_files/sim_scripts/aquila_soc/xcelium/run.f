@@ -138,6 +138,9 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/aquila_soc/ip/aquila_soc_axi_uartlite_0_0/sim/aquila_soc_axi_uartlite_0_0.vhd" \
 -endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/sim/bd_bb3d.v" \
+-endlib
 -makelib xcelium_lib/xlconstant_v1_1_5 \
   "../../../../aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v" \
 -endlib
@@ -224,7 +227,6 @@
   "../../../bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_33/sim/bd_bb3d_m00e_0.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/sim/bd_bb3d.v" \
   "../../../bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/sim/aquila_soc_smartconnect_0_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
@@ -232,33 +234,38 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/aquila_soc/sim/aquila_soc.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/aquila_M_DMEM_PORT.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/aquila_M_DEVICE_PORT.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/alu.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/bcu.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/bpu.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/clint.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/core_top.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/csr_file.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/dcache.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/decode.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/distri_ram.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/execute.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/forwarding_unit.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/icache.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/muldiv.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/pipeline_control.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/program_counter.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/sram.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/aquila_top.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/fetch.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/writeback.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/sram_dp.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/memory.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/reg_file.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/aquila_M_IMEM_PORT.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/core_rtl/atomic_unit.v" \
-  "../../../bd/aquila_soc/ipshared/6ef3/hdl/aquila.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/alu.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/aquila_M_DEVICE_PORT.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/aquila_M_DMEM_PORT.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/aquila_M_DMM_PORT.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/aquila_M_IMEM_PORT.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/aquila_top.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/atomic_unit.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/bcu.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/bpu.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/clint.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/core_top.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/csr_file.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/dcache.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/decode.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/distri_ram.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/execute.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/fetch.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/forwarding_unit.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/free_circular_buffer.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/icache.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/memory.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/memory_management.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/muldiv.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/newlib_based_allocator.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/pipeline_control.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/program_counter.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/reg_file.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/sram.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/sram_dp.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/sram_dual_port.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/core_rtl/writeback.v" \
+  "../../../bd/aquila_soc/ipshared/228d/hdl/aquila.v" \
   "../../../bd/aquila_soc/ip/aquila_soc_aquila_0_1/sim/aquila_soc_aquila_0_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

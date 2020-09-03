@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Tue Sep  1 10:27:10 2020
+//Date        : Thu Sep  3 14:03:35 2020
 //Host        : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 //Command     : generate_target aquila_soc.bd
 //Design      : aquila_soc
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "aquila_soc,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=aquila_soc,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "aquila_soc.hwdef" *) 
+(* CORE_GENERATION_INFO = "aquila_soc,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=aquila_soc,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=1,da_clkrst_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "aquila_soc.hwdef" *) 
 module aquila_soc
    (ddr3_sdram_addr,
     ddr3_sdram_ba,
@@ -285,6 +285,19 @@ module aquila_soc
         .m_dmem_port_wready(aquila_0_M_DCACHE_PORT_WREADY),
         .m_dmem_port_wstrb(aquila_0_M_DCACHE_PORT_WSTRB),
         .m_dmem_port_wvalid(aquila_0_M_DCACHE_PORT_WVALID),
+        .m_dmm_port_arready(1'b0),
+        .m_dmm_port_awready(1'b0),
+        .m_dmm_port_bid(1'b0),
+        .m_dmm_port_bresp({1'b0,1'b0}),
+        .m_dmm_port_buser(1'b0),
+        .m_dmm_port_bvalid(1'b0),
+        .m_dmm_port_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .m_dmm_port_rid(1'b0),
+        .m_dmm_port_rlast(1'b0),
+        .m_dmm_port_rresp({1'b0,1'b0}),
+        .m_dmm_port_ruser(1'b0),
+        .m_dmm_port_rvalid(1'b0),
+        .m_dmm_port_wready(1'b0),
         .m_imem_port_araddr(aquila_0_M_ICACHE_PORT_ARADDR),
         .m_imem_port_arburst(aquila_0_M_ICACHE_PORT_ARBURST),
         .m_imem_port_arcache(aquila_0_M_ICACHE_PORT_ARCACHE),
@@ -442,6 +455,38 @@ module aquila_soc
         .S01_AXI_wready(aquila_0_M_DCACHE_PORT_WREADY),
         .S01_AXI_wstrb(aquila_0_M_DCACHE_PORT_WSTRB),
         .S01_AXI_wvalid(aquila_0_M_DCACHE_PORT_WVALID),
+        .S02_AXI_araddr(1'b0),
+        .S02_AXI_arburst({1'b0,1'b1}),
+        .S02_AXI_arcache({1'b0,1'b0,1'b1,1'b1}),
+        .S02_AXI_arid(1'b0),
+        .S02_AXI_arlen(1'b0),
+        .S02_AXI_arlock(1'b0),
+        .S02_AXI_arprot({1'b0,1'b0,1'b0}),
+        .S02_AXI_arqos({1'b0,1'b0,1'b0,1'b0}),
+        .S02_AXI_arregion({1'b0,1'b0,1'b0,1'b0}),
+        .S02_AXI_arsize({1'b0,1'b1,1'b0}),
+        .S02_AXI_aruser(1'b0),
+        .S02_AXI_arvalid(1'b0),
+        .S02_AXI_awaddr(1'b0),
+        .S02_AXI_awburst({1'b0,1'b1}),
+        .S02_AXI_awcache({1'b0,1'b0,1'b1,1'b1}),
+        .S02_AXI_awid(1'b0),
+        .S02_AXI_awlen(1'b0),
+        .S02_AXI_awlock(1'b0),
+        .S02_AXI_awprot({1'b0,1'b0,1'b0}),
+        .S02_AXI_awqos({1'b0,1'b0,1'b0,1'b0}),
+        .S02_AXI_awregion({1'b0,1'b0,1'b0,1'b0}),
+        .S02_AXI_awsize({1'b0,1'b1,1'b0}),
+        .S02_AXI_awuser(1'b0),
+        .S02_AXI_awvalid(1'b0),
+        .S02_AXI_bready(1'b0),
+        .S02_AXI_rready(1'b0),
+        .S02_AXI_wdata(1'b0),
+        .S02_AXI_wid(1'b0),
+        .S02_AXI_wlast(1'b0),
+        .S02_AXI_wstrb(1'b1),
+        .S02_AXI_wuser(1'b0),
+        .S02_AXI_wvalid(1'b0),
         .aclk(mig_7series_0_ui_clk),
         .aclk1(mig_7series_0_ui_addn_clk_0),
         .aresetn(rst_mig_7series_0_200M_peripheral_aresetn));

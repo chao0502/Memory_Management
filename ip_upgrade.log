@@ -1,6 +1,183 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep  3 14:03:23 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 206)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep  3 14:01:43 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 205) to (Rev. 206)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep  3 13:36:07 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 205)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep  3 13:29:12 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 204) to (Rev. 205)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'aquila_soc_aquila_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'm_dmm_port_araddr'
+
+-Upgrade has added port 'm_dmm_port_arburst'
+
+-Upgrade has added port 'm_dmm_port_arcache'
+
+-Upgrade has added port 'm_dmm_port_arid'
+
+-Upgrade has added port 'm_dmm_port_arlen'
+
+-Upgrade has added port 'm_dmm_port_arlock'
+
+-Upgrade has added port 'm_dmm_port_arprot'
+
+-Upgrade has added port 'm_dmm_port_arqos'
+
+-Upgrade has added port 'm_dmm_port_arready'
+
+-Upgrade has added port 'm_dmm_port_arsize'
+
+-Upgrade has added port 'm_dmm_port_aruser'
+
+-Upgrade has added port 'm_dmm_port_arvalid'
+
+-Upgrade has added port 'm_dmm_port_awaddr'
+
+-Upgrade has added port 'm_dmm_port_awburst'
+
+-Upgrade has added port 'm_dmm_port_awcache'
+
+-Upgrade has added port 'm_dmm_port_awid'
+
+-Upgrade has added port 'm_dmm_port_awlen'
+
+-Upgrade has added port 'm_dmm_port_awlock'
+
+-Upgrade has added port 'm_dmm_port_awprot'
+
+-Upgrade has added port 'm_dmm_port_awqos'
+
+-Upgrade has added port 'm_dmm_port_awready'
+
+-Upgrade has added port 'm_dmm_port_awsize'
+
+-Upgrade has added port 'm_dmm_port_awuser'
+
+-Upgrade has added port 'm_dmm_port_awvalid'
+
+-Upgrade has added port 'm_dmm_port_bid'
+
+-Upgrade has added port 'm_dmm_port_bready'
+
+-Upgrade has added port 'm_dmm_port_bresp'
+
+-Upgrade has added port 'm_dmm_port_buser'
+
+-Upgrade has added port 'm_dmm_port_bvalid'
+
+-Upgrade has added port 'm_dmm_port_rdata'
+
+-Upgrade has added port 'm_dmm_port_rid'
+
+-Upgrade has added port 'm_dmm_port_rlast'
+
+-Upgrade has added port 'm_dmm_port_rready'
+
+-Upgrade has added port 'm_dmm_port_rresp'
+
+-Upgrade has added port 'm_dmm_port_ruser'
+
+-Upgrade has added port 'm_dmm_port_rvalid'
+
+-Upgrade has added port 'm_dmm_port_wdata'
+
+-Upgrade has added port 'm_dmm_port_wlast'
+
+-Upgrade has added port 'm_dmm_port_wready'
+
+-Upgrade has added port 'm_dmm_port_wstrb'
+
+-Upgrade has added port 'm_dmm_port_wuser'
+
+-Upgrade has added port 'm_dmm_port_wvalid'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
 | Date         : Tue Sep  1 10:26:38 2020
 | Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 | Command      : upgrade_ip

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:aquila:1.0
-// IP Revision: 204
+// IP Revision: 206
 
 `timescale 1ns/1ps
 
@@ -94,6 +94,48 @@ module aquila_soc_aquila_0_1 (
   m_dmem_port_rlast,
   m_dmem_port_rvalid,
   m_dmem_port_rready,
+  m_dmm_port_awid,
+  m_dmm_port_awaddr,
+  m_dmm_port_awlen,
+  m_dmm_port_awsize,
+  m_dmm_port_awburst,
+  m_dmm_port_awlock,
+  m_dmm_port_awcache,
+  m_dmm_port_awprot,
+  m_dmm_port_awqos,
+  m_dmm_port_awuser,
+  m_dmm_port_awvalid,
+  m_dmm_port_awready,
+  m_dmm_port_wdata,
+  m_dmm_port_wstrb,
+  m_dmm_port_wlast,
+  m_dmm_port_wuser,
+  m_dmm_port_wvalid,
+  m_dmm_port_wready,
+  m_dmm_port_bid,
+  m_dmm_port_bresp,
+  m_dmm_port_buser,
+  m_dmm_port_bvalid,
+  m_dmm_port_bready,
+  m_dmm_port_arid,
+  m_dmm_port_araddr,
+  m_dmm_port_arlen,
+  m_dmm_port_arsize,
+  m_dmm_port_arburst,
+  m_dmm_port_arlock,
+  m_dmm_port_arcache,
+  m_dmm_port_arprot,
+  m_dmm_port_arqos,
+  m_dmm_port_aruser,
+  m_dmm_port_arvalid,
+  m_dmm_port_arready,
+  m_dmm_port_rid,
+  m_dmm_port_rdata,
+  m_dmm_port_rresp,
+  m_dmm_port_rlast,
+  m_dmm_port_ruser,
+  m_dmm_port_rvalid,
+  m_dmm_port_rready,
   device_aclk,
   device_aresetn,
   m_device_port_awaddr,
@@ -238,13 +280,55 @@ input wire m_dmem_port_rlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_DMEM_PORT RVALID" *)
 input wire m_dmem_port_rvalid;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DMEM_PORT, WIZ_DATA_WIDTH 32, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 1, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 256, PHASE 0, CLK_DOMAIN aquila_soc_mig_7series_0_0_ui_clk, NUM_\
-READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
+READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_DMEM_PORT RREADY" *)
 output wire m_dmem_port_rready;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DEVICE_PORT_CLK, ASSOCIATED_RESET device_aresetn, ASSOCIATED_BUSIF M_DEVICE_PORT, FREQ_HZ 100000000, PHASE 0, CLK_DOMAIN aquila_soc_mig_7series_0_0_ui_clk" *)
+output wire [0 : 0] m_dmm_port_awid;
+output wire [31 : 0] m_dmm_port_awaddr;
+output wire [7 : 0] m_dmm_port_awlen;
+output wire [2 : 0] m_dmm_port_awsize;
+output wire [1 : 0] m_dmm_port_awburst;
+output wire m_dmm_port_awlock;
+output wire [3 : 0] m_dmm_port_awcache;
+output wire [2 : 0] m_dmm_port_awprot;
+output wire [3 : 0] m_dmm_port_awqos;
+output wire [0 : 0] m_dmm_port_awuser;
+output wire m_dmm_port_awvalid;
+input wire m_dmm_port_awready;
+output wire [31 : 0] m_dmm_port_wdata;
+output wire [3 : 0] m_dmm_port_wstrb;
+output wire m_dmm_port_wlast;
+output wire [0 : 0] m_dmm_port_wuser;
+output wire m_dmm_port_wvalid;
+input wire m_dmm_port_wready;
+input wire [0 : 0] m_dmm_port_bid;
+input wire [1 : 0] m_dmm_port_bresp;
+input wire [0 : 0] m_dmm_port_buser;
+input wire m_dmm_port_bvalid;
+output wire m_dmm_port_bready;
+output wire [0 : 0] m_dmm_port_arid;
+output wire [31 : 0] m_dmm_port_araddr;
+output wire [7 : 0] m_dmm_port_arlen;
+output wire [2 : 0] m_dmm_port_arsize;
+output wire [1 : 0] m_dmm_port_arburst;
+output wire m_dmm_port_arlock;
+output wire [3 : 0] m_dmm_port_arcache;
+output wire [2 : 0] m_dmm_port_arprot;
+output wire [3 : 0] m_dmm_port_arqos;
+output wire [0 : 0] m_dmm_port_aruser;
+output wire m_dmm_port_arvalid;
+input wire m_dmm_port_arready;
+input wire [0 : 0] m_dmm_port_rid;
+input wire [31 : 0] m_dmm_port_rdata;
+input wire [1 : 0] m_dmm_port_rresp;
+input wire m_dmm_port_rlast;
+input wire [0 : 0] m_dmm_port_ruser;
+input wire m_dmm_port_rvalid;
+output wire m_dmm_port_rready;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DEVICE_PORT_CLK, ASSOCIATED_RESET device_aresetn, ASSOCIATED_BUSIF M_DEVICE_PORT, FREQ_HZ 100000000, PHASE 0, CLK_DOMAIN aquila_soc_mig_7series_0_0_ui_clk, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 M_DEVICE_PORT_CLK CLK" *)
 input wire device_aclk;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DEVICE_PORT_RST, POLARITY ACTIVE_LOW" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DEVICE_PORT_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 M_DEVICE_PORT_RST RST" *)
 input wire device_aresetn;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_DEVICE_PORT AWADDR" *)
@@ -284,7 +368,7 @@ input wire [1 : 0] m_device_port_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_DEVICE_PORT RVALID" *)
 input wire m_device_port_rvalid;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DEVICE_PORT, WIZ_DATA_WIDTH 32, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0, CLK_DOMAIN aquila_soc_mig_7series_0_0_ui_clk, \
-NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
+NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_DEVICE_PORT RREADY" *)
 output wire m_device_port_rready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_IMEM_PORT AWID" *)
@@ -366,13 +450,13 @@ input wire m_imem_port_rlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_IMEM_PORT RVALID" *)
 input wire m_imem_port_rvalid;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_IMEM_PORT, WIZ_DATA_WIDTH 32, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 1, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 256, PHASE 0, CLK_DOMAIN aquila_soc_mig_7series_0_0_ui_clk, NUM_\
-READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *)
+READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_IMEM_PORT RREADY" *)
 output wire m_imem_port_rready;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DMEM_PORT_CLK, ASSOCIATED_BUSIF M_DMEM_PORT:M_IMEM_PORT, ASSOCIATED_RESET mem_aresetn, FREQ_HZ 100000000, PHASE 0.000, XIL_INTERFACENAME M_IMEM_PORT_CLK, ASSOCIATED_BUSIF M_IMEM_PORT:M_DMEM_PORT, ASSOCIATED_RESET mem_aresetn, FREQ_HZ 100000000, PHASE 0, CLK_DOMAIN aquila_soc_mig_7series_0_0_ui_clk" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DMEM_PORT_CLK, ASSOCIATED_BUSIF M_DMEM_PORT:M_IMEM_PORT, ASSOCIATED_RESET mem_aresetn, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0, XIL_INTERFACENAME M_IMEM_PORT_CLK, ASSOCIATED_BUSIF M_IMEM_PORT:M_DMEM_PORT, ASSOCIATED_RESET mem_aresetn, FREQ_HZ 100000000, PHASE 0, CLK_DOMAIN aquila_soc_mig_7series_0_0_ui_clk, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 M_DMEM_PORT_CLK CLK, xilinx.com:signal:clock:1.0 M_IMEM_PORT_CLK CLK" *)
 input wire mem_aclk;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DMEM_PORT_RST, POLARITY ACTIVE_LOW, XIL_INTERFACENAME M_IMEM_PORT_RST, POLARITY ACTIVE_LOW" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_DMEM_PORT_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0, XIL_INTERFACENAME M_IMEM_PORT_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 M_DMEM_PORT_RST RST, xilinx.com:signal:reset:1.0 M_IMEM_PORT_RST RST" *)
 input wire mem_aresetn;
 
@@ -396,7 +480,17 @@ input wire mem_aresetn;
     .C_M_IMEM_PORT_ARUSER_WIDTH(1),
     .C_M_IMEM_PORT_WUSER_WIDTH(0),
     .C_M_IMEM_PORT_RUSER_WIDTH(0),
-    .C_M_IMEM_PORT_BUSER_WIDTH(1)
+    .C_M_IMEM_PORT_BUSER_WIDTH(1),
+    .C_M_DMM_PORT_SLAVE_BASE_ADDR('H60000000),
+    .C_M_DMM_PORT_BURST_LEN(16),
+    .C_M_DMM_PORT_ID_WIDTH(1),
+    .C_M_DMM_PORT_ADDR_WIDTH(32),
+    .C_M_DMM_PORT_DATA_WIDTH(32),
+    .C_M_DMM_PORT_AWUSER_WIDTH(0),
+    .C_M_DMM_PORT_ARUSER_WIDTH(0),
+    .C_M_DMM_PORT_WUSER_WIDTH(0),
+    .C_M_DMM_PORT_RUSER_WIDTH(0),
+    .C_M_DMM_PORT_BUSER_WIDTH(0)
   ) inst (
     .m_dmem_port_awid(m_dmem_port_awid),
     .m_dmem_port_awaddr(m_dmem_port_awaddr),
@@ -440,6 +534,48 @@ input wire mem_aresetn;
     .m_dmem_port_ruser(1'B0),
     .m_dmem_port_rvalid(m_dmem_port_rvalid),
     .m_dmem_port_rready(m_dmem_port_rready),
+    .m_dmm_port_awid(m_dmm_port_awid),
+    .m_dmm_port_awaddr(m_dmm_port_awaddr),
+    .m_dmm_port_awlen(m_dmm_port_awlen),
+    .m_dmm_port_awsize(m_dmm_port_awsize),
+    .m_dmm_port_awburst(m_dmm_port_awburst),
+    .m_dmm_port_awlock(m_dmm_port_awlock),
+    .m_dmm_port_awcache(m_dmm_port_awcache),
+    .m_dmm_port_awprot(m_dmm_port_awprot),
+    .m_dmm_port_awqos(m_dmm_port_awqos),
+    .m_dmm_port_awuser(m_dmm_port_awuser),
+    .m_dmm_port_awvalid(m_dmm_port_awvalid),
+    .m_dmm_port_awready(m_dmm_port_awready),
+    .m_dmm_port_wdata(m_dmm_port_wdata),
+    .m_dmm_port_wstrb(m_dmm_port_wstrb),
+    .m_dmm_port_wlast(m_dmm_port_wlast),
+    .m_dmm_port_wuser(m_dmm_port_wuser),
+    .m_dmm_port_wvalid(m_dmm_port_wvalid),
+    .m_dmm_port_wready(m_dmm_port_wready),
+    .m_dmm_port_bid(m_dmm_port_bid),
+    .m_dmm_port_bresp(m_dmm_port_bresp),
+    .m_dmm_port_buser(m_dmm_port_buser),
+    .m_dmm_port_bvalid(m_dmm_port_bvalid),
+    .m_dmm_port_bready(m_dmm_port_bready),
+    .m_dmm_port_arid(m_dmm_port_arid),
+    .m_dmm_port_araddr(m_dmm_port_araddr),
+    .m_dmm_port_arlen(m_dmm_port_arlen),
+    .m_dmm_port_arsize(m_dmm_port_arsize),
+    .m_dmm_port_arburst(m_dmm_port_arburst),
+    .m_dmm_port_arlock(m_dmm_port_arlock),
+    .m_dmm_port_arcache(m_dmm_port_arcache),
+    .m_dmm_port_arprot(m_dmm_port_arprot),
+    .m_dmm_port_arqos(m_dmm_port_arqos),
+    .m_dmm_port_aruser(m_dmm_port_aruser),
+    .m_dmm_port_arvalid(m_dmm_port_arvalid),
+    .m_dmm_port_arready(m_dmm_port_arready),
+    .m_dmm_port_rid(m_dmm_port_rid),
+    .m_dmm_port_rdata(m_dmm_port_rdata),
+    .m_dmm_port_rresp(m_dmm_port_rresp),
+    .m_dmm_port_rlast(m_dmm_port_rlast),
+    .m_dmm_port_ruser(m_dmm_port_ruser),
+    .m_dmm_port_rvalid(m_dmm_port_rvalid),
+    .m_dmm_port_rready(m_dmm_port_rready),
     .device_aclk(device_aclk),
     .device_aresetn(device_aresetn),
     .m_device_port_awaddr(m_device_port_awaddr),

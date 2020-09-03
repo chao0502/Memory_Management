@@ -404,7 +404,7 @@ proc create_root_design { parentCell } {
   set axi_smc [ create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 axi_smc ]
   set_property -dict [ list \
    CONFIG.NUM_CLKS {2} \
-   CONFIG.NUM_SI {2} \
+   CONFIG.NUM_SI {3} \
  ] $axi_smc
 
   # Create instance: axi_uartlite_0, and set properties

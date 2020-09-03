@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="aquila_soc_rst_mig_7series_0_200M_0_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1598927251">
-  <File Type="VDS-TIMING-PB" Name="aquila_soc_rst_mig_7series_0_200M_0_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="aquila_soc_rst_mig_7series_0_200M_0_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="aquila_soc_rst_mig_7series_0_200M_0.dcp"/>
-  <File Type="REPORTS-TCL" Name="aquila_soc_rst_mig_7series_0_200M_0_reports.tcl"/>
-  <File Type="PA-TCL" Name="aquila_soc_rst_mig_7series_0_200M_0.tcl"/>
-  <File Type="RDS-RDS" Name="aquila_soc_rst_mig_7series_0_200M_0.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="aquila_soc_rst_mig_7series_0_200M_0_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="aquila_soc_rst_mig_7series_0_200M_0_utilization_synth.rpt"/>
+<GenRun Id="aquila_soc_rst_mig_7series_0_200M_0_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1599113041">
   <File Type="RDS-UTIL-PB" Name="aquila_soc_rst_mig_7series_0_200M_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="aquila_soc_rst_mig_7series_0_200M_0_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="aquila_soc_rst_mig_7series_0_200M_0.vds"/>
+  <File Type="RDS-DCP" Name="aquila_soc_rst_mig_7series_0_200M_0.dcp"/>
+  <File Type="PA-TCL" Name="aquila_soc_rst_mig_7series_0_200M_0.tcl"/>
+  <File Type="REPORTS-TCL" Name="aquila_soc_rst_mig_7series_0_200M_0_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/aquila_soc_rst_mig_7series_0_200M_0">
     <File Path="$PSRCDIR/sources_1/bd/aquila_soc/ip/aquila_soc_rst_mig_7series_0_200M_0/aquila_soc_rst_mig_7series_0_200M_0.xci">
       <FileInfo>
@@ -46,9 +43,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
