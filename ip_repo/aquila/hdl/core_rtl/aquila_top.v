@@ -97,7 +97,25 @@ module aquila_top #
     output [DATA_WIDTH/8-1 : 0]    M_DEVICE_byte_enable_o,
     output [DATA_WIDTH-1 : 0]      M_DEVICE_data_o,
     input                          M_DEVICE_data_ready_i,
-    input  [DATA_WIDTH-1 : 0]      M_DEVICE_data_i
+    input  [DATA_WIDTH-1 : 0]      M_DEVICE_data_i,
+
+    // Mem_IP master port interface signals
+    // malloc ip to AXI bus
+    output                         copy_active,
+    output [31:0]                  copy_len,
+    input                          copy_done,
+    input                          wvalid,
+    output                         write_request,
+    output [31:0]                  write_address,
+    output [3:0]                   write_len,
+    output [31:0]                  write_data,
+    output [31:0]                  src_addr,
+    output [31:0]                  dst_addr,
+    input                          rvalid,
+    output                         read_request,
+    output [31:0]                  read_address,
+    output [3:0]                   read_len,
+    input [31:0]                   read_data
 );
 
 // ------------- Signals for cpu, cache and master ip -------------------------
@@ -142,6 +160,17 @@ wire [CACHE_LINE_SIZE-1 : 0] m_i_dram, m_d_cache2dram, m_d_dram2cache;
 
 wire                         m_d_is_amo;   // Atomic op flag to D-memory.
 wire [4 : 0]                 m_d_amo_type; // Atomic type to D-memory.
+
+// core_top to malloc_ip
+wire                         allocate_request;
+wire                         reallocate_request;
+wire [ADDR_WIDTH-1 : 0]      reallocate_addr_i;
+wire [DATA_WIDTH-1 : 0]      allocate_size;
+wire                         free_request;
+wire [ADDR_WIDTH-1 : 0]      free_addr;
+wire [ADDR_WIDTH-1 : 0]      allocate_addr;
+wire                         allocate_finish;
+wire                         free_finish;
 
 // Connections from the RISCV Core to the Atomic Unit, then to D-memory.
 wire                         atomic_unit_strobe;
@@ -243,6 +272,17 @@ RISCV_CORE0(
     .data_is_amo_o(p_d_is_amo),
     .data_amo_type_o(p_d_amo_type),
 
+    // Memory Manangement port
+    .allocate_request(allocate_request),
+    .reallocate_request(reallocate_request),
+    .reallocate_addr_i(reallocate_addr_i),
+    .allocate_size(allocate_size),
+    .free_request(free_request),
+    .free_addr(free_addr),
+    .allocate_addr(allocate_addr),
+    .allocate_finish(allocate_finish),
+    .free_finish(free_finish),
+
     // Cache flush signal
     .cache_flush_o(p_cache_flush),
 
@@ -251,12 +291,44 @@ RISCV_CORE0(
     .tmr_irq_i(tmr_irq),
     .sft_irq_i(sft_irq)
 );
+// ----------------------------------------------------------------------------
+//  Memory_Management
+//
+memory_manager #(.HEAP_SIZE(32'h02000000))
+Memory_Management (
+    .clk(clk_i),
+    .rst(rst_i),
+    .allocate_request(allocate_request),
+    .reallocate_request(reallocate_request),
+    .reallocate_addr_i(reallocate_addr_i),
+    .allocate_size(allocate_size),
+    .free_request(free_request),
+    .free_addr(free_addr),
+    .allocate_addr(allocate_addr),
+    .allocate_finish(allocate_finish),
+    .free_finish(free_finish),
 
+    .read_request(read_request),
+    .read_address(read_address),
+    .write_request(write_request),
+    .write_address(write_address),
+    .write_valid(wvalid),
+    .write_data(write_data),
+    .write_len(write_len),
+    .read_len(read_len),
+    .read_valid(rvalid),
+    .read_data(read_data),
+    .src_addr(src_addr),
+    .dst_addr(dst_addr),
+    .copy_len(copy_len),
+    .copy_done(copy_done),
+    .copy_active(copy_active)
+);
 // ----------------------------------------------------------------------------
 //  Instiantiation of the dual-port tightly-coupled scratchpad memory module.
 //  0x00000000 ~ 0x0FFFFFFF
-localparam TCM_SIZE_IN_WORDS = 16384; // 64KB
-localparam TCM_ADDR_WIDTH = $clog2(TCM_SIZE_IN_WORDS);
+localparam integer TCM_SIZE_IN_WORDS = 16384; // 64KB
+localparam integer TCM_ADDR_WIDTH = $clog2(TCM_SIZE_IN_WORDS);
 
 sram_dp #(.DATA_WIDTH(DATA_WIDTH), .N_ENTRIES(TCM_SIZE_IN_WORDS))
 TCM(

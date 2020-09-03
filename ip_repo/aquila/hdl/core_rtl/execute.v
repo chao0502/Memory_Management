@@ -113,6 +113,17 @@ module execute #(parameter DATA_WIDTH = 32, ADDR_WIDTH = 32)
     //    multicycle mul, div and rem instructions.
     output                        stall_from_exe_o,
 
+    // To Memory Management IP
+    output                        allocate_request,
+    output                        reallocate_request,
+    output [ADDR_WIDTH-1 : 0]     reallocate_addr_i,
+    output [DATA_WIDTH-1 : 0]     allocate_size,
+    output                        free_request,
+    output [ADDR_WIDTH-1 : 0]     free_addr,
+    input  [ADDR_WIDTH-1 : 0]     allocate_addr,
+    input                         allocate_finish,
+    input                         free_finish,
+
     // Signals to D-memory.
     output reg                    we_o,
     output reg                    re_o,

@@ -53,7 +53,7 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 // =============================================================================
-module aquila_M_MALLOC_PORT #
+module aquila_M_DMM_PORT #
 (        
     parameter  C_M_TARGET_SLAVE_BASE_ADDR    = 32'h60000000,// Base address of targeted slave
     parameter integer C_M_AXI_BURST_LEN    = 16, // Burst Length.
@@ -68,25 +68,25 @@ module aquila_M_MALLOC_PORT #
 )
 (
     // Users to add ports here
-    input copy_active;
-    input [31:0] copy_len;
-    output copy_flag;
-    output copy_done;
+    input copy_active,
+    input [31:0] copy_len,
+    output copy_flag,
+    output copy_done,
 
-    input write_request;
-    input [31:0]write_address;
-    input [3:0]write_len;
-    input [31:0]write_data;
-    output wnext;
+    input write_request,
+    input [31:0]write_address,
+    input [3:0]write_len,
+    input [31:0]write_data,
+    output wnext,
     
-    input [31:0] src_addr;
-    input [31:0] dst_addr;
+    input [31:0] src_addr,
+    input [31:0] dst_addr,
     
-    input read_request;
-    input [31:0]read_address;
-    input [3:0] read_len;
-    output [31:0]read_data;
-    output rnext;
+    input read_request,
+    input [31:0]read_address,
+    input [3:0] read_len,
+    output [31:0]read_data,
+    output rnext,
     // User ports ends
 
     // Global Clock Signal.
@@ -291,7 +291,7 @@ reg  [31:0]read_address_reg;
 
 assign copy_flag = copy_flag_r;
 assign read_data = M_AXI_RDATA;
-assign copy_done = (mst_exec_state == DONE & copy_len_r == 0 & copy_flag);
+assign copy_done = (mst_exec_state == DONE & copy_len_r == 0 & copy_flag_r);
 
 //I/O Connections. Write Address (AW)
 assign M_AXI_AWID    = 'b0;
@@ -509,7 +509,7 @@ begin
     if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)
         axi_wdata = 'b0;
     else if (mst_exec_state == INIT_WRITE)
-        axi_wdata = (copy_flag) ? buffer[write_index] : write_data;
+        axi_wdata = (copy_flag_r) ? buffer[write_index] : write_data;
     else
         axi_wdata = 0;
 end
@@ -690,7 +690,7 @@ begin
             // read controller
             if (reads_done)
             begin
-                mst_exec_state <= (copy_flag) ? INIT_WRITE : DONE;
+                mst_exec_state <= (copy_flag_r) ? INIT_WRITE : DONE;
             end
             else
             begin
@@ -732,7 +732,7 @@ begin
             // of written data with the read data. If no error flags are set,
             // compare_done signal will be asseted to indicate success.
             //if (~error_reg) 
-            if(copy_flag)begin
+            if(copy_flag_r)begin
                 if(copy_len_r == 0)
                 begin
                     mst_exec_state <= IDLE;
@@ -858,11 +858,11 @@ end
          
 always @(posedge M_AXI_ACLK)begin
     if(M_AXI_ARESETN == 0)
-        copy_flag <= 0;    
+        copy_flag_r <= 0;    
     else if(mst_exec_state == DONE & copy_len_r == 0)
-        copy_flag <= 0;    
+        copy_flag_r <= 0;    
     else    
-        copy_flag <= (init_txn_pulse & copy_active_reg) ? 1'b1 : copy_flag;
+        copy_flag_r <= (init_txn_pulse & copy_active_reg) ? 1'b1 : copy_flag_r;
 end
         
 always @(posedge M_AXI_ACLK)begin
