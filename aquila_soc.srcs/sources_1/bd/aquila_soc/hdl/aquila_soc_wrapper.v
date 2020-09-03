@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Thu Sep  3 14:03:35 2020
+//Date        : Thu Sep  3 14:41:39 2020
 //Host        : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 //Command     : generate_target aquila_soc_wrapper.bd
 //Design      : aquila_soc_wrapper

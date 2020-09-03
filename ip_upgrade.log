@@ -1,6 +1,27 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep  3 14:41:29 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 206) to (Rev. 207)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
 | Date         : Thu Sep  3 14:03:23 2020
 | Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 | Command      : upgrade_ip

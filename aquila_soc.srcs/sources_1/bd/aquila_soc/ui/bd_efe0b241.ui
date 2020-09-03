@@ -11,20 +11,20 @@ preplace inst aquila_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 4 -y 370 -defaultsOSRD
 preplace inst rst_mig_7series_0_200M -pg 1 -lvl 1 -y 550 -defaultsOSRD
 preplace inst axi_uartlite_0 -pg 1 -lvl 3 -y 140 -defaultsOSRD
-preplace netloc mig_7series_0_mmcm_locked 1 0 4 70 700 NJ 700 NJ 700 850
-preplace netloc aquila_0_M_ICACHE_PORT 1 1 3 NJ -210 NJ -210 910
+preplace netloc mig_7series_0_mmcm_locked 1 0 4 50 700 NJ 700 NJ 700 880
 preplace netloc mig_7series_0_DDR3 1 3 2 NJ 260 N
-preplace netloc mig_7series_0_ui_addn_clk_0 1 0 4 40 680 N 680 530 430 870
-preplace netloc aquila_0_M_DEVICE_PORT 1 1 2 490 120 NJ
-preplace netloc sys_diff_clock_1 1 0 3 30J 650 NJ 650 540
-preplace netloc rst_mig_7series_0_200M_peripheral_aresetn 1 0 4 60 670 490 690 550 440 910
-preplace netloc smartconnect_0_M00_AXI 1 2 3 570 420 890J 250 1200
-preplace netloc mig_7series_0_ui_clk 1 3 1 880
-preplace netloc aquila_0_M_DCACHE_PORT 1 1 3 NJ -190 NJ -190 900
+preplace netloc aquila_0_M_ICACHE_PORT 1 1 3 NJ -210 NJ -210 940
+preplace netloc mig_7series_0_ui_addn_clk_0 1 0 4 20 680 N 680 510 430 900
+preplace netloc aquila_0_M_DEVICE_PORT 1 1 2 470 120 NJ
+preplace netloc sys_diff_clock_1 1 0 3 10J 650 NJ 650 520
+preplace netloc rst_mig_7series_0_200M_peripheral_aresetn 1 0 4 40 670 470 690 530 440 940
+preplace netloc smartconnect_0_M00_AXI 1 2 3 550 420 920J 250 1230
+preplace netloc mig_7series_0_ui_clk 1 3 1 910
+preplace netloc aquila_0_M_DCACHE_PORT 1 1 3 NJ -190 NJ -190 930
 preplace netloc axi_uartlite_0_UART 1 3 2 N 130 N
-preplace netloc mig_7series_0_ui_clk_sync_rst 1 0 4 50 710 NJ 710 NJ 710 860
-preplace netloc reset_1 1 0 3 20J 660 NJ 660 560
-levelinfo -pg 1 0 280 510 710 1060 1230 -top -270 -bot 1620
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 0 4 30 710 NJ 710 NJ 710 890
+preplace netloc reset_1 1 0 3 0J 660 NJ 660 540
+levelinfo -pg 1 -20 260 490 740 1090 1250 -top -270 -bot 1620
 "
 }
 {

@@ -1,0 +1,454 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Sep  3 14:41:44 2020
+# Process ID: 22304
+# Current directory: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/aquila_soc_aquila_0_1_synth_1
+# Command line: vivado -log aquila_soc_aquila_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aquila_soc_aquila_0_1.tcl
+# Log file: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/aquila_soc_aquila_0_1_synth_1/aquila_soc_aquila_0_1.vds
+# Journal file: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/aquila_soc_aquila_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source aquila_soc_aquila_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hahaha/riscv/aquila_soc_0901/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx3/Vivado/2018.3/data/ip'.
+Command: synth_design -top aquila_soc_aquila_0_1 -part xc7k325tffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22356 
+WARNING: [Synth 8-2611] redeclaration of ansi port allocate_request is not allowed [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:283]
+WARNING: [Synth 8-2611] redeclaration of ansi port reallocate_request is not allowed [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:284]
+WARNING: [Synth 8-2611] redeclaration of ansi port reallocate_addr_i is not allowed [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:285]
+WARNING: [Synth 8-2611] redeclaration of ansi port allocate_size is not allowed [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:286]
+WARNING: [Synth 8-2611] redeclaration of ansi port free_request is not allowed [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:287]
+WARNING: [Synth 8-2611] redeclaration of ansi port free_addr is not allowed [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:288]
+WARNING: [Synth 8-2611] redeclaration of ansi port allocate_addr is not allowed [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:289]
+WARNING: [Synth 8-2611] redeclaration of ansi port allocate_finish is not allowed [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:290]
+WARNING: [Synth 8-2611] redeclaration of ansi port free_finish is not allowed [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:291]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1482.551 ; gain = 88.500 ; free physical = 2828 ; free virtual = 11622
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aquila_soc_aquila_0_1' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/synth/aquila_soc_aquila_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'aquila' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila.v:57]
+	Parameter C_M_IMEM_PORT_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_IMEM_PORT_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_IMEM_PORT_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_IMEM_PORT_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_IMEM_PORT_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_IMEM_PORT_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_IMEM_PORT_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_IMEM_PORT_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DMEM_PORT_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DMEM_PORT_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DMEM_PORT_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DMEM_PORT_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DMEM_PORT_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DMEM_PORT_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_DMEM_PORT_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_DMEM_PORT_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DMM_PORT_SLAVE_BASE_ADDR bound to: 1610612736 - type: integer 
+	Parameter C_M_DMM_PORT_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_DMM_PORT_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DMM_PORT_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DMM_PORT_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DMM_PORT_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_DMM_PORT_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_DMM_PORT_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_DMM_PORT_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_DMM_PORT_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_DEVICE_PORT_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_DEVICE_PORT_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'aquila_M_IMEM_PORT' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_IMEM_PORT.v:57]
+	Parameter C_CACHE_LINE_SIZE bound to: 256 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_BURST_LEN bound to: 8 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 3 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 7 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter READ bound to: 1 - type: integer 
+	Parameter DONE bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_IMEM_PORT.v:640]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_IMEM_PORT.v:660]
+WARNING: [Synth 8-6014] Unused sequential element burst_write_active_reg was removed.  [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_IMEM_PORT.v:704]
+WARNING: [Synth 8-6014] Unused sequential element writes_done_reg was removed.  [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_IMEM_PORT.v:722]
+WARNING: [Synth 8-3848] Net start_single_burst_write in module/entity aquila_M_IMEM_PORT does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_IMEM_PORT.v:229]
+INFO: [Synth 8-6155] done synthesizing module 'aquila_M_IMEM_PORT' (1#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_IMEM_PORT.v:57]
+INFO: [Synth 8-6157] synthesizing module 'aquila_M_DMEM_PORT' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMEM_PORT.v:57]
+	Parameter C_CACHE_LINE_SIZE bound to: 256 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_BURST_LEN bound to: 8 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 3 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 7 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter READ bound to: 1 - type: integer 
+	Parameter WRITE bound to: 2 - type: integer 
+	Parameter DONE bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMEM_PORT.v:820]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMEM_PORT.v:643]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMEM_PORT.v:663]
+INFO: [Synth 8-6155] done synthesizing module 'aquila_M_DMEM_PORT' (2#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMEM_PORT.v:57]
+INFO: [Synth 8-6157] synthesizing module 'aquila_M_DMM_PORT' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:56]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1610612736 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 6 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_READ bound to: 2'b01 
+	Parameter INIT_WRITE bound to: 2'b10 
+	Parameter DONE bound to: 2'b11 
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+INFO: [Synth 8-226] default block is never used [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:671]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:214]
+INFO: [Synth 8-6155] done synthesizing module 'aquila_M_DMM_PORT' (3#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DMM_PORT.v:56]
+INFO: [Synth 8-6157] synthesizing module 'aquila_M_DEVICE_PORT' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DEVICE_PORT.v:57]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'aquila_M_DEVICE_PORT' (4#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila_M_DEVICE_PORT.v:57]
+INFO: [Synth 8-6157] synthesizing module 'aquila_top' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/aquila_top.v:65]
+	Parameter HART_ID bound to: 0 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 256 - type: integer 
+	Parameter TCM_SIZE_IN_WORDS bound to: 16384 - type: integer 
+	Parameter TCM_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter ICACHE_SIZE bound to: 4 - type: integer 
+	Parameter DCACHE_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'core_top' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:80]
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter HART_ID bound to: 0 - type: integer 
+	Parameter BPU_ENTRY_NUM bound to: 32 - type: integer 
+	Parameter BPU_PC_WIDTH bound to: 32 - type: integer 
+	Parameter i_NEXT bound to: 0 - type: integer 
+	Parameter i_WAIT bound to: 1 - type: integer 
+	Parameter d_IDLE bound to: 0 - type: integer 
+	Parameter d_WAIT bound to: 1 - type: integer 
+	Parameter d_STALL bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pipeline_control' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/pipeline_control.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_control' (5#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/pipeline_control.v:62]
+INFO: [Synth 8-6157] synthesizing module 'forwarding_unit' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/forwarding_unit.v:59]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'forwarding_unit' (6#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/forwarding_unit.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bpu' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/bpu.v:59]
+	Parameter ENTRY_NUM bound to: 32 - type: integer 
+	Parameter PC_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'distri_ram' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/distri_ram.v:56]
+	Parameter ENTRY_NUM bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'distri_ram' (7#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/distri_ram.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'bpu' (8#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/bpu.v:59]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/reg_file.v:56]
+	Parameter NUM_REGS bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (9#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/reg_file.v:56]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/program_counter.v:62]
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (10#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/program_counter.v:62]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/fetch.v:71]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (11#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/fetch.v:71]
+INFO: [Synth 8-6157] synthesizing module 'decode' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/decode.v:58]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decode' (12#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/decode.v:58]
+WARNING: [Synth 8-689] width (12) of port connection 'sys_jump_csr_addr_o' does not match port width (2) of module 'decode' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:716]
+INFO: [Synth 8-6157] synthesizing module 'execute' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/execute.v:58]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/alu.v:57]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (13#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/alu.v:57]
+INFO: [Synth 8-6157] synthesizing module 'muldiv' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/muldiv.v:65]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter S_IDLE bound to: 3'b000 
+	Parameter S_CALC bound to: 3'b001 
+	Parameter S_SIGN_ADJUST bound to: 3'b010 
+	Parameter S_DONE bound to: 3'b011 
+	Parameter S_STALL bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'muldiv' (14#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/muldiv.v:65]
+INFO: [Synth 8-6157] synthesizing module 'bcu' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/bcu.v:56]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bcu' (15#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/bcu.v:56]
+WARNING: [Synth 8-3848] Net allocate_request in module/entity execute does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/execute.v:117]
+WARNING: [Synth 8-3848] Net reallocate_request in module/entity execute does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/execute.v:118]
+WARNING: [Synth 8-3848] Net reallocate_addr_i in module/entity execute does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/execute.v:119]
+WARNING: [Synth 8-3848] Net allocate_size in module/entity execute does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/execute.v:120]
+WARNING: [Synth 8-3848] Net free_request in module/entity execute does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/execute.v:121]
+WARNING: [Synth 8-3848] Net free_addr in module/entity execute does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/execute.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (16#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/execute.v:58]
+INFO: [Synth 8-6157] synthesizing module 'memory' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/memory.v:58]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/memory.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (17#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/memory.v:58]
+INFO: [Synth 8-6157] synthesizing module 'writeback' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/writeback.v:56]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/writeback.v:233]
+INFO: [Synth 8-6155] done synthesizing module 'writeback' (18#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/writeback.v:56]
+INFO: [Synth 8-6157] synthesizing module 'csr_file' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/csr_file.v:67]
+	Parameter HART_ID bound to: 0 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-151] case item 12'b110000000000 is unreachable [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/csr_file.v:574]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/csr_file.v:574]
+WARNING: [Synth 8-151] case item 12'b001100000100 is unreachable [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/csr_file.v:785]
+WARNING: [Synth 8-151] case item 12'b110000000000 is unreachable [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/csr_file.v:785]
+WARNING: [Synth 8-6014] Unused sequential element cycle_r_reg was removed.  [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/csr_file.v:771]
+INFO: [Synth 8-6155] done synthesizing module 'csr_file' (19#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/csr_file.v:67]
+WARNING: [Synth 8-3848] Net dec_sys_jump_csr_addr2exe in module/entity core_top does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:180]
+INFO: [Synth 8-6155] done synthesizing module 'core_top' (20#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/core_top.v:80]
+INFO: [Synth 8-6157] synthesizing module 'memory_manager' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/memory_management.v:23]
+	Parameter HEAP_SIZE bound to: 33554432 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'newlib_based_allocator' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/newlib_based_allocator.v:24]
+	Parameter HEAP_SIZE bound to: 33554432 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+	Parameter IDLE bound to: 1 - type: integer 
+	Parameter BUFF bound to: 2 - type: integer 
+	Parameter ANALYSIS bound to: 3 - type: integer 
+	Parameter EXACT bound to: 4 - type: integer 
+	Parameter OTHERS bound to: 5 - type: integer 
+	Parameter TOP bound to: 6 - type: integer 
+	Parameter INSERT bound to: 7 - type: integer 
+	Parameter FREE bound to: 8 - type: integer 
+	Parameter FAIL bound to: 9 - type: integer 
+	Parameter REALLOC bound to: 10 - type: integer 
+	Parameter DONE bound to: 11 - type: integer 
+	Parameter MEM_IDLE bound to: 0 - type: integer 
+	Parameter MEM_READ_REQ bound to: 1 - type: integer 
+	Parameter MEM_WAIT_READ bound to: 2 - type: integer 
+	Parameter MEM_WRITE_REQ bound to: 3 - type: integer 
+	Parameter MEM_WAIT_WRITE bound to: 4 - type: integer 
+	Parameter MEM_DONE bound to: 5 - type: integer 
+	Parameter TOP_IDLE bound to: 0 - type: integer 
+	Parameter TOP_OUTPUT bound to: 1 - type: integer 
+	Parameter TOP_SET_SIZE bound to: 2 - type: integer 
+	Parameter TOP_UPDATE bound to: 3 - type: integer 
+	Parameter TOP_DONE bound to: 4 - type: integer 
+	Parameter EXACT_IDLE bound to: 0 - type: integer 
+	Parameter EXACT_OUTPUT bound to: 1 - type: integer 
+	Parameter EXACT_UNLINK_FD bound to: 2 - type: integer 
+	Parameter EXACT_UNLINK_BK bound to: 3 - type: integer 
+	Parameter EXACT_SET_NEXTCHUNK bound to: 4 - type: integer 
+	Parameter EXACT_UPDATE_EMPTY bound to: 5 - type: integer 
+	Parameter EXACT_UPDATE_NEW bound to: 6 - type: integer 
+	Parameter EXACT_DONE bound to: 7 - type: integer 
+	Parameter OTHERS_IDLE bound to: 0 - type: integer 
+	Parameter OTHERS_OUTPUT bound to: 1 - type: integer 
+	Parameter OTHERS_SET_SIZE bound to: 2 - type: integer 
+	Parameter OTHERS_UNLINK_FD bound to: 3 - type: integer 
+	Parameter OTHERS_UNLINK_BK bound to: 4 - type: integer 
+	Parameter OTHERS_UPDATE_EMPTY bound to: 5 - type: integer 
+	Parameter OTHERS_UPDATE_NEW bound to: 6 - type: integer 
+	Parameter OTHERS_DONE bound to: 7 - type: integer 
+	Parameter INSERT_IDLE bound to: 0 - type: integer 
+	Parameter INSERT_DELAY bound to: 1 - type: integer 
+	Parameter INSERT_READ_BIN bound to: 2 - type: integer 
+	Parameter INSERT_ANALYSIS bound to: 3 - type: integer 
+	Parameter INSERT_READ_CHUNK bound to: 4 - type: integer 
+	Parameter INSERT_LINK_FD bound to: 5 - type: integer 
+	Parameter INSERT_LINK_BK bound to: 6 - type: integer 
+	Parameter INSERT_SET_HEAD bound to: 7 - type: integer 
+	Parameter INSERT_SET_FOOT bound to: 8 - type: integer 
+	Parameter INSERT_UPDATE bound to: 9 - type: integer 
+	Parameter INSERT_DONE bound to: 10 - type: integer 
+	Parameter FREE_IDLE bound to: 0 - type: integer 
+	Parameter FREE_READ_SIZE bound to: 1 - type: integer 
+	Parameter FREE_INITIAL bound to: 2 - type: integer 
+	Parameter FREE_ANALYSIS bound to: 3 - type: integer 
+	Parameter FREE_READ_PREVIOUS bound to: 4 - type: integer 
+	Parameter FREE_UNLINK_FD bound to: 5 - type: integer 
+	Parameter FREE_UNLINK_BK bound to: 6 - type: integer 
+	Parameter FREE_UPDATE_EMPTY bound to: 7 - type: integer 
+	Parameter FREE_UPDATE_NEW bound to: 8 - type: integer 
+	Parameter FREE_CHECK_TOP bound to: 9 - type: integer 
+	Parameter FREE_UPDATE_TOP bound to: 10 - type: integer 
+	Parameter FREE_READ_NEXT bound to: 11 - type: integer 
+	Parameter FREE_CLEAR_USEBIT bound to: 12 - type: integer 
+	Parameter FREE_READ_USEBIT bound to: 13 - type: integer 
+	Parameter FREE_TOP_DONE bound to: 14 - type: integer 
+	Parameter FREE_NTOP_DONE bound to: 15 - type: integer 
+	Parameter REALLOC_IDLE bound to: 0 - type: integer 
+	Parameter REALLOC_READ_SIZE bound to: 1 - type: integer 
+	Parameter REALLOC_ANALYSIS bound to: 2 - type: integer 
+	Parameter REALLOC_ALLOCATE_NEW bound to: 3 - type: integer 
+	Parameter REALLOC_COPY bound to: 4 - type: integer 
+	Parameter REALLOC_FREE bound to: 5 - type: integer 
+	Parameter REALLOC_SET_HEAD1 bound to: 6 - type: integer 
+	Parameter REALLOC_SET_HEAD2 bound to: 7 - type: integer 
+	Parameter REALLOC_DONE bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/newlib_based_allocator.v:1043]
+INFO: [Synth 8-226] default block is never used [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/newlib_based_allocator.v:1119]
+INFO: [Synth 8-226] default block is never used [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/newlib_based_allocator.v:1413]
+INFO: [Synth 8-6157] synthesizing module 'sram_dual_port' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram_dual_port.v:8]
+	Parameter RAM_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_ADDR_BITS bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sram_dual_port' (21#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram_dual_port.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'newlib_based_allocator' (22#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/newlib_based_allocator.v:24]
+WARNING: [Synth 8-689] width (1) of port connection 'allocate_finish' does not match port width (3) of module 'newlib_based_allocator' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/memory_management.v:71]
+INFO: [Synth 8-6157] synthesizing module 'free_circular_buffer' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/free_circular_buffer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sram_dual_port__parameterized0' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram_dual_port.v:8]
+	Parameter RAM_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sram_dual_port__parameterized0' (22#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram_dual_port.v:8]
+INFO: [Synth 8-4471] merging register 'write_flag_reg' into 'free_finish_reg' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/free_circular_buffer.v:57]
+WARNING: [Synth 8-6014] Unused sequential element write_flag_reg was removed.  [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/free_circular_buffer.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'free_circular_buffer' (23#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/free_circular_buffer.v:23]
+WARNING: [Synth 8-3848] Net write_valid in module/entity memory_manager does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/memory_management.v:41]
+WARNING: [Synth 8-3848] Net read_valid in module/entity memory_manager does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/memory_management.v:45]
+WARNING: [Synth 8-3848] Net read_data in module/entity memory_manager does not have driver. [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/memory_management.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'memory_manager' (24#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/memory_management.v:23]
+WARNING: [Synth 8-6104] Input port 'wvalid' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/aquila_top.v:315]
+WARNING: [Synth 8-6104] Input port 'rvalid' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/aquila_top.v:319]
+WARNING: [Synth 8-6104] Input port 'read_data' has an internal driver [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/aquila_top.v:320]
+INFO: [Synth 8-6157] synthesizing module 'sram_dp' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram_dp.v:56]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter N_ENTRIES bound to: 16384 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/mem/bootrom.mem' is read successfully [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram_dp.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'sram_dp' (25#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram_dp.v:56]
+INFO: [Synth 8-6157] synthesizing module 'clint' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/clint.v:56]
+	Parameter TIMER bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clint' (26#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/clint.v:56]
+INFO: [Synth 8-6157] synthesizing module 'atomic_unit' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/atomic_unit.v:55]
+	Parameter N bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter CACHE_LINE_SIZE bound to: 256 - type: integer 
+	Parameter Bypass bound to: 0 - type: integer 
+	Parameter AmoRd bound to: 1 - type: integer 
+	Parameter AmoWr bound to: 2 - type: integer 
+	Parameter AmoFinish bound to: 3 - type: integer 
+	Parameter AmoWaitCohere bound to: 4 - type: integer 
+	Parameter Lr bound to: 5 - type: integer 
+	Parameter SWAP bound to: 5'b00001 
+	Parameter ADD bound to: 5'b00000 
+	Parameter XOR bound to: 5'b00100 
+	Parameter AND bound to: 5'b01100 
+	Parameter OR bound to: 5'b01000 
+	Parameter MIN bound to: 5'b10000 
+	Parameter MAX bound to: 5'b10100 
+	Parameter MINU bound to: 5'b11000 
+	Parameter MAXU bound to: 5'b11100 
+	Parameter SC bound to: 5'b00011 
+WARNING: [Synth 8-151] case item 2'b10 is unreachable [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/atomic_unit.v:178]
+INFO: [Synth 8-6155] done synthesizing module 'atomic_unit' (27#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/atomic_unit.v:55]
+INFO: [Synth 8-6157] synthesizing module 'icache' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/icache.v:61]
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter CACHE_SIZE bound to: 4 - type: integer 
+	Parameter LINE_SIZE bound to: 256 - type: integer 
+	Parameter N_WAYS bound to: 4 - type: integer 
+	Parameter WORDS_PER_LINE bound to: 8 - type: integer 
+	Parameter N_LINES bound to: 32 - type: integer 
+	Parameter WAY_BITS bound to: 2 - type: integer 
+	Parameter BYTE_BITS bound to: 2 - type: integer 
+	Parameter WORD_BITS bound to: 3 - type: integer 
+	Parameter LINE_BITS bound to: 5 - type: integer 
+	Parameter NONTAG_BITS bound to: 10 - type: integer 
+	Parameter TAG_BITS bound to: 22 - type: integer 
+	Parameter Idle bound to: 0 - type: integer 
+	Parameter Next bound to: 1 - type: integer 
+	Parameter RdfromMem bound to: 2 - type: integer 
+	Parameter RdfromMemFinish bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sram' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram.v:56]
+	Parameter DATA_WIDTH bound to: 256 - type: integer 
+	Parameter N_ENTRIES bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sram' (28#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram.v:56]
+INFO: [Synth 8-226] default block is never used [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/icache.v:149]
+WARNING: [Synth 8-5856] 3D RAM VALID__reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM TAG__reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'icache' (29#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/icache.v:61]
+INFO: [Synth 8-6157] synthesizing module 'dcache' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/dcache.v:63]
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter CACHE_SIZE bound to: 4 - type: integer 
+	Parameter LINE_SIZE bound to: 256 - type: integer 
+	Parameter N_WAYS bound to: 4 - type: integer 
+	Parameter WORDS_PER_LINE bound to: 8 - type: integer 
+	Parameter N_LINES bound to: 32 - type: integer 
+	Parameter WAY_BITS bound to: 2 - type: integer 
+	Parameter BYTE_BITS bound to: 2 - type: integer 
+	Parameter WORD_BITS bound to: 3 - type: integer 
+	Parameter LINE_BITS bound to: 5 - type: integer 
+	Parameter NONTAG_BITS bound to: 10 - type: integer 
+	Parameter TAG_BITS bound to: 22 - type: integer 
+	Parameter Idle bound to: 0 - type: integer 
+	Parameter Analysis bound to: 1 - type: integer 
+	Parameter WbtoMem bound to: 2 - type: integer 
+	Parameter WbtoMemFinish bound to: 3 - type: integer 
+	Parameter RdfromMem bound to: 4 - type: integer 
+	Parameter RdfromMemFinish bound to: 5 - type: integer 
+	Parameter WbtoMemAll bound to: 6 - type: integer 
+	Parameter WbtoMemAllFinish bound to: 7 - type: integer 
+	Parameter RdAmo bound to: 8 - type: integer 
+	Parameter RdAmoFinish bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram.v:56]
+	Parameter DATA_WIDTH bound to: 22 - type: integer 
+	Parameter N_ENTRIES bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (29#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/sram.v:56]
+WARNING: [Synth 8-5856] 3D RAM VALID__reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM DIRTY__reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'dcache' (30#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/dcache.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'aquila_top' (31#1) [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/core_rtl/aquila_top.v:65]
+ERROR: [Synth 8-448] named port connection 'wavlid' does not exist for instance 'aquila_core' of module 'aquila_top' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila.v:584]
+ERROR: [Synth 8-6156] failed synthesizing module 'aquila' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ipshared/a181/hdl/aquila.v:57]
+ERROR: [Synth 8-6156] failed synthesizing module 'aquila_soc_aquila_0_1' [/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/synth/aquila_soc_aquila_0_1.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1653.371 ; gain = 259.320 ; free physical = 2785 ; free virtual = 11597
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 65 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  3 14:41:57 2020...
