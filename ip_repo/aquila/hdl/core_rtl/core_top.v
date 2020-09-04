@@ -172,6 +172,9 @@ wire [ 2 : 0]           dec_regfile_sel2exe, dec_operation_sel2exe;
 wire                    dec_regfile_we2exe, dec_signex_sel2exe;
 wire                    dec_alu_muldiv_sel2exe, dec_shift_sel2exe;
 wire                    dec_is_fencei2exe;
+wire                    dec_is_malloc2exe;
+wire                    dec_is_realloc2exe;
+wire                    dec_is_free2exe;
 wire                    dec_is_amo2exe;
 wire [ 4 : 0]           dec_amo_type2exe;
 
@@ -675,6 +678,9 @@ decode Decode(
     .branch_decision_o(dec_branch_decision),
     .is_jalr_o(dec_is_jalr),
     .is_fencei_o(dec_is_fencei2exe),
+    .is_malloc_o(dec_is_malloc2exe),
+    .is_realloc_o(dec_is_realloc2exe),
+    .is_free_o(dec_is_free2exe),
 
     // to Execute and BPU
     .is_branch_o(dec_is_branch),
@@ -751,6 +757,9 @@ execute Execute(
     .is_jal_i(dec_is_jal),
     .is_jalr_i(dec_is_jalr),
     .is_fencei_i(dec_is_fencei2exe),
+    .is_malloc_i(dec_is_malloc2exe),
+    .is_realloc_i(dec_is_realloc2exe),
+    .is_free_o(dec_is_free2exe),
     .branch_hit_i(dec_branch_hit),
     .branch_decision_i(dec_branch_decision),
 

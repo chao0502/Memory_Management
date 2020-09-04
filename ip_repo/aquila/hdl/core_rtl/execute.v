@@ -88,6 +88,9 @@ module execute #(parameter DATA_WIDTH = 32, ADDR_WIDTH = 32)
     input                         signex_sel_i,
     input  [4: 0]                 rd_addr_i,
     input                         is_fencei_i,
+    input                         is_malloc_i,
+    input                         is_realloc_i,
+    input                         is_free_i,
     input                         is_amo_i,
     input  [4: 0]                 amo_type_i,
 

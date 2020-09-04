@@ -99,6 +99,9 @@ module decode #(parameter DATA_WIDTH = 32)
     output reg                    branch_decision_o,
     output reg                    is_jalr_o,
     output reg                    is_fencei_o,
+    output reg                    is_malloc_o,
+    output reg                    is_realloc_o,
+    output reg                    is_free_o,
 
     // to Execute and BPU
     output reg [DATA_WIDTH-1 : 0] pc_o, // also to CSR
@@ -316,10 +319,11 @@ wire rv32_auipc = opcode_6_5_00 & opcode_4_2_101;   // AUIPC opcode
 wire rv32_miscmem = opcode_6_5_00 & opcode_4_2_011; // MISC-MEM opcode
 wire rv32_system = opcode_6_5_11 & opcode_4_2_100;  // SYSTEM opcode
 wire rv32_amo = opcode_6_5_01 & opcode_4_2_011;     // AMO opcode
+wire rv32_dmm = opcode_6_5_11 & opcode_4_2_010;
 
 wire rv32m = rv32_op & rv32_funct7_0000001;  // Mul, Div and Rem instructions
 
-wire rv32_imm_seli = rv32_op_imm | rv32_jalr | rv32_load;
+wire rv32_imm_seli = rv32_op_imm | rv32_jalr | rv32_load | rv32_dmm;
 wire rv32_imm_sels = rv32_store;
 wire rv32_imm_selb = rv32_branch;
 wire rv32_imm_selu = rv32_lui | rv32_auipc;
@@ -371,6 +375,13 @@ wire rv32_lhu = rv32_load & rv32_funct3_101;
 wire rv32_sb = rv32_store & rv32_funct3_000;
 wire rv32_sh = rv32_store & rv32_funct3_001;
 wire rv32_sw = rv32_store & rv32_funct3_010;
+
+// ================================================================================
+// Dynamic memory management Instructions
+// 
+wire rv32_mallloc = rv32_dmm & rv32_funct3_000; 
+wire rv32_reallloc = rv32_dmm & rv32_funct3_010;
+wire rv32_free = rv32_dmm & rv32_funct3_011;
 
 // ================================================================================
 // Exception Signals
@@ -449,7 +460,7 @@ begin
     else if (rv32_csr)
         regfile_input_sel = 5; // csr
     else
-        regfile_input_sel = 4; // execute result
+        regfile_input_sel = 4; // execute result / malloc address
 end
 
 assign illegal_instr_o =     // the instructions that are not supported currently
@@ -491,6 +502,9 @@ begin
         branch_hit_o <= 0;
         branch_decision_o <= 0;
         is_fencei_o <= 0;
+        is_malloc_o <= 0;
+        is_realloc_o <= 0;
+        is_free_o <= 0;
         amo_type_o <= 0;
         is_amo_o <= 0;
 
@@ -531,6 +545,9 @@ begin
         branch_hit_o <= branch_hit_o;
         branch_decision_o <= branch_decision_o;
         is_fencei_o <= is_fencei_o;
+        is_malloc_o <= is_malloc_o;
+        is_realloc_o <= is_realloc_o;
+        is_free_o <= is_free_o;
         amo_type_o <= amo_type_o;
         is_amo_o <= is_amo_o;
 
@@ -572,6 +589,9 @@ begin
         branch_hit_o <= 0;
         branch_decision_o <= 0;
         is_fencei_o <= 0;
+        is_malloc_o <= 0;
+        is_realloc_o <= 0;
+        is_free_o <= 0;
         amo_type_o <= 0;
         is_amo_o <= 0;
 
@@ -612,6 +632,9 @@ begin
         branch_hit_o <= branch_hit_i;
         branch_decision_o <= branch_decision_i;
         is_fencei_o <= rv32_fencei;
+        is_malloc_o <= rv32_mallloc;
+        is_realloc_o <= rv32_reallloc;
+        is_free_o <= rv32_free;
         amo_type_o <= amo_type;
         is_amo_o <= rv32_amo;
 
