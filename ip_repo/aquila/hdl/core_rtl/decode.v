@@ -407,7 +407,8 @@ assign imm =
 //   # FENCE, FENCE.I
 //   # ECALL, EBREAK
 assign regfile_we = rv32_lui | rv32_auipc | rv32_load | rv32_op_imm |
-                    rv32_op | rv32_csr | rv32_amo | rv32_jal | rv32_jalr;
+                    rv32_op | rv32_csr | rv32_amo | rv32_jal | rv32_jalr |
+                    rv32_mallloc | rv32_reallloc;
 
 assign re = rv32_load | rv32_amo; // AMO instr. also need to load d-cache data
 assign we = rv32_store | rv32_fencei;

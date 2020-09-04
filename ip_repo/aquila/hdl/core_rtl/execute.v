@@ -256,8 +256,21 @@ assign branch_taken_o = (is_branch_i & compare_result) | is_jal_i | is_jalr_i;
 assign branch_misprediction_o = branch_hit_i &
                                     (branch_decision_i ^ branch_taken_o);
 
-assign result = alu_muldiv_sel_i ? muldiv_result : alu_result;
-assign stall_from_exe_o = alu_muldiv_sel_i & !muldiv_ready;
+assign result = alu_muldiv_sel_i ? muldiv_result : 
+                is_dmm ? allocate_addr : alu_result;
+assign stall_from_exe_o = alu_muldiv_sel_i & !muldiv_ready
+                | ((is_malloc_i | is_realloc_i) & !allocate_finish);
+
+// ===============================================================================
+//  Dynamic memory management signals
+//
+wire   is_dmm = is_malloc_i | is_realloc_i;
+assign allocate_request = is_malloc_i;
+assign reallocate_request = is_realloc_i;
+assign free_request = is_free_i;
+assign reallocate_addr_i = rs1_data_i;
+assign free_addr = rs1_data_i;
+assign allocate_size = imm_i;
 
 // ===============================================================================
 //  CSR
