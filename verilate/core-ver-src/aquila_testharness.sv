@@ -98,6 +98,22 @@ wire [C_S_CONFIG_PORT_DATA_WIDTH - 1 : 0] M_DEVICE_core2dev_data;
 wire                                      M_DEVICE_data_ready;
 wire [C_S_CONFIG_PORT_DATA_WIDTH - 1 : 0] M_DEVICE_dev2core_data;
 
+wire          copy_active;
+wire [31:0]   copy_len;
+wire          copy_done;
+wire          wvalid;
+wire          write_request;
+wire [31:0]   write_address;
+wire [3:0]    write_len;
+wire [31:0]   write_data;
+wire [31:0]   src_addr;
+wire [31:0]   dst_addr;
+wire          rvalid;
+wire          read_request;
+wire [31:0]   read_address;
+wire [3:0]    read_len;
+wire [31:0]   read_data;
+
 // Debug pc
 wire [31:0] debug_pc/*verilator public_flat*/;
 assign debug_pc = aquila_core.p_i_addr;
@@ -134,7 +150,23 @@ assign cur_instr_addr = aquila_core.p_i_addr;
       .M_DEVICE_byte_enable_o(M_DEVICE_byte_enable),
       .M_DEVICE_data_o(M_DEVICE_core2dev_data),
       .M_DEVICE_data_ready_i(M_DEVICE_data_ready),
-      .M_DEVICE_data_i(M_DEVICE_dev2core_data)
+      .M_DEVICE_data_i(M_DEVICE_dev2core_data),
+
+      .copy_active(copy_active),
+      .copy_len(copy_len),
+      .copy_done(copy_done),
+      .wvalid(wvalid),
+      .write_request(write_request),
+      .write_address(write_address),
+      .write_len(write_len),
+      .write_data(write_data),
+      .src_addr(src_addr),
+      .dst_addr(dst_addr),
+      .rvalid(rvalid),
+      .read_request(read_request),
+      .read_address(read_address),
+      .read_len(read_len),
+      .read_data(read_data)
   );
 
   dp_ram mock_ram(

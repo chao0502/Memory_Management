@@ -283,6 +283,7 @@ wire [ 1: 0] privilege_level;
 // =============================================================================
 //  core_top to malloc_ip
 //
+/*
 wire                         allocate_request;
 wire                         reallocate_request;
 wire [ADDR_WIDTH-1 : 0]      reallocate_addr_i;
@@ -291,7 +292,7 @@ wire                         free_request;
 wire [ADDR_WIDTH-1 : 0]      free_addr;
 wire [ADDR_WIDTH-1 : 0]      allocate_addr;
 wire                         allocate_finish;
-wire                         free_finish;
+wire                         free_finish;*/
 
 // =============================================================================
 //  Signals sent to the instruction & data memory IPs in the Aquila SoC
@@ -759,7 +760,7 @@ execute Execute(
     .is_fencei_i(dec_is_fencei2exe),
     .is_malloc_i(dec_is_malloc2exe),
     .is_realloc_i(dec_is_realloc2exe),
-    .is_free_o(dec_is_free2exe),
+    .is_free_i(dec_is_free2exe),
     .branch_hit_i(dec_branch_hit),
     .branch_decision_i(dec_branch_decision),
 
@@ -802,7 +803,7 @@ execute Execute(
     .allocate_addr(allocate_addr),
     .allocate_finish(allocate_finish),
     .free_finish(free_finish),
-    
+
     // Signals to D-Memory.
     .we_o(exe_we),
     .re_o(exe_re),
