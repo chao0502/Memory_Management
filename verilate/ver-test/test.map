@@ -47,7 +47,7 @@ Linker script and memory map
                 0x0000000000001000                __stack_size = 0x1000
                 0x000000008003f000                __stack_start = (__stack_top - __stack_size)
 
-.text           0x0000000080000000     0x3ea0
+.text           0x0000000080000000     0x3e94
  boot-p.o(.text)
  .text          0x0000000080000000       0x44 boot-p.o
                 0x0000000080000000                boot
@@ -86,80 +86,80 @@ Linker script and memory map
                 0x00000000800007c0                isr_is_LoadPageFault
                 0x00000000800007e4                isr_is_StoreAmoPageFault
                 0x0000000080000808                isr_is_UnknownException
- .text          0x000000008000082c      0x2d0 test.o
+ .text          0x000000008000082c      0x2c4 test.o
                 0x000000008000082c                main
-                0x0000000080000964                malloc_test
- .text          0x0000000080000afc      0x83c ../../sw/elibc/stdio.o
-                0x0000000080000afc                getchar
-                0x0000000080000b1c                fgets
-                0x0000000080000bec                putchar
-                0x0000000080000c1c                fputs
-                0x0000000080000c98                putd
-                0x0000000080000d84                putx
-                0x0000000080000ea4                putf
-                0x00000000800010a0                printf
- .text          0x0000000080001338      0x2c0 ../../sw/elibc/stdlib.o
-                0x0000000080001338                malloc
-                0x0000000080001360                free
-                0x0000000080001384                calloc
-                0x00000000800013dc                atoi
-                0x0000000080001514                abs
-                0x000000008000154c                exit
-                0x0000000080001590                srand
-                0x00000000800015b0                rand
- .text          0x00000000800015f8      0x528 ../../sw/elibc/heap_4.o
-                0x00000000800015f8                empty
-                0x0000000080001600                pvPortMalloc
-                0x00000000800017d4                vPortFree
-                0x0000000080001888                xPortGetFreeHeapSize
-                0x0000000080001898                xPortGetMinimumEverFreeHeapSize
-                0x00000000800018a8                vPortInitialiseBlocks
- .text          0x0000000080001b20      0x54c ../../sw/elibc/string.o
-                0x0000000080001b20                memcpy
-                0x0000000080001b90                memmove
-                0x0000000080001c68                memset
-                0x0000000080001cc8                strlen
-                0x0000000080001d08                strcpy
-                0x0000000080001d64                strncpy
-                0x0000000080001df4                strcat
-                0x0000000080001e6c                strncat
-                0x0000000080001efc                strcmp
-                0x0000000080001fa8                strncmp
- .text          0x000000008000206c       0x94 ../../sw/elibc/time.o
-                0x000000008000206c                clock
- .text          0x0000000080002100       0xa0 ../../sw/elibc/uart.o
-                0x0000000080002100                inbyte
-                0x000000008000212c                outbyte
- .text          0x00000000800021a0      0x480 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_divdi3.o)
-                0x00000000800021a0                __divdi3
- .text          0x0000000080002620      0x7c0 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(adddf3.o)
-                0x0000000080002620                __adddf3
- .text          0x0000000080002de0       0xe8 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(ledf2.o)
-                0x0000000080002de0                __ltdf2
-                0x0000000080002de0                __ledf2
- .text          0x0000000080002ec8      0x5c0 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldf3.o)
-                0x0000000080002ec8                __muldf3
- .text          0x0000000080003488      0x7c4 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(subdf3.o)
-                0x0000000080003488                __subdf3
- .text          0x0000000080003c4c       0x80 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixdfsi.o)
-                0x0000000080003c4c                __fixdfsi
- .text          0x0000000080003ccc       0xac /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsidf.o)
-                0x0000000080003ccc                __floatsidf
- .text          0x0000000080003d78       0xdc /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(extendsfdf2.o)
-                0x0000000080003d78                __extendsfdf2
- .text          0x0000000080003e54        0x0 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clz.o)
- .text          0x0000000080003e54       0x4c /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clzsi2.o)
-                0x0000000080003e54                __clzsi2
+                0x0000000080000958                malloc_test
+ .text          0x0000000080000af0      0x83c ../../sw/elibc/stdio.o
+                0x0000000080000af0                getchar
+                0x0000000080000b10                fgets
+                0x0000000080000be0                putchar
+                0x0000000080000c10                fputs
+                0x0000000080000c8c                putd
+                0x0000000080000d78                putx
+                0x0000000080000e98                putf
+                0x0000000080001094                printf
+ .text          0x000000008000132c      0x2c0 ../../sw/elibc/stdlib.o
+                0x000000008000132c                malloc
+                0x0000000080001354                free
+                0x0000000080001378                calloc
+                0x00000000800013d0                atoi
+                0x0000000080001508                abs
+                0x0000000080001540                exit
+                0x0000000080001584                srand
+                0x00000000800015a4                rand
+ .text          0x00000000800015ec      0x528 ../../sw/elibc/heap_4.o
+                0x00000000800015ec                empty
+                0x00000000800015f4                pvPortMalloc
+                0x00000000800017c8                vPortFree
+                0x000000008000187c                xPortGetFreeHeapSize
+                0x000000008000188c                xPortGetMinimumEverFreeHeapSize
+                0x000000008000189c                vPortInitialiseBlocks
+ .text          0x0000000080001b14      0x54c ../../sw/elibc/string.o
+                0x0000000080001b14                memcpy
+                0x0000000080001b84                memmove
+                0x0000000080001c5c                memset
+                0x0000000080001cbc                strlen
+                0x0000000080001cfc                strcpy
+                0x0000000080001d58                strncpy
+                0x0000000080001de8                strcat
+                0x0000000080001e60                strncat
+                0x0000000080001ef0                strcmp
+                0x0000000080001f9c                strncmp
+ .text          0x0000000080002060       0x94 ../../sw/elibc/time.o
+                0x0000000080002060                clock
+ .text          0x00000000800020f4       0xa0 ../../sw/elibc/uart.o
+                0x00000000800020f4                inbyte
+                0x0000000080002120                outbyte
+ .text          0x0000000080002194      0x480 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_divdi3.o)
+                0x0000000080002194                __divdi3
+ .text          0x0000000080002614      0x7c0 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(adddf3.o)
+                0x0000000080002614                __adddf3
+ .text          0x0000000080002dd4       0xe8 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(ledf2.o)
+                0x0000000080002dd4                __ltdf2
+                0x0000000080002dd4                __ledf2
+ .text          0x0000000080002ebc      0x5c0 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldf3.o)
+                0x0000000080002ebc                __muldf3
+ .text          0x000000008000347c      0x7c4 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(subdf3.o)
+                0x000000008000347c                __subdf3
+ .text          0x0000000080003c40       0x80 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixdfsi.o)
+                0x0000000080003c40                __fixdfsi
+ .text          0x0000000080003cc0       0xac /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsidf.o)
+                0x0000000080003cc0                __floatsidf
+ .text          0x0000000080003d6c       0xdc /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(extendsfdf2.o)
+                0x0000000080003d6c                __extendsfdf2
+ .text          0x0000000080003e48        0x0 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clz.o)
+ .text          0x0000000080003e48       0x4c /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clzsi2.o)
+                0x0000000080003e48                __clzsi2
 
-.srodata        0x0000000080003ea0        0x4
- .srodata       0x0000000080003ea0        0x4 ../../sw/elibc/heap_4.o
+.srodata        0x0000000080003e94        0x4
+ .srodata       0x0000000080003e94        0x4 ../../sw/elibc/heap_4.o
 
-.eh_frame       0x0000000080003ea4       0x28
- .eh_frame      0x0000000080003ea4       0x28 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_divdi3.o)
+.eh_frame       0x0000000080003e98       0x28
+ .eh_frame      0x0000000080003e98       0x28 /opt/riscv_8.2.0/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_divdi3.o)
 
-.rela.dyn       0x0000000080003ecc        0x0
- .rela.text     0x0000000080003ecc        0x0 boot-p.o
- .rela.sdata    0x0000000080003ecc        0x0 boot-p.o
+.rela.dyn       0x0000000080003ec0        0x0
+ .rela.text     0x0000000080003ec0        0x0 boot-p.o
+ .rela.sdata    0x0000000080003ec0        0x0 boot-p.o
 
 .data           0x000000008000a000      0x7a8
  *(.data)

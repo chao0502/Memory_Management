@@ -63,8 +63,9 @@ void malloc_test(int nwords);
 
 int main(void)
 {
-    outbyte('H');
-    asm volatile ("addi t0, zero, 0");
+    //outbyte('H');
+    asm volatile ("addi t1, zero, 32");
+    asm volatile(".byte 0x6b, 0x03, 0x00, 0x06");
     //asm volatile ("00000000000000000000000000010011");
     outbyte('e');
     outbyte('l');
@@ -86,7 +87,7 @@ int main(void)
     printf("The address of 'ver' is 0x%X\n\n", (unsigned) &ver);
 
     printf("First time tick = %d\n\n", clock());
-    malloc_test(10);
+    //malloc_test(10);
     printf("\nSecond time tick = %d\n\n", clock());
 
     //timer_isr_test();
