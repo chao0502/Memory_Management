@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Tue Sep  1 13:53:30 2020
+| Date             : Mon Sep  7 10:56:32 2020
 | Host             : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 | Command          : report_power -file aquila_soc_wrapper_power_routed.rpt -pb aquila_soc_wrapper_power_summary_routed.pb -rpx aquila_soc_wrapper_power_routed.rpx
 | Design           : aquila_soc_wrapper
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.851        |
+| Total On-Chip Power (W)  | 2.873        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.670        |
-| Device Static (W)        | 0.181        |
+| Dynamic (W)              | 2.692        |
+| Device Static (W)        | 0.182        |
 | Effective TJA (C/W)      | 1.8          |
 | Max Ambient (C)          | 79.9         |
 | Junction Temperature (C) | 30.1         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.221 |       51 |       --- |             --- |
-| Slice Logic              |     0.079 |    71878 |       --- |             --- |
-|   LUT as Logic           |     0.067 |    24982 |    203800 |           12.26 |
-|   LUT as Distributed RAM |     0.007 |     4332 |     64000 |            6.77 |
-|   Register               |     0.003 |    29407 |    407600 |            7.21 |
-|   CARRY4                 |     0.002 |      725 |     50950 |            1.42 |
+| Clocks                   |     0.218 |       51 |       --- |             --- |
+| Slice Logic              |     0.085 |    74336 |       --- |             --- |
+|   LUT as Logic           |     0.072 |    26245 |    203800 |           12.88 |
+|   LUT as Distributed RAM |     0.008 |     4332 |     64000 |            6.77 |
+|   Register               |     0.003 |    30002 |    407600 |            7.36 |
+|   CARRY4                 |     0.002 |      828 |     50950 |            1.63 |
 |   LUT as Shift Register  |    <0.001 |      722 |     64000 |            1.13 |
-|   F7/F8 Muxes            |    <0.001 |     1567 |    203800 |            0.77 |
-|   Others                 |     0.000 |      757 |       --- |             --- |
-| Signals                  |     0.128 |    56121 |       --- |             --- |
-| Block RAM                |     0.183 |       48 |       445 |           10.79 |
+|   F7/F8 Muxes            |    <0.001 |     1630 |    203800 |            0.80 |
+|   Others                 |     0.000 |      767 |       --- |             --- |
+| Signals                  |     0.138 |    57939 |       --- |             --- |
+| Block RAM                |     0.189 |     49.5 |       445 |           11.12 |
 | MMCM                     |     0.215 |        2 |        10 |           20.00 |
 | PLL                      |     0.133 |        1 |        10 |           10.00 |
-| I/O                      |     1.047 |      119 |       500 |           23.80 |
+| I/O                      |     1.048 |      119 |       500 |           23.80 |
 | PHASER                   |     0.661 |       44 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
-| Static Power             |     0.181 |          |           |                 |
-| Total                    |     2.851 |          |           |                 |
+| Static Power             |     0.182 |          |           |                 |
+| Total                    |     2.873 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,16 +79,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.907 |       0.822 |      0.086 |
+| Vccint    |       1.000 |     0.928 |       0.842 |      0.086 |
 | Vccaux    |       1.800 |     0.698 |       0.669 |      0.029 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vcco15    |       1.500 |     0.419 |       0.418 |      0.001 |
+| Vcco15    |       1.500 |     0.420 |       0.419 |      0.001 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.017 |       0.014 |      0.003 |
+| Vccbram   |       1.000 |     0.018 |       0.015 |      0.003 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -197,14 +197,14 @@ Table of Contents
 +----------------------------------------+-----------+
 | Name                                   | Power (W) |
 +----------------------------------------+-----------+
-| aquila_soc_wrapper                     |     2.670 |
-|   aquila_soc_i                         |     2.670 |
-|     aquila_0                           |     0.245 |
-|       inst                             |     0.245 |
-|     axi_smc                            |     0.151 |
-|       inst                             |     0.151 |
-|     mig_7series_0                      |     2.272 |
-|       u_aquila_soc_mig_7series_0_0_mig |     2.272 |
+| aquila_soc_wrapper                     |     2.692 |
+|   aquila_soc_i                         |     2.692 |
+|     aquila_0                           |     0.261 |
+|       inst                             |     0.261 |
+|     axi_smc                            |     0.149 |
+|       inst                             |     0.149 |
+|     mig_7series_0                      |     2.281 |
+|       u_aquila_soc_mig_7series_0_0_mig |     2.281 |
 +----------------------------------------+-----------+
 
 

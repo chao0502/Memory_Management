@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="aquila_soc_mig_7series_0_0_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1599113041">
-  <File Type="RDS-UTIL" Name="aquila_soc_mig_7series_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="aquila_soc_mig_7series_0_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="aquila_soc_mig_7series_0_0_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="aquila_soc_mig_7series_0_0.vds"/>
   <File Type="RDS-DCP" Name="aquila_soc_mig_7series_0_0.dcp"/>
   <File Type="PA-TCL" Name="aquila_soc_mig_7series_0_0.tcl"/>

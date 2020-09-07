@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Tue Sep  1 13:53:13 2020
+| Date         : Mon Sep  7 10:56:15 2020
 | Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_drc -file aquila_soc_wrapper_drc_routed.rpt -pb aquila_soc_wrapper_drc_routed.pb -rpx aquila_soc_wrapper_drc_routed.rpx
 | Design       : aquila_soc_wrapper
@@ -67,7 +67,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-10 net(s) have no routable loads. The problem bus(es) and/or net(s) are aquila_soc_i/axi_smc/inst/s00_nodes/s00_b_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s00_nodes/s00_r_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s00_nodes/s00_w_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_b_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_r_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_w_node/inst/s_sc_areset.
+10 net(s) have no routable loads. The problem bus(es) and/or net(s) are aquila_soc_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s00_nodes/s00_b_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s00_nodes/s00_r_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s00_nodes/s00_w_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_b_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_r_node/inst/s_sc_areset, aquila_soc_i/axi_smc/inst/s01_nodes/s01_w_node/inst/s_sc_areset.
 Related violations: <none>
 
 

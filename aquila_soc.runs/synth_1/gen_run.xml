@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1599113041">
-  <File Type="RDS-UTIL" Name="aquila_soc_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="aquila_soc_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-RDS" Name="aquila_soc_wrapper.vds"/>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1599446945">
+  <File Type="VDS-TIMING-PB" Name="aquila_soc_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="aquila_soc_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="aquila_soc_wrapper.dcp"/>
-  <File Type="PA-TCL" Name="aquila_soc_wrapper.tcl"/>
+  <File Type="RDS-UTIL-PB" Name="aquila_soc_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="aquila_soc_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="aquila_soc_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="aquila_soc_wrapper.vds"/>
   <File Type="REPORTS-TCL" Name="aquila_soc_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="aquila_soc_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/aquila_soc/aquila_soc.bd">
@@ -57,8 +60,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="aquila_soc_mig_7series_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="aquila_soc_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="aquila_soc_aquila_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="aquila_soc_rst_mig_7series_0_200M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="aquila_soc_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="aquila_soc_mig_7series_0_0"/>
 </GenRun>

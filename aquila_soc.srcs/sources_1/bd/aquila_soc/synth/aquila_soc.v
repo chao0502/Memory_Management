@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Thu Sep  3 14:41:39 2020
+//Date        : Mon Sep  7 10:48:22 2020
 //Host        : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 //Command     : generate_target aquila_soc.bd
 //Design      : aquila_soc
@@ -285,19 +285,6 @@ module aquila_soc
         .m_dmem_port_wready(aquila_0_M_DCACHE_PORT_WREADY),
         .m_dmem_port_wstrb(aquila_0_M_DCACHE_PORT_WSTRB),
         .m_dmem_port_wvalid(aquila_0_M_DCACHE_PORT_WVALID),
-        .m_dmm_port_arready(1'b0),
-        .m_dmm_port_awready(1'b0),
-        .m_dmm_port_bid(1'b0),
-        .m_dmm_port_bresp({1'b0,1'b0}),
-        .m_dmm_port_buser(1'b0),
-        .m_dmm_port_bvalid(1'b0),
-        .m_dmm_port_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .m_dmm_port_rid(1'b0),
-        .m_dmm_port_rlast(1'b0),
-        .m_dmm_port_rresp({1'b0,1'b0}),
-        .m_dmm_port_ruser(1'b0),
-        .m_dmm_port_rvalid(1'b0),
-        .m_dmm_port_wready(1'b0),
         .m_imem_port_araddr(aquila_0_M_ICACHE_PORT_ARADDR),
         .m_imem_port_arburst(aquila_0_M_ICACHE_PORT_ARBURST),
         .m_imem_port_arcache(aquila_0_M_ICACHE_PORT_ARCACHE),

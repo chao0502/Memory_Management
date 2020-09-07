@@ -1,0 +1,157 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Sep  3 14:40:16 2020
+# Process ID: 21874
+# Current directory: /home/hahaha/riscv/aquila_soc_0901
+# Command line: vivado aquila_soc.xpr
+# Log file: /home/hahaha/riscv/aquila_soc_0901/vivado.log
+# Journal file: /home/hahaha/riscv/aquila_soc_0901/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project aquila_soc.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hahaha/riscv/aquila_soc_0901/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx3/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'aquila_soc_aquila_0_1' generated file not found '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'aquila_soc_aquila_0_1' generated file not found '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'aquila_soc_aquila_0_1' generated file not found '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'aquila_soc_aquila_0_1' generated file not found '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'aquila_soc_aquila_0_1' generated file not found '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 6566.234 ; gain = 248.629 ; free physical = 3737 ; free virtual = 12526
+open_bd_design {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd}
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_200M
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:user:aquila:1.0 - aquila_0
+Successfully read diagram <aquila_soc> from BD file </home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd>
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name aquila_v1_0_project -directory /home/hahaha/riscv/aquila_soc_0901/aquila_soc.tmp/aquila_v1_0_project /home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx3/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hahaha/riscv/aquila_soc_0901/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/alu.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DEVICE_PORT.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DMEM_PORT.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DMM_PORT.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_IMEM_PORT.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/aquila_top.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/atomic_unit.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/bcu.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/bpu.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/clint.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/core_top.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/csr_file.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/dcache.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/decode.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/distri_ram.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/execute.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/fetch.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/forwarding_unit.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/free_circular_buffer.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/icache.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/memory.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/memory_management.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/muldiv.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/newlib_based_allocator.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/pipeline_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/program_counter.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/reg_file.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/sram.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/sram_dp.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/sram_dual_port.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/writeback.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila.v:]
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_AWUSER_WIDTH' has its value changed from '1' to '0'.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_ARUSER_WIDTH' has its value changed from '1' to '0'.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_WUSER_WIDTH' has its value changed from '1' to '0'.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_RUSER_WIDTH' has its value changed from '1' to '0'.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_BUSER_WIDTH' has its value changed from '1' to '0'.
+INFO: [IP_Flow 19-3164] Bus Interface 'M_IMEM_PORT': References existing address space 'M_IMEM_PORT'.
+INFO: [IP_Flow 19-3164] Bus Interface 'M_DMEM_PORT': References existing address space 'M_DMEM_PORT'.
+INFO: [IP_Flow 19-3164] Bus Interface 'M_DEVICE_PORT': References existing address space 'M_DEVICE_PORT'.
+set_property core_revision 207 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project aquila_soc
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hahaha/riscv/aquila_soc_0901/ip_repo'.
+report_ip_status -name ip_status
+current_project aquila_v1_0_project
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_cells' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running can_apply_rule TCL procedure: ERROR: [Common 17-39] 'get_bd_cells' failed due to earlier errors.
+    ::bd::mig_utils::can_apply_mig_rule Line 5
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+current_project aquila_soc
+upgrade_ip -vlnv xilinx.com:user:aquila:1.0 [get_ips  aquila_soc_aquila_0_1] -log ip_upgrade.log
+Upgrading '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd'
+INFO: [IP_Flow 19-3422] Upgraded aquila_soc_aquila_0_1 (aquila 1.0) from revision 206 to revision 207
+Wrote  : </home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd> 
+Wrote  : </home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ui/bd_efe0b241.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/hahaha/riscv/aquila_soc_0901/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips aquila_soc_aquila_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd]
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /mig_7series_0/S_AXI(0) and /axi_smc/M00_AXI(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /mig_7series_0/S_AXI(0) and /axi_smc/M00_AXI(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /mig_7series_0/S_AXI(0) and /axi_smc/M00_AXI(1)
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/aquila_0/m_dmm_port_awready
+/aquila_0/m_dmm_port_wready
+/aquila_0/m_dmm_port_bid
+/aquila_0/m_dmm_port_bresp
+/aquila_0/m_dmm_port_buser
+/aquila_0/m_dmm_port_bvalid
+/aquila_0/m_dmm_port_arready
+/aquila_0/m_dmm_port_rid
+/aquila_0/m_dmm_port_rdata
+/aquila_0/m_dmm_port_rresp
+/aquila_0/m_dmm_port_rlast
+/aquila_0/m_dmm_port_ruser
+/aquila_0/m_dmm_port_rvalid
+
+Wrote  : </home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd> 
+VHDL Output written to : /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/synth/aquila_soc.v
+VHDL Output written to : /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/sim/aquila_soc.v
+VHDL Output written to : /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/hdl/aquila_soc_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+Exporting to file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/hw_handoff/aquila_soc_smartconnect_0_0.hwh
+Generated Block Design Tcl file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/hw_handoff/aquila_soc_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/synth/aquila_soc_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_200M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block aquila_0 .
+Exporting to file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/hw_handoff/aquila_soc.hwh
+Generated Block Design Tcl file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/hw_handoff/aquila_soc_bd.tcl
+Generated Hardware Definition File /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/synth/aquila_soc.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 6993.996 ; gain = 60.969 ; free physical = 3236 ; free virtual = 12025
+catch { config_ip_cache -export [get_ips -all aquila_soc_aquila_0_1] }
+export_ip_user_files -of_objects [get_files /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd]
+launch_runs -jobs 12 aquila_soc_aquila_0_1_synth_1
+[Thu Sep  3 14:41:43 2020] Launched aquila_soc_aquila_0_1_synth_1...
+Run output will be captured here: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/aquila_soc_aquila_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd] -directory /home/hahaha/riscv/aquila_soc_0901/aquila_soc.ip_user_files/sim_scripts -ip_user_files_dir /home/hahaha/riscv/aquila_soc_0901/aquila_soc.ip_user_files -ipstatic_source_dir /home/hahaha/riscv/aquila_soc_0901/aquila_soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/modelsim} {questa=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/questa} {ies=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/ies} {xcelium=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/xcelium} {vcs=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/vcs} {riviera=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+current_project aquila_v1_0_project
+current_project aquila_soc
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  3 15:20:22 2020...

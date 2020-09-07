@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7k325tffg900-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -41,6 +42,7 @@ set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aqu
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_axi_uartlite_0_0/aquila_soc_axi_uartlite_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_axi_uartlite_0_0/aquila_soc_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_axi_uartlite_0_0/aquila_soc_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_1/bd_bb3d_psr0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_1/bd_bb3d_psr0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_2/bd_bb3d_psr_aclk_0_board.xdc]
@@ -70,7 +72,6 @@ set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aqu
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_30/bd_bb3d_m00awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_31/bd_bb3d_m00wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/ip/ip_32/bd_bb3d_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_rst_mig_7series_0_200M_0/aquila_soc_rst_mig_7series_0_200M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_rst_mig_7series_0_200M_0/aquila_soc_rst_mig_7series_0_200M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_rst_mig_7series_0_200M_0/aquila_soc_rst_mig_7series_0_200M_0_ooc.xdc]

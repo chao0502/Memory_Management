@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep  3 14:41:42 2020" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Sep  7 10:48:25 2020" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="kintex7" BOARD="xilinx.com:kc705:part0:1.5" DEVICE="7k325t" NAME="aquila_soc" PACKAGE="ffg900" SPEEDGRADE="-2"/>
 
@@ -7,26 +7,6 @@
     <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
       <CONNECTIONS>
         <CONNECTION INSTANCE="mig_7series_0" PORT="sys_rst"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="rs232_uart_rxd" SIGIS="undef" SIGNAME="axi_uartlite_0_rx">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_uartlite_0" PORT="rx"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="rs232_uart_txd" SIGIS="undef" SIGNAME="axi_uartlite_0_tx">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_uartlite_0" PORT="tx"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="sys_diff_clock_clk_p" SIGIS="clk" SIGNAME="mig_7series_0_sys_clk_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mig_7series_0" PORT="sys_clk_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="sys_diff_clock_clk_n" SIGIS="clk" SIGNAME="mig_7series_0_sys_clk_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mig_7series_0" PORT="sys_clk_n"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="IO" LEFT="63" NAME="ddr3_sdram_dq" RIGHT="0" SIGIS="undef" SIGNAME="mig_7series_0_ddr3_dq">
@@ -104,6 +84,26 @@
         <CONNECTION INSTANCE="mig_7series_0" PORT="ddr3_odt"/>
       </CONNECTIONS>
     </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="sys_diff_clock_clk_p" SIGIS="clk" SIGNAME="mig_7series_0_sys_clk_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mig_7series_0" PORT="sys_clk_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="sys_diff_clock_clk_n" SIGIS="clk" SIGNAME="mig_7series_0_sys_clk_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mig_7series_0" PORT="sys_clk_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rs232_uart_rxd" SIGIS="undef" SIGNAME="axi_uartlite_0_rx">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_uartlite_0" PORT="rx"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="rs232_uart_txd" SIGIS="undef" SIGNAME="axi_uartlite_0_tx">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_uartlite_0" PORT="tx"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -157,7 +157,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="207" FULLNAME="/aquila_0" HWVERSION="1.0" INSTANCE="aquila_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="aquila" VLNV="xilinx.com:user:aquila:1.0">
+    <MODULE COREREVISION="210" FULLNAME="/aquila_0" HWVERSION="1.0" INSTANCE="aquila_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="aquila" VLNV="xilinx.com:user:aquila:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_M_DMEM_PORT_ID_WIDTH" VALUE="1"/>
@@ -392,48 +392,6 @@
             <CONNECTION INSTANCE="axi_smc" PORT="S01_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="m_dmm_port_awid" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="m_dmm_port_awaddr" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="m_dmm_port_awlen" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="m_dmm_port_awsize" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="m_dmm_port_awburst" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_dmm_port_awlock" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="3" NAME="m_dmm_port_awcache" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="m_dmm_port_awprot" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="3" NAME="m_dmm_port_awqos" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="m_dmm_port_awuser" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_dmm_port_awvalid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="m_dmm_port_awready" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="m_dmm_port_wdata" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="3" NAME="m_dmm_port_wstrb" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_dmm_port_wlast" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="m_dmm_port_wuser" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_dmm_port_wvalid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="m_dmm_port_wready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="m_dmm_port_bid" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="m_dmm_port_bresp" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="m_dmm_port_buser" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="m_dmm_port_bvalid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_dmm_port_bready" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="m_dmm_port_arid" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="m_dmm_port_araddr" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="m_dmm_port_arlen" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="m_dmm_port_arsize" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="m_dmm_port_arburst" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_dmm_port_arlock" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="3" NAME="m_dmm_port_arcache" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="m_dmm_port_arprot" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="3" NAME="m_dmm_port_arqos" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="m_dmm_port_aruser" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_dmm_port_arvalid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="m_dmm_port_arready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="m_dmm_port_rid" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="m_dmm_port_rdata" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="m_dmm_port_rresp" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="m_dmm_port_rlast" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="m_dmm_port_ruser" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="m_dmm_port_rvalid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="m_dmm_port_rready" SIGIS="undef"/>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="device_aclk" SIGIS="clk" SIGNAME="mig_7series_0_ui_addn_clk_0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mig_7series_0" PORT="ui_addn_clk_0"/>

@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Sep  1 13:48:59 2020
-# Process ID: 7752
+# Start of session at: Mon Sep  7 10:51:47 2020
+# Process ID: 12873
 # Current directory: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1
 # Command line: vivado -log aquila_soc_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source aquila_soc_wrapper.tcl -notrace
 # Log file: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.vdi

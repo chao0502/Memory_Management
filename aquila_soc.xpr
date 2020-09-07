@@ -40,13 +40,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="168"/>
-    <Option Name="WTModelSimExportSim" Val="168"/>
-    <Option Name="WTQuestaExportSim" Val="168"/>
-    <Option Name="WTIesExportSim" Val="168"/>
-    <Option Name="WTVcsExportSim" Val="168"/>
-    <Option Name="WTRivieraExportSim" Val="168"/>
-    <Option Name="WTActivehdlExportSim" Val="168"/>
+    <Option Name="WTXSimExportSim" Val="175"/>
+    <Option Name="WTModelSimExportSim" Val="175"/>
+    <Option Name="WTQuestaExportSim" Val="175"/>
+    <Option Name="WTIesExportSim" Val="175"/>
+    <Option Name="WTVcsExportSim" Val="175"/>
+    <Option Name="WTRivieraExportSim" Val="175"/>
+    <Option Name="WTActivehdlExportSim" Val="175"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -67,17 +67,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="aquila_soc.bd" FileRelPathName="ip/aquila_soc_mig_7series_0_0/aquila_soc_mig_7series_0_0.xci">
-          <Proxy FileSetName="aquila_soc_mig_7series_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="aquila_soc.bd" FileRelPathName="ip/aquila_soc_axi_uartlite_0_0/aquila_soc_axi_uartlite_0_0.xci">
-          <Proxy FileSetName="aquila_soc_axi_uartlite_0_0"/>
+        <CompFileExtendedInfo CompFileName="aquila_soc.bd" FileRelPathName="ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1.xci">
+          <Proxy FileSetName="aquila_soc_aquila_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="aquila_soc.bd" FileRelPathName="ip/aquila_soc_rst_mig_7series_0_200M_0/aquila_soc_rst_mig_7series_0_200M_0.xci">
           <Proxy FileSetName="aquila_soc_rst_mig_7series_0_200M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="aquila_soc.bd" FileRelPathName="ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1.xci">
-          <Proxy FileSetName="aquila_soc_aquila_0_1"/>
+        <CompFileExtendedInfo CompFileName="aquila_soc.bd" FileRelPathName="ip/aquila_soc_axi_uartlite_0_0/aquila_soc_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="aquila_soc_axi_uartlite_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="aquila_soc.bd" FileRelPathName="ip/aquila_soc_mig_7series_0_0/aquila_soc_mig_7series_0_0.xci">
+          <Proxy FileSetName="aquila_soc_mig_7series_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/aquila_soc/hdl/aquila_soc_wrapper.v">
@@ -85,6 +85,12 @@
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/aquila_soc/ip/aquila_soc_mig_7series_0_0/board.prj">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="ScopedToCell" Val="aquila_soc_mig_7series_0_0"/>
         </FileInfo>
       </File>
       <Config>
