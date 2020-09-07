@@ -87,6 +87,7 @@ module aquila_top #
     output [ADDR_WIDTH-1 : 0]      M_DMEM_addr_o,
     output                         M_DMEM_rw_o,
     output [CACHE_LINE_SIZE-1 : 0] M_DMEM_data_o,
+    output [7:0]                   M_DMEM_size_o,  
     input                          M_DMEM_done_i,
     input  [CACHE_LINE_SIZE-1 : 0] M_DMEM_data_i,
 
@@ -97,25 +98,7 @@ module aquila_top #
     output [DATA_WIDTH/8-1 : 0]    M_DEVICE_byte_enable_o,
     output [DATA_WIDTH-1 : 0]      M_DEVICE_data_o,
     input                          M_DEVICE_data_ready_i,
-    input  [DATA_WIDTH-1 : 0]      M_DEVICE_data_i,
-
-    // Mem_IP master port interface signals
-    // malloc ip to AXI bus
-    output                         copy_active,
-    output [31:0]                  copy_len,
-    input                          copy_done,
-    input                          wvalid,
-    output                         write_request,
-    output [31:0]                  write_address,
-    output [3:0]                   write_len,
-    output [31:0]                  write_data,
-    output [31:0]                  src_addr,
-    output [31:0]                  dst_addr,
-    input                          rvalid,
-    output                         read_request,
-    output [31:0]                  read_address,
-    output [3:0]                   read_len,
-    input [31:0]                   read_data
+    input  [DATA_WIDTH-1 : 0]      M_DEVICE_data_i
 );
 
 // ------------- Signals for cpu, cache and master ip -------------------------
@@ -172,6 +155,23 @@ wire [ADDR_WIDTH-1 : 0]      allocate_addr;
 wire                         allocate_finish;
 wire                         free_finish;
 
+// none use signal
+wire                         copy_active;
+wire [31:0]                  copy_len;
+wire                         copy_done;
+wire                         wvalid;
+wire                         write_request;
+wire [31:0]                  write_address;
+wire [3:0]                   write_len;
+wire [31:0]                  write_data;
+wire [31:0]                  src_addr;
+wire [31:0]                  dst_addr;
+wire                         rvalid;
+wire                         read_request;
+wire [31:0]                  read_address;
+wire [3:0]                   read_len;
+wire [31:0]                  read_data;
+
 // Connections from the RISCV Core to the Atomic Unit, then to D-memory.
 wire                         atomic_unit_strobe;
 wire [31      : 0]           atomic_unit_addr;
@@ -179,6 +179,18 @@ wire                         atomic_unit_rw;
 wire [255 : 0]               atomic_unit_dataout;
 wire                         atomic_unit_done;
 wire [255 : 0]               atomic_unit_datain;
+wire                         atomic_unit_done_i;
+wire [255 : 0]               atomic_unit_data_i;
+
+
+// Connections from the RISCV Core to the Atomic Unit, then to D-memory.
+wire                         dmm_unit_strobe;
+wire [31      : 0]           dmm_unit_addr;
+wire                         dmm_unit_rw;
+wire [255 : 0]               dmm_unit_dataout;
+wire                         dmm_unit_done;
+wire [255 : 0]               dmm_unit_datain;
+wire [7:0]                   dmm_unit_size;
 
 // Interrupt signals.
 wire tmr_irq, sft_irq;
@@ -226,11 +238,12 @@ assign M_IMEM_addr_o   = m_i_addr;
 assign m_i_ready       = M_IMEM_done_i;
 assign m_i_dram        = M_IMEM_data_i;
 
-// From the Atomic Unit to the external memory controller 
-assign M_DMEM_strobe_o = atomic_unit_strobe;
-assign M_DMEM_addr_o   = atomic_unit_addr;
-assign M_DMEM_rw_o     = atomic_unit_rw;
-assign M_DMEM_data_o   = atomic_unit_dataout;
+// From the DMM Unit to the external memory controller 
+assign M_DMEM_strobe_o = dmm_unit_strobe;
+assign M_DMEM_addr_o   = dmm_unit_addr;
+assign M_DMEM_rw_o     = dmm_unit_rw;
+assign M_DMEM_data_o   = dmm_unit_dataout;
+assign M_DMEM_size_o   = dmm_unit_size;
 
 // From the external memory controller to the atomic unit
 assign m_d_ready       = atomic_unit_done;
@@ -307,22 +320,21 @@ Memory_Management (
     .allocate_addr(allocate_addr),
     .allocate_finish(allocate_finish),
     .free_finish(free_finish),
+    
+    .dmm_unit_strobe(dmm_unit_strobe),
+    .dmm_unit_addr(dmm_unit_addr),
+    .dmm_unit_rw(dmm_unit_rw),
+    .dmm_unit_dataout(dmm_unit_dataout),
+    .dmm_unit_size(dmm_unit_size),
+    .dmm_unit_done(M_DMEM_done_i),
+    .dmm_unit_datain(M_DMEM_data_i),
 
-    .read_request(read_request),
-    .read_address(read_address),
-    .write_request(write_request),
-    .write_address(write_address),
-    .write_valid(wvalid),
-    .write_data(write_data),
-    .write_len(write_len),
-    .read_len(read_len),
-    .read_valid(rvalid),
-    .read_data(read_data),
-    .src_addr(src_addr),
-    .dst_addr(dst_addr),
-    .copy_len(copy_len),
-    .copy_done(copy_done),
-    .copy_active(copy_active)
+    .atomic_unit_strobe_i(atomic_unit_strobe),
+    .atomic_unit_addr_i(atomic_unit_addr),
+    .atomic_unit_rw_i(atomic_unit_rw),
+    .atomic_unit_data_i(atomic_unit_dataout),
+    .atomic_unit_done_o(atomic_unit_done_i),
+    .atomic_unit_data_o(atomic_unit_data_i)
 );
 // ----------------------------------------------------------------------------
 //  Instiantiation of the dual-port tightly-coupled scratchpad memory module.
@@ -395,8 +407,8 @@ atomic_unit ATOM_U(
     .M_DMEM_addr_o    (atomic_unit_addr),
     .M_DMEM_rw_o      (atomic_unit_rw),
     .M_DMEM_data_o    (atomic_unit_dataout),
-    .M_DMEM_done_i    (M_DMEM_done_i),
-    .M_DMEM_data_i    (M_DMEM_data_i)
+    .M_DMEM_done_i    (atomic_unit_done_i),
+    .M_DMEM_data_i    (atomic_unit_data_i)
 );
 
 // ----------------------------------------------------------------------------

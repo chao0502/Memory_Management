@@ -366,9 +366,13 @@ always @(posedge clk)begin
     allocate_addr <= 0;
 	allocate_finish <= 4;
   end
-  else begin
+  else if(MAIN_ST == IDLE)begin
     allocate_addr <= allocate_addr;
     allocate_finish <= 0;
+  end
+  else begin
+    allocate_addr <= allocate_addr;
+    allocate_finish <= allocate_finish;
   end
 end
 

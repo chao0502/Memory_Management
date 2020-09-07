@@ -89,6 +89,7 @@ wire                                      M_DCACHE_strobe, M_DCACHE_done;
 wire                                      M_DCACHE_rw;
 wire [C_S_CONFIG_PORT_DATA_WIDTH - 1 : 0] M_ICACHE_addr, M_DCACHE_addr;
 wire [255 : 0] M_ICACHE_datain, M_DCACHE_datain, M_DCACHE_dataout;
+wire [7:0] M_DMEM_size;
 
 wire                                      M_DEVICE_strobe;
 wire [C_S_CONFIG_PORT_DATA_WIDTH - 1 : 0] M_DEVICE_addr;
@@ -98,21 +99,6 @@ wire [C_S_CONFIG_PORT_DATA_WIDTH - 1 : 0] M_DEVICE_core2dev_data;
 wire                                      M_DEVICE_data_ready;
 wire [C_S_CONFIG_PORT_DATA_WIDTH - 1 : 0] M_DEVICE_dev2core_data;
 
-wire          copy_active;
-wire [31:0]   copy_len;
-wire          copy_done;
-wire          wvalid;
-wire          write_request;
-wire [31:0]   write_address;
-wire [3:0]    write_len;
-wire [31:0]   write_data;
-wire [31:0]   src_addr;
-wire [31:0]   dst_addr;
-wire          rvalid;
-wire          read_request;
-wire [31:0]   read_address;
-wire [3:0]    read_len;
-wire [31:0]   read_data;
 
 // Debug pc
 wire [31:0] debug_pc/*verilator public_flat*/;
@@ -141,6 +127,7 @@ assign cur_instr_addr = aquila_core.p_i_addr;
       .M_DMEM_addr_o(M_DCACHE_addr),
       .M_DMEM_rw_o(M_DCACHE_rw),
       .M_DMEM_data_o(M_DCACHE_dataout),
+      .M_DMEM_size_o(M_DMEM_size),
       .M_DMEM_done_i(M_DCACHE_done),
       .M_DMEM_data_i(M_DCACHE_datain),
 
@@ -150,23 +137,7 @@ assign cur_instr_addr = aquila_core.p_i_addr;
       .M_DEVICE_byte_enable_o(M_DEVICE_byte_enable),
       .M_DEVICE_data_o(M_DEVICE_core2dev_data),
       .M_DEVICE_data_ready_i(M_DEVICE_data_ready),
-      .M_DEVICE_data_i(M_DEVICE_dev2core_data),
-
-      .copy_active(copy_active),
-      .copy_len(copy_len),
-      .copy_done(copy_done),
-      .wvalid(wvalid),
-      .write_request(write_request),
-      .write_address(write_address),
-      .write_len(write_len),
-      .write_data(write_data),
-      .src_addr(src_addr),
-      .dst_addr(dst_addr),
-      .rvalid(rvalid),
-      .read_request(read_request),
-      .read_address(read_address),
-      .read_len(read_len),
-      .read_data(read_data)
+      .M_DEVICE_data_i(M_DEVICE_dev2core_data)
   );
 
   dp_ram mock_ram(

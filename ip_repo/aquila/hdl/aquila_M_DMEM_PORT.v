@@ -73,6 +73,7 @@ module aquila_M_DMEM_PORT #
     input [C_M_AXI_ADDR_WIDTH-1: 0] M_DMEM_addr,
     input                           M_DMEM_rw,
     input [C_CACHE_LINE_SIZE-1: 0]  M_DMEM_dataout,
+    input [7:0]                     M_DMEM_size,
     output                          M_DMEM_done,
     output[C_CACHE_LINE_SIZE-1: 0]  M_DMEM_datain,
     // User ports ends

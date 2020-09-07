@@ -34,27 +34,52 @@ module memory_manager #(parameter HEAP_SIZE = 32'h02000000)
     output allocate_finish,
     output free_finish,
 
-    output read_request,
-    output [31:0] read_address,
-    output write_request,
-    output [31:0] write_address,
-    input write_valid,
-    output [31:0] write_data,
-    output [3:0] write_len,
-    output [3:0] read_len,
-    input read_valid,
-    input [31:0] read_data,
-    output [31:0] src_addr,
-    output [31:0] dst_addr,
-    output [31:0] copy_len,
-    input copy_done,
-    output copy_active
+    output dmm_unit_strobe,
+    output [31:0] dmm_unit_addr,
+    output dmm_unit_rw,//write is 1
+    output [255:0] dmm_unit_dataout,
+    output [7:0] dmm_unit_size,
+    input dmm_unit_done,
+    input [255:0] dmm_unit_datain,
+
+    input atomic_unit_strobe_i,
+    input [31:0] atomic_unit_addr_i,
+    input atomic_unit_rw_i,
+    input [255:0] atomic_unit_data_i,
+    output atomic_unit_done_o,
+    output [255:0] atomic_unit_data_o
+
 );
 
 wire state_idle;
 wire state_analysis;
 wire free_request_o;
 wire [31:0] free_address_o;
+
+assign dmm_unit_strobe = atomic_unit_strobe_i;
+assign dmm_unit_addr = atomic_unit_addr_i;
+assign dmm_unit_dataout = atomic_unit_data_i; 
+assign dmm_unit_rw = atomic_unit_rw_i;
+assign dmm_unit_size = 0;
+assign atomic_unit_done_o = dmm_unit_done;
+assign atomic_unit_data_o = dmm_unit_datain;
+
+
+wire                         read_request;
+wire [31:0]                  read_address;
+wire                         write_request;
+wire [31:0]                  write_address;
+wire                         write_valid;
+wire [31:0]                  write_data;
+wire [3:0]                   write_len;
+wire [3:0]                   read_len;
+wire                         read_valid;
+wire [31:0]                  read_data;
+wire [31:0]                  src_addr;
+wire [31:0]                  dst_addr;
+wire [31:0]                  copy_len;
+wire                         copy_done;
+wire                         copy_active;
 
 newlib_based_allocator #(.HEAP_SIZE(HEAP_SIZE)) allocator(
    .clk(clk), 
