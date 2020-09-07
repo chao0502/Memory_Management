@@ -581,7 +581,7 @@ aquila_top aquila_core(
     .read_address(read_address),
     .read_len(read_len),
     .read_data(read_data),
-    .wavlid(wvalid),
+    .wvalid(wvalid),
     .rvalid(rvalid)
 );
 

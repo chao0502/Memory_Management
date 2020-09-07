@@ -420,7 +420,7 @@ always @(*)begin
 	  MAIN_NST = IDLE;
 	IDLE:
 	  if(allocate_request_r & idle_cnt == 2) MAIN_NST = BUFF;
-	  else if(free_request)MAIN_NST = FREE;
+	  else if(free_request) MAIN_NST = FREE;
 	  else if(reallocate_request) MAIN_NST = REALLOC;
 	  else MAIN_NST = IDLE;
 	BUFF:

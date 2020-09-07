@@ -86,7 +86,7 @@ int main(void)
     printf("The address of 'ver' is 0x%X\n\n", (unsigned) &ver);
 
     printf("First time tick = %d\n\n", clock());
-    malloc_test(10000);
+    malloc_test(10);
     printf("\nSecond time tick = %d\n\n", clock());
 
     //timer_isr_test();

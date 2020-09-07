@@ -90,19 +90,18 @@ newlib_based_allocator #(.HEAP_SIZE(HEAP_SIZE)) allocator(
    .state_idle(state_idle), 
    .state_analysis(state_analysis),       
    .copy_active(copy_active)
-  );
+);
      
-  free_circular_buffer
-    c1 (
-    .clk(clk), 
-    .rst(rst), 
-    .free_request_i(free_request), 
-    .free_address_i(free_addr), 
-    .idle(state_idle), 
-    .analysis(state_analysis), 
-    .free_finish(free_finish), 
-    .free_request_o(free_request_o), 
-    .free_address_o(free_address_o)
-   );       
+free_circular_buffer c1(
+  .clk(clk), 
+  .rst(rst), 
+  .free_request_i(free_request), 
+  .free_address_i(free_addr), 
+  .idle(state_idle), 
+  .analysis(state_analysis), 
+  .free_finish(free_finish), 
+  .free_request_o(free_request_o), 
+  .free_address_o(free_address_o)
+);       
 
 endmodule

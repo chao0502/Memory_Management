@@ -115,7 +115,7 @@ always @(posedge clk)begin
   end
   else if(idle)begin
     free_request_o <= (!empty && cnt==2);
-	free_address_o <= data_oA;
+	  free_address_o <= data_oA;
   end
   else begin
     free_request_o <= 0;
