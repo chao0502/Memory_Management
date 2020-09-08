@@ -54,7 +54,8 @@ module newlib_based_allocator
   output reg [31:0]                 src_addr,
   output reg [31:0]                 dst_addr,
   output reg [31:0]                 copy_len,
-  output reg                        copy_active
+  output reg                        copy_active,
+  output                            state_allocate
 );
 
 /* main state signal */
@@ -425,7 +426,7 @@ always @(*)begin
 	IDLE:
 	  if(allocate_request_r & idle_cnt == 2) MAIN_NST = BUFF;
 	  else if(free_request) MAIN_NST = FREE;
-	  else if(reallocate_request) MAIN_NST = REALLOC;
+	  //else if(reallocate_request) MAIN_NST = REALLOC;
 	  else MAIN_NST = IDLE;
 	BUFF:
 	  MAIN_NST = ANALYSIS;
@@ -465,7 +466,8 @@ always @(*)begin
   endcase
 end
 
-
+assign state_allocate = (MAIN_ST == TOP) | (MAIN_ST == EXACT) | (MAIN_ST == OTHERS) |
+                      (MAIN_ST == INSERT) | (MAIN_ST == FREE) ;
 
 
 // ------------------------------------
@@ -717,7 +719,7 @@ end
 always @(posedge clk)begin
   if(MEM_CTRL_ST == MEM_IDLE)
     read_request <= 0;
-  else if(MEM_CTRL_ST == MEM_READ_REQ)
+  else if(MEM_CTRL_ST == MEM_READ_REQ | MEM_CTRL_ST == MEM_WAIT_READ)
     read_request <= 1;
   else
     read_request <= 0;
@@ -841,7 +843,7 @@ end
 always @(posedge clk)begin
   if(MEM_CTRL_ST == MEM_IDLE)
     write_request <= 0;
-  else if(MEM_CTRL_ST == MEM_WRITE_REQ)
+  else if(MEM_CTRL_ST == MEM_WRITE_REQ | MEM_CTRL_ST == MEM_WAIT_WRITE)
     write_request <= 1;
   else
     write_request <= 0;

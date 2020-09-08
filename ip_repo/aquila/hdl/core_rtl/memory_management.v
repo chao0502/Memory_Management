@@ -54,14 +54,26 @@ module memory_manager #(parameter HEAP_SIZE = 32'h02000000)
 
 wire state_idle;
 wire state_analysis;
+wire state_allocate;
+wire port_request;
+wire [31:0] dmm_addr;
+wire [31:0] dmm_dataout;
+wire dmm_rw;
 wire free_request_o;
 wire [31:0] free_address_o;
 
-assign dmm_unit_strobe = atomic_unit_strobe_i;
-assign dmm_unit_addr = atomic_unit_addr_i;
-assign dmm_unit_dataout = atomic_unit_data_i; 
-assign dmm_unit_rw = atomic_unit_rw_i;
-assign dmm_unit_size = 0;
+// I/O
+assign port_request = read_request | write_request;
+assign dmm_addr = read_request ? read_address : write_request ? write_address : dmm_addr;
+assign dmm_dataout = read_request ? read_data : write_request ? write_data : dmm_dataout;
+assign dmm_rw = read_request ? 0 : write_request ? 1 : dmm_rw;
+assign dmm_size = read_request ? read_len : write_request ? write_len : dmm_size;
+
+assign dmm_unit_strobe = state_allocate ? port_request : atomic_unit_strobe_i;
+assign dmm_unit_addr = state_allocate ? dmm_addr : atomic_unit_addr_i;
+assign dmm_unit_dataout = state_allocate ? dmm_dataout : atomic_unit_data_i; 
+assign dmm_unit_rw = state_allocate ? dmm_rw : atomic_unit_rw_i;
+assign dmm_unit_size = state_allocate ? dmm_size : 8;
 assign dmm_is_idle = state_idle;
 assign atomic_unit_done_o = dmm_unit_done;
 assign atomic_unit_data_o = dmm_unit_datain;
@@ -82,6 +94,10 @@ wire [31:0]                  dst_addr;
 wire [31:0]                  copy_len;
 wire                         copy_done;
 wire                         copy_active;
+
+assign write_valid = dmm_unit_done;
+assign read_valid = dmm_unit_done;
+assign read_data = dmm_unit_datain[31:0];
 
 newlib_based_allocator #(.HEAP_SIZE(HEAP_SIZE)) allocator(
    .clk(clk), 
@@ -116,7 +132,8 @@ newlib_based_allocator #(.HEAP_SIZE(HEAP_SIZE)) allocator(
    .copy_done(copy_done),    
    .state_idle(state_idle), 
    .state_analysis(state_analysis),       
-   .copy_active(copy_active)
+   .copy_active(copy_active),
+   .state_allocate(state_allocate)
 );
      
 free_circular_buffer c1(
