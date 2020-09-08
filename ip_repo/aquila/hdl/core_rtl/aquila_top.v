@@ -297,6 +297,7 @@ RISCV_CORE0(
     .allocate_finish(allocate_finish),
     .free_finish(free_finish),
     .dmm_is_idle(dmm_is_idle),
+    .dcache_flushing_i(dcache_flushing),
 
     // Cache flush signal
     .cache_flush_o(p_cache_flush),
@@ -453,7 +454,7 @@ D_Cache(
     .p_data_o(data_from_cache),
     .p_data_i(p_d_core2mem),
     .p_ready_o(cache_d_ready),
-    .p_flush_i(p_cache_flush),
+    .p_flush_i(p_cache_flush|free_request),
     .busy_flushing_o(dcache_flushing),
 
     .p_is_amo_i(p_d_is_amo),

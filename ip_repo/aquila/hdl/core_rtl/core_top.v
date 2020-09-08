@@ -121,6 +121,7 @@ module core_top #(
     input                       allocate_finish,
     input                       free_finish,
     input                       dmm_is_idle,
+    input                       dcache_flushing_i,
 
     // Cache flush signal.
     output                      cache_flush_o,
@@ -805,6 +806,7 @@ execute Execute(
     .allocate_finish(allocate_finish),
     .free_finish(free_finish),
     .dmm_is_idle(dmm_is_idle),
+    .dcache_flushing_i(dcache_flushing_i),
 
     // Signals to D-Memory.
     .we_o(exe_we),
