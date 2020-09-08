@@ -120,6 +120,7 @@ module core_top #(
     input [ADDR_WIDTH-1 : 0]    allocate_addr,
     input                       allocate_finish,
     input                       free_finish,
+    input                       dmm_is_idle,
 
     // Cache flush signal.
     output                      cache_flush_o,
@@ -803,6 +804,7 @@ execute Execute(
     .allocate_addr(allocate_addr),
     .allocate_finish(allocate_finish),
     .free_finish(free_finish),
+    .dmm_is_idle(dmm_is_idle),
 
     // Signals to D-Memory.
     .we_o(exe_we),

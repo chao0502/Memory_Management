@@ -126,6 +126,7 @@ module execute #(parameter DATA_WIDTH = 32, ADDR_WIDTH = 32)
     input  [ADDR_WIDTH-1 : 0]     allocate_addr,
     input                         allocate_finish,
     input                         free_finish,
+    input                         dmm_is_idle,
 
     // Signals to D-memory.
     output reg                    we_o,
@@ -178,6 +179,7 @@ reg  [DATA_WIDTH-1 : 0]           inputA, inputB;
 wire [DATA_WIDTH-1 : 0]           alu_result;
 wire [DATA_WIDTH-1 : 0]           muldiv_result;
 wire                              compare_result, stall_from_muldiv, muldiv_ready;
+wire                              stall_from_dmm;
 
 wire [DATA_WIDTH-1 : 0]           result;
 wire [DATA_WIDTH-1 : 0]           mem_addr;
@@ -258,8 +260,8 @@ assign branch_misprediction_o = branch_hit_i &
 
 assign result = alu_muldiv_sel_i ? muldiv_result : 
                 is_dmm ? allocate_addr : alu_result;
-assign stall_from_exe_o = alu_muldiv_sel_i & !muldiv_ready
-                | ((is_malloc_i | is_realloc_i) & !allocate_finish);
+assign stall_from_exe_o = (alu_muldiv_sel_i & !muldiv_ready) | stall_from_dmm ;
+assign stall_from_dmm = (is_malloc_i | is_realloc_i) & !allocate_finish;
 
 // ===============================================================================
 //  Dynamic memory management signals

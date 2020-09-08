@@ -33,6 +33,7 @@ module memory_manager #(parameter HEAP_SIZE = 32'h02000000)
     output [31:0] allocate_addr,
     output allocate_finish,
     output free_finish,
+    output dmm_is_idle,
 
     output dmm_unit_strobe,
     output [31:0] dmm_unit_addr,
@@ -61,6 +62,7 @@ assign dmm_unit_addr = atomic_unit_addr_i;
 assign dmm_unit_dataout = atomic_unit_data_i; 
 assign dmm_unit_rw = atomic_unit_rw_i;
 assign dmm_unit_size = 0;
+assign dmm_is_idle = state_idle;
 assign atomic_unit_done_o = dmm_unit_done;
 assign atomic_unit_data_o = dmm_unit_datain;
 

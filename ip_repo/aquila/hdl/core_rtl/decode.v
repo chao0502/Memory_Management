@@ -381,7 +381,7 @@ wire rv32_sw = rv32_store & rv32_funct3_010;
 // 
 wire rv32_mallloc = rv32_dmm & rv32_funct3_000; 
 wire rv32_reallloc = rv32_dmm & rv32_funct3_010;
-wire rv32_free = rv32_dmm & rv32_funct3_011;
+wire rv32_free = rv32_dmm && rv32_funct3_010;
 
 // ================================================================================
 // Exception Signals

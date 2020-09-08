@@ -191,6 +191,7 @@ wire [255 : 0]               dmm_unit_dataout;
 wire                         dmm_unit_done;
 wire [255 : 0]               dmm_unit_datain;
 wire [7:0]                   dmm_unit_size;
+wire                         dmm_is_idle;
 
 // Interrupt signals.
 wire tmr_irq, sft_irq;
@@ -295,6 +296,7 @@ RISCV_CORE0(
     .allocate_addr(allocate_addr),
     .allocate_finish(allocate_finish),
     .free_finish(free_finish),
+    .dmm_is_idle(dmm_is_idle),
 
     // Cache flush signal
     .cache_flush_o(p_cache_flush),
@@ -320,6 +322,7 @@ Memory_Management (
     .allocate_addr(allocate_addr),
     .allocate_finish(allocate_finish),
     .free_finish(free_finish),
+    .dmm_is_idle(dmm_is_idle),
     
     .dmm_unit_strobe(dmm_unit_strobe),
     .dmm_unit_addr(dmm_unit_addr),
