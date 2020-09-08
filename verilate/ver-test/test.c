@@ -66,9 +66,9 @@ int main(void)
     //outbyte('H');
     //asm volatile ("addi t1, zero, 32");
     asm volatile(".byte 0x6b, 0x03, 0x00, 0x06");//malloc t1(x6) 96
+    /*asm volatile ("addi t2, zero, 32");
     asm volatile ("addi t2, zero, 32");
-    asm volatile ("addi t2, zero, 32");
-    asm volatile ("addi t2, zero, 32");
+    asm volatile ("addi t2, zero, 32");*/
     asm volatile(".byte 0xeb, 0x03, 0x00, 0x04");//malloc t2(x6) 64
     //outbyte('e');
     asm volatile ("addi t2, zero, 32");
