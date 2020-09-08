@@ -64,8 +64,10 @@ void malloc_test(int nwords);
 int main(void)
 {
     //outbyte('H');
-    asm volatile ("addi t1, zero, 32");
-    asm volatile(".byte 0x6b, 0x03, 0x00, 0x06");
+    //asm volatile ("addi t1, zero, 32");
+    asm volatile(".byte 0x6b, 0x03, 0x00, 0x06");//malloc t1(x6) 96
+    outbyte('e');
+    asm volatile(".byte 0x6b, 0x20, 0x03, 0x00");
     //asm volatile ("00000000000000000000000000010011");
     outbyte('e');
     outbyte('l');
