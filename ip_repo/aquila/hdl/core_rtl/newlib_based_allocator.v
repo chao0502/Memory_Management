@@ -28,6 +28,7 @@ module newlib_based_allocator
   (
   input clk,
   input rst,
+  input stall_i,
   input                             allocate_request,
   input                             reallocate_request,
   input                             free_request,
@@ -367,13 +368,16 @@ always @(posedge clk)begin
     allocate_addr <= 0;
 	allocate_finish <= 4;
   end
-  else if(MAIN_ST == IDLE)begin
-    allocate_addr <= allocate_addr;
-    allocate_finish <= 0;
-  end
-  else begin
+  else if(stall_i) begin
     allocate_addr <= allocate_addr;
     allocate_finish <= allocate_finish;
+  end
+  /*else if(MAIN_ST == IDLE)begin
+    
+  end*/
+  else begin
+    allocate_addr <= allocate_addr;
+    allocate_finish <= 0;
   end
 end
 

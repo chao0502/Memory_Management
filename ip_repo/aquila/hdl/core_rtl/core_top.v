@@ -117,10 +117,12 @@ module core_top #(
     output [DATA_WIDTH-1 : 0]   allocate_size,
     output                      free_request,
     output [ADDR_WIDTH-1 : 0]   free_addr,
+    output                      stall_core2dmm,
     input [ADDR_WIDTH-1 : 0]    allocate_addr,
     input                       allocate_finish,
     input                       free_finish,
     input                       dmm_is_idle,
+    input                       dmm_is_allocating,
     input                       dcache_flushing_i,
 
     // Cache flush signal.
@@ -334,6 +336,7 @@ wire stall_pipeline;
 assign stall_for_instr_fetch = (!code_ready_i);
 assign stall_for_data_fetch = (dS_nxt == d_WAIT) && (! exe_is_fencei);
 assign stall_pipeline = stall_for_instr_fetch | stall_for_data_fetch | stall_from_exe;
+assign stall_core2dmm = stall_for_data_fetch | stall_for_instr_fetch;
 
 // Maintain irq_taken signal for pipeline stall
 always @(posedge clk_i)
@@ -806,6 +809,7 @@ execute Execute(
     .allocate_finish(allocate_finish),
     .free_finish(free_finish),
     .dmm_is_idle(dmm_is_idle),
+    .dmm_is_allocating(dmm_is_allocating),
     .dcache_flushing_i(dcache_flushing_i),
 
     // Signals to D-Memory.
