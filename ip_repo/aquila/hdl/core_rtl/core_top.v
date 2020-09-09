@@ -113,7 +113,7 @@ module core_top #(
     // Memory Management port
     output                      allocate_request,
     output                      reallocate_request,
-    output [ADDR_WIDTH-1 : 0]   reallocate_addr_i,
+    output [ADDR_WIDTH-1 : 0]   reallocate_addr,
     output [DATA_WIDTH-1 : 0]   allocate_size,
     output                      free_request,
     output [ADDR_WIDTH-1 : 0]   free_addr,
@@ -283,20 +283,6 @@ wire irq_taken = csr_irq_taken | csr_irq_taken_r;
 
 reg  [31: 0] nxt_unwb_PC;
 wire [ 1: 0] privilege_level;
-
-// =============================================================================
-//  core_top to malloc_ip
-//
-/*
-wire                         allocate_request;
-wire                         reallocate_request;
-wire [ADDR_WIDTH-1 : 0]      reallocate_addr_i;
-wire [DATA_WIDTH-1 : 0]      allocate_size;
-wire                         free_request;
-wire [ADDR_WIDTH-1 : 0]      free_addr;
-wire [ADDR_WIDTH-1 : 0]      allocate_addr;
-wire                         allocate_finish;
-wire                         free_finish;*/
 
 // =============================================================================
 //  Signals sent to the instruction & data memory IPs in the Aquila SoC
@@ -801,7 +787,7 @@ execute Execute(
     // To Memory Management IP
     .allocate_request(allocate_request),
     .reallocate_request(reallocate_request),
-    .reallocate_addr_i(reallocate_addr_i),
+    .reallocate_addr(reallocate_addr),
     .allocate_size(allocate_size),
     .free_request(free_request),
     .free_addr(free_addr),

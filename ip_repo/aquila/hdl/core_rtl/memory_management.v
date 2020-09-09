@@ -27,7 +27,7 @@ module memory_manager #(parameter HEAP_SIZE = 32'h02000000)
     input stall_i,
     input allocate_request,
     input reallocate_request,
-    input [31:0] reallocate_addr_i,
+    input [31:0] reallocate_addr,
     input [31:0] allocate_size,
     input free_request,
     input [31:0] free_addr,
@@ -59,7 +59,7 @@ wire state_analysis;
 wire state_allocate;
 wire port_request;
 wire [31:0] dmm_addr;
-wire [31:0] dmm_dataout;
+wire [255:0] dmm_dataout;
 wire dmm_rw;
 wire free_request_o;
 wire [31:0] free_address_o;
@@ -69,7 +69,7 @@ assign dmm_is_allcating = state_allocate;
 // I/O
 assign port_request = read_request | write_request;
 assign dmm_addr = read_request ? read_address : write_request ? write_address : dmm_addr;
-assign dmm_dataout = read_request ? read_data : write_request ? write_data : dmm_dataout;
+assign dmm_dataout = read_request ? {read_data, 224'b0} : write_request ? {write_data, 224'b0} : dmm_dataout;
 assign dmm_rw = read_request ? 0 : write_request ? 1 : dmm_rw;
 assign dmm_size = read_request ? read_len : write_request ? write_len : dmm_size;
 
@@ -101,7 +101,7 @@ wire                         copy_active;
 
 assign write_valid = dmm_unit_done;
 assign read_valid = dmm_unit_done;
-assign read_data = dmm_unit_datain[31:0];
+assign read_data = dmm_unit_datain[223:192];
 
 newlib_based_allocator #(.HEAP_SIZE(HEAP_SIZE)) allocator(
    .clk(clk), 
@@ -114,7 +114,7 @@ newlib_based_allocator #(.HEAP_SIZE(HEAP_SIZE)) allocator(
    .free_addr(free_address_o), 
    .allocate_size(allocate_size),
    .heap_start_address(32'h70000000),
-   .reallocate_addr_i(reallocate_addr_i), 
+   .reallocate_addr_i(reallocate_addr), 
    .allocate_addr(allocate_addr), 
    .allocate_finish(allocate_finish),
    

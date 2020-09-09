@@ -119,7 +119,7 @@ module execute #(parameter DATA_WIDTH = 32, ADDR_WIDTH = 32)
     // To Memory Management IP
     output                        allocate_request,
     output                        reallocate_request,
-    output [ADDR_WIDTH-1 : 0]     reallocate_addr_i,
+    output [ADDR_WIDTH-1 : 0]     reallocate_addr,
     output [DATA_WIDTH-1 : 0]     allocate_size,
     output                        free_request,
     output [ADDR_WIDTH-1 : 0]     free_addr,
@@ -274,7 +274,7 @@ wire   is_dmm = is_malloc_i | is_realloc_i;
 assign allocate_request = is_malloc_i;
 assign reallocate_request = is_realloc_i;
 assign free_request = is_free_i;
-assign reallocate_addr_i = rs1_data_i;
+assign reallocate_addr = rs1_data_i;
 assign free_addr = rs1_data_i;
 assign allocate_size = imm_i;
 

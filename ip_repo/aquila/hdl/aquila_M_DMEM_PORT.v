@@ -193,7 +193,8 @@ module aquila_M_DMEM_PORT #
 );
 
 // Burst Length. Supports 1, 2, 4, 8, 16, 32, 64, 128, 256 burst lengths
-localparam integer C_BURST_LEN = 8;
+//localparam integer C_BURST_LEN = 8;
+integer C_BURST_LEN;
 
 // C_TRANSACTIONS_NUM is the width of the index counter for
 // number of write or read transaction.
@@ -309,6 +310,11 @@ assign M_AXI_RREADY	= axi_rready;
 assign burst_size_bytes	= C_BURST_LEN * C_M_AXI_DATA_WIDTH / 8;
 assign cpu_reset = (!cpu_reset_ff2) && cpu_reset_ff;
 
+
+always @(*)
+begin
+    C_BURST_LEN = M_DMEM_size;
+end
 
 always @(posedge M_AXI_ACLK)
 begin

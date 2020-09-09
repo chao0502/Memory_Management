@@ -109,7 +109,7 @@ wire                         data_rw;
 
 // Cache flush signals
 wire                         p_cache_flush;
-wire                         dcache_flushing;
+wire                         dcache_is_flushing;
 
 // Processor to instruction memory signals.
 wire                         p_i_strobe, p_i_ready;
@@ -147,7 +147,7 @@ wire [4 : 0]                 m_d_amo_type; // Atomic type to D-memory.
 // core_top to malloc_ip
 wire                         allocate_request;
 wire                         reallocate_request;
-wire [ADDR_WIDTH-1 : 0]      reallocate_addr_i;
+wire [ADDR_WIDTH-1 : 0]      reallocate_addr;
 wire [DATA_WIDTH-1 : 0]      allocate_size;
 wire                         free_request;
 wire [ADDR_WIDTH-1 : 0]      free_addr;
@@ -155,23 +155,6 @@ wire [ADDR_WIDTH-1 : 0]      allocate_addr;
 wire                         allocate_finish;
 wire                         free_finish;
 wire                         stall_core2dmm;
-
-// none use signal
-wire                         copy_active;
-wire [31:0]                  copy_len;
-wire                         copy_done;
-wire                         wvalid;
-wire                         write_request;
-wire [31:0]                  write_address;
-wire [3:0]                   write_len;
-wire [31:0]                  write_data;
-wire [31:0]                  src_addr;
-wire [31:0]                  dst_addr;
-wire                         rvalid;
-wire                         read_request;
-wire [31:0]                  read_address;
-wire [3:0]                   read_len;
-wire [31:0]                  read_data;
 
 // Connections from the RISCV Core to the Atomic Unit, then to D-memory.
 wire                         atomic_unit_strobe;
@@ -291,7 +274,7 @@ RISCV_CORE0(
     // Memory Manangement port
     .allocate_request(allocate_request),
     .reallocate_request(reallocate_request),
-    .reallocate_addr_i(reallocate_addr_i),
+    .reallocate_addr(reallocate_addr),
     .allocate_size(allocate_size),
     .free_request(free_request),
     .free_addr(free_addr),
@@ -300,7 +283,7 @@ RISCV_CORE0(
     .free_finish(free_finish),
     .dmm_is_idle(dmm_is_idle),
     .dmm_is_allocating(dmm_is_allocating),
-    .dcache_flushing_i(dcache_flushing),
+    .dcache_flushing_i(dcache_is_flushing),
     .stall_core2dmm(stall_core2dmm),
 
     // Cache flush signal
@@ -321,7 +304,7 @@ Memory_Management (
     .stall_i(stall_core2dmm),
     .allocate_request(allocate_request),
     .reallocate_request(reallocate_request),
-    .reallocate_addr_i(reallocate_addr_i),
+    .reallocate_addr(reallocate_addr),
     .allocate_size(allocate_size),
     .free_request(free_request),
     .free_addr(free_addr),
@@ -439,7 +422,7 @@ I_Cache(
     .p_instr_o(code_from_cache),
     .p_ready_o(cache_i_ready),
 
-    .d_flushing_i(dcache_flushing),
+    .d_flushing_i(dcache_is_flushing),
 
     .m_addr_o(m_i_addr),
     .m_data_i(m_i_dram),
@@ -461,7 +444,7 @@ D_Cache(
     .p_data_i(p_d_core2mem),
     .p_ready_o(cache_d_ready),
     .p_flush_i(p_cache_flush|free_request),
-    .busy_flushing_o(dcache_flushing),
+    .busy_flushing_o(dcache_is_flushing),
 
     .p_is_amo_i(p_d_is_amo),
     .p_amo_type_i(p_d_amo_type),

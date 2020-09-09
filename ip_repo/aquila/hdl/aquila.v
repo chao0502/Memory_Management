@@ -76,18 +76,6 @@ module aquila #
     parameter integer C_M_DMEM_PORT_RUSER_WIDTH	= 0,
     parameter integer C_M_DMEM_PORT_BUSER_WIDTH	= 0,
 
-    // Parameters of Axi Master Bus Interface M_DMM_PORT
-    parameter integer C_M_DMM_PORT_SLAVE_BASE_ADDR = 32'h60000000,
-    parameter integer C_M_DMM_PORT_BURST_LEN = 16,
-    parameter integer C_M_DMM_PORT_ID_WIDTH		= 1,
-    parameter integer C_M_DMM_PORT_ADDR_WIDTH	= 32,
-    parameter integer C_M_DMM_PORT_DATA_WIDTH	= 32,
-    parameter integer C_M_DMM_PORT_AWUSER_WIDTH	= 0,
-    parameter integer C_M_DMM_PORT_ARUSER_WIDTH	= 0,
-    parameter integer C_M_DMM_PORT_WUSER_WIDTH	= 0,
-    parameter integer C_M_DMM_PORT_RUSER_WIDTH	= 0,
-    parameter integer C_M_DMM_PORT_BUSER_WIDTH	= 0,
-
     // Parameters of Axi Master Bus Interface M_DEVICE_PORT
     parameter integer C_M_DEVICE_PORT_ADDR_WIDTH    = 32,
     parameter integer C_M_DEVICE_PORT_DATA_WIDTH    = 32
@@ -418,7 +406,7 @@ aquila_top aquila_core(
     .M_DMEM_addr_o(M_DMEM_addr),
     .M_DMEM_rw_o(M_DMEM_rw),
     .M_DMEM_data_o(M_DMEM_dataout),
-    .M_DMEM_size(M_DMEM_size),
+    .M_DMEM_size_o(M_DMEM_size),
     .M_DMEM_done_i(M_DMEM_done),
     .M_DMEM_data_i(M_DMEM_datain),
 
