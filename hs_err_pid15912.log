@@ -1,0 +1,19 @@
+#
+# An unexpected error has occurred (6)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x3efd0) [0x7f3bf4cfffd0]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7) [0x7f3bf4cfff47]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x141) [0x7f3bf4d018b1]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/Ubuntu/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x15d) [0x7f3bf535833d]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x8e316) [0x7f3bf5356316]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x8d349) [0x7f3bf5355349]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/Ubuntu/libstdc++.so.6(__gxx_personality_v0+0x2cd) [0x7f3bf5355c9d]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/Ubuntu/libgcc_s.so.1(+0xff43) [0x7f3bf50c1f43]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/Ubuntu/libgcc_s.so.1(_Unwind_RaiseException+0xfb) [0x7f3bf50c22ab]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/Ubuntu/libstdc++.so.6(__cxa_throw+0x5b) [0x7f3bf535656b]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/Ubuntu/libstdc++.so.6(_ZSt20__throw_system_errori+0x7f) [0x7f3bf537ed5f]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/librdi_filemgmt.so(HADGDesignGraphMgr::releaseGraph(HADGDesignGraph*)+0x241) [0x7f3bccff5871]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/librdi_tcltasks.so(HTCDesignGraphThreadEventHandler::~HTCDesignGraphThreadEventHandler()+0x54) [0x7f3be6fccfc4]
+/tools/Xilinx3/Vivado/2018.3/lib/lnx64.o/librdi_tcltasks.so(HTCDesignGraphThreadEventHandler::~HTCDesignGraphThreadEventHandler()+0x9) [0x7f3be6fcd109]
+[0x7f3b98c54db5]

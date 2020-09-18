@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Mon Sep  7 10:56:15 2020
+| Date         : Fri Sep 18 08:29:02 2020
 | Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_drc -file aquila_soc_wrapper_drc_routed.rpt -pb aquila_soc_wrapper_drc_routed.pb -rpx aquila_soc_wrapper_drc_routed.rpx
 | Design       : aquila_soc_wrapper
@@ -24,11 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 4
+             Violations found: 9
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153  | Warning  | Gated clock check                                   | 5          |
 | PLCK-23   | Warning  | Clock Placer Checks                                 | 1          |
 | REQP-1709 | Warning  | Clock output buffering                              | 1          |
 | RTSTAT-10 | Warning  | No routable loads                                   | 1          |
@@ -47,6 +48,31 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/allocator/read_request_reg_0[0] is a gated clock net sourced by a combinational pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/allocator/dmm_size_reg[2]_i_2/O, cell aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/allocator/dmm_size_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[159]_i_2_n_0 is a gated clock net sourced by a combinational pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[159]_i_2/O, cell aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[159]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[191]_i_1_n_0 is a gated clock net sourced by a combinational pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[191]_i_1/O, cell aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[191]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[223]_i_1_n_0 is a gated clock net sourced by a combinational pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[223]_i_1/O, cell aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[223]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[255]_i_2_n_0 is a gated clock net sourced by a combinational pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[255]_i_2/O, cell aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[255]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLCK-23#1 Warning

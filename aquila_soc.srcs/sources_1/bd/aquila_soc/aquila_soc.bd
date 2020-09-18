@@ -206,22 +206,16 @@
       }
     },
     "interface_nets": {
-      "mig_7series_0_DDR3": {
-        "interface_ports": [
-          "ddr3_sdram",
-          "mig_7series_0/DDR3"
-        ]
-      },
-      "sys_diff_clock_1": {
-        "interface_ports": [
-          "sys_diff_clock",
-          "mig_7series_0/SYS_CLK"
-        ]
-      },
       "aquila_0_M_DEVICE_PORT": {
         "interface_ports": [
           "aquila_0/M_DEVICE_PORT",
           "axi_uartlite_0/S_AXI"
+        ]
+      },
+      "aquila_0_M_ICACHE_PORT": {
+        "interface_ports": [
+          "aquila_0/M_IMEM_PORT",
+          "axi_smc/S00_AXI"
         ]
       },
       "smartconnect_0_M00_AXI": {
@@ -242,10 +236,16 @@
           "axi_smc/S01_AXI"
         ]
       },
-      "aquila_0_M_ICACHE_PORT": {
+      "mig_7series_0_DDR3": {
         "interface_ports": [
-          "aquila_0/M_IMEM_PORT",
-          "axi_smc/S00_AXI"
+          "ddr3_sdram",
+          "mig_7series_0/DDR3"
+        ]
+      },
+      "sys_diff_clock_1": {
+        "interface_ports": [
+          "sys_diff_clock",
+          "mig_7series_0/SYS_CLK"
         ]
       }
     },

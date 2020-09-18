@@ -59,52 +59,62 @@
 #include "uart.h"
 
 void malloc_test(int nwords);
-
+int* dmm_test_malloc(int nwords);
+void dmm_test_free(int pointer);
 
 int main(void)
 {
-    //outbyte('H');
-    //asm volatile ("addi t1, zero, 32");
-    asm volatile(".byte 0x6b, 0x03, 0x00, 0x06");//malloc t1(x6) 96
-    /*asm volatile ("addi t2, zero, 32");
-    asm volatile ("addi t2, zero, 32");
-    asm volatile ("addi t2, zero, 32");*/
-    asm volatile(".byte 0xeb, 0x03, 0x00, 0x04");//malloc t2(x6) 64
-    //outbyte('e');
-    asm volatile ("addi t2, zero, 32");
-    asm volatile ("addi t2, zero, 32");
-    asm volatile ("addi t2, zero, 32");
-    asm volatile(".byte 0x6b, 0x20, 0x03, 0x00");//free
-    //asm volatile ("00000000000000000000000000010011");
-    outbyte('e');
-    outbyte('l');
-    outbyte('l');
-    outbyte('o');
-    outbyte(' ');
-    outbyte('W');
-    outbyte('o');
-    outbyte('r');
-    outbyte('l');
-    outbyte('d');
-    outbyte('!');
-    outbyte('\n');
-
-    printf("Test Print\n");
-    float ver = 0.9;
-    printf("Hello world!\n");
-    printf("Hello, Aquila %.1f!\n", ver);
-    printf("The address of 'ver' is 0x%X\n\n", (unsigned) &ver);
-
-    printf("First time tick = %d\n\n", clock());
-    //malloc_test(10);
-    printf("\nSecond time tick = %d\n\n", clock());
-
-    //timer_isr_test();
-    printf("Waiting for timer ISR ...");
-
     
+    int *p[15];
+    int i,j;
+    //printf("\nFirst time tick = %d\n", clock());
+    for(i=0; i<5; i++){
+        p[i] = dmm_test_malloc(0);
+        printf("%d:%x\n",i,p[i]);
+        
+    }
+    //printf("Second time tick = %d\n", clock());
+    /*for(i=0; i<5; i++){
+        p[i] = (int*)malloc(4);
+        printf("%d:%d\n",i,p[i]);
+    }*/
+    //printf("Third time tick = %d\n", clock());*/
+    for(int j=0; j<5; j++){
+        printf("%d\n",j);
+        dmm_test_free(p[j]);
+    }
+    for(i=5; i<11; i++){
+        p[i] = dmm_test_malloc(0);
+        printf("%d:%x\n",i,p[i]);
+        
+    }
+    /*for(j=5; j<10; j++){
+        printf("%d\n",j);
+        dmm_test_free(p[j]);
+    }*/
+    
+    printf("\nFirst time tick = %d\n", clock());
+    //malloc_test(10);
+    printf("Second time tick = %d\n", clock());
+
     printf("Test finished.\n");
     return 0;
+}
+
+int* dmm_test_malloc(int nwords){
+    int a;
+    /*if(nwords < 10)
+        asm volatile(".byte 0x6b, 0x03, 0x00, 0x06");//malloc t1(x6) 96
+    else*/
+        asm volatile(".byte 0x6b, 0x03, 0x00, 0x60");//malloc t1(x6) 96
+    asm volatile("addi %0, t1 ,0" : "=r"(a));
+    return a;
+}
+
+void dmm_test_free(int pointer){
+    asm volatile("add t2, a0, zero");
+    asm volatile(".byte 0x0f, 0x10, 0x00, 0x00");
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
 }
 
 void malloc_test(int nwords)
@@ -131,3 +141,48 @@ void malloc_test(int nwords)
     free(buf);
     printf("Buffer freed.\n");
 }
+
+/*int *p1, *p2, *p3, *p4, *p5, *p6, *p7, *p8, *p9, *p10;
+    for(int i=0;i<10;i++){
+    p1 = dmm_test_malloc(0); 
+    p2 = dmm_test_malloc(0); 
+    p3 = dmm_test_malloc(0); 
+    p4 = dmm_test_malloc(0); 
+    p5 = dmm_test_malloc(0);
+    printf("p1:%d\n",p1);
+    printf("p2:%d\n",p2);
+    printf("p3:%d\n",p3);
+    printf("p4:%d\n",p4);
+    printf("p5:%d\n",p5); 
+    int tem;
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p1));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p2));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p3));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p4));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p5));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    p6 = dmm_test_malloc(0); 
+    p7 = dmm_test_malloc(0); 
+    p8 = dmm_test_malloc(0); 
+    p9 = dmm_test_malloc(0); 
+    p10 = dmm_test_malloc(0); 
+    printf("p6:%d\n",p6);
+    printf("p7:%d\n",p7);
+    printf("p8:%d\n",p8);
+    printf("p9:%d\n",p9);
+    printf("p10:%d\n",p10);
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p6));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p7));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p8));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p9));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    asm volatile("add t2, %1, zero" : "=r"(tem) : "r"(p10));
+    asm volatile(".byte 0x6b, 0xa0, 0x03, 0x00");//free
+    }*/

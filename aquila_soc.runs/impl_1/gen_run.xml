@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1599446945">
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1600388534">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="aquila_soc_wrapper.drc"/>
   <File Type="BG-BGN" Name="aquila_soc_wrapper.bgn"/>
@@ -130,6 +130,6 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="aquila_soc_aquila_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="aquila_soc_rst_mig_7series_0_200M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="aquila_soc_mig_7series_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="aquila_soc_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="aquila_soc_mig_7series_0_0"/>
 </GenRun>

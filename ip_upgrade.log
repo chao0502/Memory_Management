@@ -1,6 +1,1507 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Sep 18 08:21:35 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 269) to (Rev. 270)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Sep 18 08:20:12 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 268) to (Rev. 269)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Sep 18 08:04:41 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 267) to (Rev. 268)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 23:58:44 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 266) to (Rev. 267)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 23:44:14 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 265) to (Rev. 266)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 23:28:00 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 264) to (Rev. 265)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 22:51:36 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 263) to (Rev. 264)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 22:27:19 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 262) to (Rev. 263)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 22:21:33 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 261) to (Rev. 262)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 21:42:35 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 260) to (Rev. 261)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 21:15:39 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 259) to (Rev. 260)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 15:09:35 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 258) to (Rev. 259)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 14:38:00 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 257) to (Rev. 258)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 13:13:58 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 256) to (Rev. 257)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 10:45:51 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 255) to (Rev. 256)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 10:25:47 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 255)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 10:24:38 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 254) to (Rev. 255)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 10:12:21 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 254)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 17 10:00:35 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 254)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 20:26:13 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 253) to (Rev. 254)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 20:01:16 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 253)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 20:00:26 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 252) to (Rev. 253)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 19:59:25 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 252)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 19:58:35 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 252)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 19:50:02 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 252)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 19:28:35 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 251) to (Rev. 252)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 18:37:18 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 250) to (Rev. 251)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 18:21:54 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 249) to (Rev. 250)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 18:00:22 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 248) to (Rev. 249)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 17:55:06 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 247) to (Rev. 248)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 17:43:16 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 245) to (Rev. 247)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 17:39:44 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 243) to (Rev. 245)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 17:25:49 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 242) to (Rev. 243)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 17:10:19 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 241) to (Rev. 242)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 11:49:39 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 240) to (Rev. 241)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 11:09:38 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 239) to (Rev. 240)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 11:02:42 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 238) to (Rev. 239)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 10:18:59 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 237) to (Rev. 238)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 09:52:59 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0 (Rev. 237)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 09:52:06 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 236) to (Rev. 237)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 09:50:31 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 235) to (Rev. 236)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Sep 16 09:36:34 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 234) to (Rev. 235)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Sep 15 19:16:28 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 233) to (Rev. 234)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Sep 15 18:36:31 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 232) to (Rev. 233)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Sep 14 16:58:26 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 231) to (Rev. 232)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Sep 14 16:43:02 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 229) to (Rev. 231)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Sep 14 15:56:05 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 227) to (Rev. 229)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Sep 14 15:52:42 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 226) to (Rev. 227)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Sep 14 15:21:07 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 225) to (Rev. 226)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Sep 14 11:32:25 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 224) to (Rev. 225)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Sep 14 10:52:39 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 223) to (Rev. 224)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Sep 11 09:26:19 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 222) to (Rev. 223)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Sep 11 09:12:07 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 221) to (Rev. 222)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Sep 11 09:00:44 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 220) to (Rev. 221)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Sep 11 08:37:44 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 218) to (Rev. 220)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 10 14:23:13 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 217) to (Rev. 218)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 10 14:01:04 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 216) to (Rev. 217)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 10 13:15:18 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 215) to (Rev. 216)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 10 13:07:17 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 214) to (Rev. 215)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 10 13:04:32 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 213) to (Rev. 214)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 10 13:01:01 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 212) to (Rev. 213)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 10 12:53:58 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 211) to (Rev. 212)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Sep 10 12:50:23 2020
+| Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'aquila_soc_aquila_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of aquila_soc_aquila_0_1 (xilinx.com:user:aquila:1.0) from (Rev. 210) to (Rev. 211)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'C_M_DMM_PORT_SLAVE_BASE_ADDR' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '0x60000000'
+
+Parameter 'C_M_DMM_PORT_BURST_LEN' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '16'
+
+Parameter 'C_M_DMM_PORT_ID_WIDTH' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '1'
+
+Parameter 'C_M_DMM_PORT_ADDR_WIDTH' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '32'
+
+Parameter 'C_M_DMM_PORT_DATA_WIDTH' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '32'
+
+Parameter 'C_M_DMM_PORT_AWUSER_WIDTH' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '0'
+
+Parameter 'C_M_DMM_PORT_ARUSER_WIDTH' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '0'
+
+Parameter 'C_M_DMM_PORT_WUSER_WIDTH' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '0'
+
+Parameter 'C_M_DMM_PORT_RUSER_WIDTH' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '0'
+
+Parameter 'C_M_DMM_PORT_BUSER_WIDTH' is no longer present on the upgraded IP 'aquila_soc_aquila_0_1', and cannot be set to '0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:aquila:1.0 -user_name aquila_soc_aquila_0_1
+set_property -dict "\
+  CONFIG.C_M_DEVICE_PORT_ADDR_WIDTH {32} \
+  CONFIG.C_M_DEVICE_PORT_DATA_WIDTH {32} \
+  CONFIG.C_M_DMEM_PORT_ADDR_WIDTH {32} \
+  CONFIG.C_M_DMEM_PORT_ARUSER_WIDTH {1} \
+  CONFIG.C_M_DMEM_PORT_AWUSER_WIDTH {1} \
+  CONFIG.C_M_DMEM_PORT_BUSER_WIDTH {1} \
+  CONFIG.C_M_DMEM_PORT_DATA_WIDTH {32} \
+  CONFIG.C_M_DMEM_PORT_ID_WIDTH {1} \
+  CONFIG.C_M_DMEM_PORT_RUSER_WIDTH {0} \
+  CONFIG.C_M_DMEM_PORT_WUSER_WIDTH {0} \
+  CONFIG.C_M_IMEM_PORT_ADDR_WIDTH {32} \
+  CONFIG.C_M_IMEM_PORT_ARUSER_WIDTH {1} \
+  CONFIG.C_M_IMEM_PORT_AWUSER_WIDTH {1} \
+  CONFIG.C_M_IMEM_PORT_BUSER_WIDTH {1} \
+  CONFIG.C_M_IMEM_PORT_DATA_WIDTH {32} \
+  CONFIG.C_M_IMEM_PORT_ID_WIDTH {1} \
+  CONFIG.C_M_IMEM_PORT_RUSER_WIDTH {0} \
+  CONFIG.C_M_IMEM_PORT_WUSER_WIDTH {0} \
+  CONFIG.Component_Name {aquila_soc_aquila_0_1} \
+  CONFIG.M_DEVICE_PORT.ADDR_WIDTH {32} \
+  CONFIG.M_DEVICE_PORT.ARUSER_WIDTH {0} \
+  CONFIG.M_DEVICE_PORT.AWUSER_WIDTH {0} \
+  CONFIG.M_DEVICE_PORT.BUSER_WIDTH {0} \
+  CONFIG.M_DEVICE_PORT.CLK_DOMAIN {aquila_soc_mig_7series_0_0_ui_clk} \
+  CONFIG.M_DEVICE_PORT.DATA_WIDTH {32} \
+  CONFIG.M_DEVICE_PORT.FREQ_HZ {100000000} \
+  CONFIG.M_DEVICE_PORT.HAS_BRESP {1} \
+  CONFIG.M_DEVICE_PORT.HAS_BURST {0} \
+  CONFIG.M_DEVICE_PORT.HAS_CACHE {0} \
+  CONFIG.M_DEVICE_PORT.HAS_LOCK {0} \
+  CONFIG.M_DEVICE_PORT.HAS_PROT {1} \
+  CONFIG.M_DEVICE_PORT.HAS_QOS {0} \
+  CONFIG.M_DEVICE_PORT.HAS_REGION {0} \
+  CONFIG.M_DEVICE_PORT.HAS_RRESP {1} \
+  CONFIG.M_DEVICE_PORT.HAS_WSTRB {1} \
+  CONFIG.M_DEVICE_PORT.ID_WIDTH {0} \
+  CONFIG.M_DEVICE_PORT.INSERT_VIP {0} \
+  CONFIG.M_DEVICE_PORT.MAX_BURST_LENGTH {1} \
+  CONFIG.M_DEVICE_PORT.NUM_READ_OUTSTANDING {1} \
+  CONFIG.M_DEVICE_PORT.NUM_READ_THREADS {1} \
+  CONFIG.M_DEVICE_PORT.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.M_DEVICE_PORT.NUM_WRITE_THREADS {1} \
+  CONFIG.M_DEVICE_PORT.PHASE {0} \
+  CONFIG.M_DEVICE_PORT.PROTOCOL {AXI4LITE} \
+  CONFIG.M_DEVICE_PORT.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.M_DEVICE_PORT.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.M_DEVICE_PORT.RUSER_WIDTH {0} \
+  CONFIG.M_DEVICE_PORT.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.M_DEVICE_PORT.WIZ_DATA_WIDTH {32} \
+  CONFIG.M_DEVICE_PORT.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.M_DEVICE_PORT.WUSER_WIDTH {0} \
+  CONFIG.M_DEVICE_PORT_CLK.ASSOCIATED_BUSIF {M_DEVICE_PORT} \
+  CONFIG.M_DEVICE_PORT_CLK.ASSOCIATED_RESET {device_aresetn} \
+  CONFIG.M_DEVICE_PORT_CLK.CLK_DOMAIN {aquila_soc_mig_7series_0_0_ui_clk} \
+  CONFIG.M_DEVICE_PORT_CLK.FREQ_HZ {100000000} \
+  CONFIG.M_DEVICE_PORT_CLK.INSERT_VIP {0} \
+  CONFIG.M_DEVICE_PORT_CLK.PHASE {0} \
+  CONFIG.M_DEVICE_PORT_RST.INSERT_VIP {0} \
+  CONFIG.M_DEVICE_PORT_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.M_DMEM_PORT.ADDR_WIDTH {32} \
+  CONFIG.M_DMEM_PORT.ARUSER_WIDTH {1} \
+  CONFIG.M_DMEM_PORT.AWUSER_WIDTH {1} \
+  CONFIG.M_DMEM_PORT.BUSER_WIDTH {1} \
+  CONFIG.M_DMEM_PORT.CLK_DOMAIN {aquila_soc_mig_7series_0_0_ui_clk} \
+  CONFIG.M_DMEM_PORT.DATA_WIDTH {32} \
+  CONFIG.M_DMEM_PORT.FREQ_HZ {100000000} \
+  CONFIG.M_DMEM_PORT.HAS_BRESP {1} \
+  CONFIG.M_DMEM_PORT.HAS_BURST {1} \
+  CONFIG.M_DMEM_PORT.HAS_CACHE {1} \
+  CONFIG.M_DMEM_PORT.HAS_LOCK {1} \
+  CONFIG.M_DMEM_PORT.HAS_PROT {1} \
+  CONFIG.M_DMEM_PORT.HAS_QOS {1} \
+  CONFIG.M_DMEM_PORT.HAS_REGION {0} \
+  CONFIG.M_DMEM_PORT.HAS_RRESP {1} \
+  CONFIG.M_DMEM_PORT.HAS_WSTRB {1} \
+  CONFIG.M_DMEM_PORT.ID_WIDTH {1} \
+  CONFIG.M_DMEM_PORT.INSERT_VIP {0} \
+  CONFIG.M_DMEM_PORT.MAX_BURST_LENGTH {256} \
+  CONFIG.M_DMEM_PORT.NUM_READ_OUTSTANDING {2} \
+  CONFIG.M_DMEM_PORT.NUM_READ_THREADS {1} \
+  CONFIG.M_DMEM_PORT.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.M_DMEM_PORT.NUM_WRITE_THREADS {1} \
+  CONFIG.M_DMEM_PORT.PHASE {0} \
+  CONFIG.M_DMEM_PORT.PROTOCOL {AXI4} \
+  CONFIG.M_DMEM_PORT.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.M_DMEM_PORT.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.M_DMEM_PORT.RUSER_WIDTH {0} \
+  CONFIG.M_DMEM_PORT.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.M_DMEM_PORT.WIZ_DATA_WIDTH {32} \
+  CONFIG.M_DMEM_PORT.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.M_DMEM_PORT.WUSER_WIDTH {0} \
+  CONFIG.M_DMEM_PORT_CLK.ASSOCIATED_BUSIF {M_DMEM_PORT:M_IMEM_PORT} \
+  CONFIG.M_DMEM_PORT_CLK.ASSOCIATED_RESET {mem_aresetn} \
+  CONFIG.M_DMEM_PORT_CLK.CLK_DOMAIN {} \
+  CONFIG.M_DMEM_PORT_CLK.FREQ_HZ {100000000} \
+  CONFIG.M_DMEM_PORT_CLK.INSERT_VIP {0} \
+  CONFIG.M_DMEM_PORT_CLK.PHASE {0.000} \
+  CONFIG.M_DMEM_PORT_RST.INSERT_VIP {0} \
+  CONFIG.M_DMEM_PORT_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.M_IMEM_PORT.ADDR_WIDTH {32} \
+  CONFIG.M_IMEM_PORT.ARUSER_WIDTH {1} \
+  CONFIG.M_IMEM_PORT.AWUSER_WIDTH {1} \
+  CONFIG.M_IMEM_PORT.BUSER_WIDTH {1} \
+  CONFIG.M_IMEM_PORT.CLK_DOMAIN {aquila_soc_mig_7series_0_0_ui_clk} \
+  CONFIG.M_IMEM_PORT.DATA_WIDTH {32} \
+  CONFIG.M_IMEM_PORT.FREQ_HZ {100000000} \
+  CONFIG.M_IMEM_PORT.HAS_BRESP {1} \
+  CONFIG.M_IMEM_PORT.HAS_BURST {1} \
+  CONFIG.M_IMEM_PORT.HAS_CACHE {1} \
+  CONFIG.M_IMEM_PORT.HAS_LOCK {1} \
+  CONFIG.M_IMEM_PORT.HAS_PROT {1} \
+  CONFIG.M_IMEM_PORT.HAS_QOS {1} \
+  CONFIG.M_IMEM_PORT.HAS_REGION {0} \
+  CONFIG.M_IMEM_PORT.HAS_RRESP {1} \
+  CONFIG.M_IMEM_PORT.HAS_WSTRB {1} \
+  CONFIG.M_IMEM_PORT.ID_WIDTH {1} \
+  CONFIG.M_IMEM_PORT.INSERT_VIP {0} \
+  CONFIG.M_IMEM_PORT.MAX_BURST_LENGTH {256} \
+  CONFIG.M_IMEM_PORT.NUM_READ_OUTSTANDING {2} \
+  CONFIG.M_IMEM_PORT.NUM_READ_THREADS {1} \
+  CONFIG.M_IMEM_PORT.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.M_IMEM_PORT.NUM_WRITE_THREADS {1} \
+  CONFIG.M_IMEM_PORT.PHASE {0} \
+  CONFIG.M_IMEM_PORT.PROTOCOL {AXI4} \
+  CONFIG.M_IMEM_PORT.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.M_IMEM_PORT.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.M_IMEM_PORT.RUSER_WIDTH {0} \
+  CONFIG.M_IMEM_PORT.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.M_IMEM_PORT.WIZ_DATA_WIDTH {32} \
+  CONFIG.M_IMEM_PORT.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.M_IMEM_PORT.WUSER_WIDTH {0} \
+  CONFIG.M_IMEM_PORT_CLK.ASSOCIATED_BUSIF {M_IMEM_PORT:M_DMEM_PORT} \
+  CONFIG.M_IMEM_PORT_CLK.ASSOCIATED_RESET {mem_aresetn} \
+  CONFIG.M_IMEM_PORT_CLK.CLK_DOMAIN {aquila_soc_mig_7series_0_0_ui_clk} \
+  CONFIG.M_IMEM_PORT_CLK.FREQ_HZ {100000000} \
+  CONFIG.M_IMEM_PORT_CLK.INSERT_VIP {0} \
+  CONFIG.M_IMEM_PORT_CLK.PHASE {0} \
+  CONFIG.M_IMEM_PORT_RST.INSERT_VIP {0} \
+  CONFIG.M_IMEM_PORT_RST.POLARITY {ACTIVE_LOW} " [get_ips aquila_soc_aquila_0_1]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
 | Date         : Mon Sep  7 10:48:15 2020
 | Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 | Command      : upgrade_ip

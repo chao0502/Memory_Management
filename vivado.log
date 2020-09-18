@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Sep  7 10:46:38 2020
-# Process ID: 11228
+# Start of session at: Fri Sep 18 08:20:41 2020
+# Process ID: 12370
 # Current directory: /home/hahaha/riscv/aquila_soc_0901
 # Command line: vivado aquila_soc.xpr
 # Log file: /home/hahaha/riscv/aquila_soc_0901/vivado.log
@@ -21,7 +21,8 @@ WARNING: [IP_Flow 19-3664] IP 'aquila_soc_aquila_0_1' generated file not found '
 WARNING: [IP_Flow 19-3664] IP 'aquila_soc_aquila_0_1' generated file not found '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1_stub.vhdl'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'aquila_soc_aquila_0_1' generated file not found '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1_sim_netlist.v'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'aquila_soc_aquila_0_1' generated file not found '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_aquila_0_1/aquila_soc_aquila_0_1_sim_netlist.vhdl'. Please regenerate to continue.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 6540.598 ; gain = 206.316 ; free physical = 4418 ; free virtual = 12796
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 6566.988 ; gain = 239.730 ; free physical = 5952 ; free virtual = 13450
+update_compile_order -fileset sources_1
 open_bd_design {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd}
 Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
 Adding cell -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
@@ -29,7 +30,6 @@ Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_200M
 Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
 Adding cell -- xilinx.com:user:aquila:1.0 - aquila_0
 Successfully read diagram <aquila_soc> from BD file </home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd>
-update_compile_order -fileset sources_1
 ipx::edit_ip_in_project -upgrade true -name aquila_v1_0_project -directory /home/hahaha/riscv/aquila_soc_0901/aquila_soc.tmp/aquila_v1_0_project /home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/component.xml
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
@@ -40,7 +40,6 @@ INFO: [IP_Flow 19-795] Syncing license key meta-data
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/alu.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DEVICE_PORT.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DMEM_PORT.v:]
-WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DMM_PORT.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_IMEM_PORT.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/aquila_top.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/atomic_unit.v:]
@@ -70,22 +69,7 @@ WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Ver
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/core_rtl/writeback.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila.v:]
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files /home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DMM_PORT.v] -no_script -reset -force -quiet
-remove_files  /home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DMM_PORT.v
-ipx::merge_project_changes hdl_parameters [ipx::current_core]
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-WARNING: [IP_Flow 19-5226] Project source file '/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/component.xml' ignored by IP packager.
-WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File '/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DMM_PORT.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
-WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File '/home/hahaha/riscv/aquila_soc_0901/ip_repo/aquila/hdl/aquila_M_DMM_PORT.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
-WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_AWUSER_WIDTH' has its value changed from '1' to '0'.
-WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_ARUSER_WIDTH' has its value changed from '1' to '0'.
-WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_WUSER_WIDTH' has its value changed from '1' to '0'.
-WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_RUSER_WIDTH' has its value changed from '1' to '0'.
-WARNING: [IP_Flow 19-4300] HDL parameter 'C_M_DMEM_PORT_BUSER_WIDTH' has its value changed from '1' to '0'.
-INFO: [IP_Flow 19-3164] Bus Interface 'M_IMEM_PORT': References existing address space 'M_IMEM_PORT'.
-INFO: [IP_Flow 19-3164] Bus Interface 'M_DMEM_PORT': References existing address space 'M_DMEM_PORT'.
-INFO: [IP_Flow 19-3164] Bus Interface 'M_DEVICE_PORT': References existing address space 'M_DEVICE_PORT'.
-set_property core_revision 210 [ipx::current_core]
+set_property core_revision 270 [ipx::current_core]
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
@@ -97,90 +81,7 @@ INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/hahaha/riscv/aquila_so
 report_ip_status -name ip_status 
 upgrade_ip -vlnv xilinx.com:user:aquila:1.0 [get_ips  aquila_soc_aquila_0_1] -log ip_upgrade.log
 Upgrading '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd'
-INFO: [IP_Flow 19-3422] Upgraded aquila_soc_aquila_0_1 (aquila 1.0) from revision 209 to revision 210
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_araddr'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arburst'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arcache'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arid'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arlen'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arlock'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arprot'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arqos'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arready'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arsize'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_aruser'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_arvalid'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awaddr'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awburst'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awcache'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awid'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awlen'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awlock'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awprot'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awqos'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awready'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awsize'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awuser'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_awvalid'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_bid'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_bready'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_bresp'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_buser'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_bvalid'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_rdata'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_rid'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_rlast'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_rready'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_rresp'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_ruser'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_rvalid'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_wdata'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_wlast'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_wready'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_wstrb'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_wuser'
-WARNING: [IP_Flow 19-4700] Upgrade has removed port 'm_dmm_port_wvalid'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'aquila_soc_aquila_0_1'. These changes may impact your design.
-CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'aquila_soc_aquila_0_1' has identified issues that may require user intervention. Please review the upgrade log '/home/hahaha/riscv/aquila_soc_0901/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
-Wrote  : </home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd> 
-Wrote  : </home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ui/bd_efe0b241.ui> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/hahaha/riscv/aquila_soc_0901/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips aquila_soc_aquila_0_1] -no_script -sync -force -quiet
-generate_target all [get_files  /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd]
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /mig_7series_0/S_AXI(0) and /axi_smc/M00_AXI(1)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /mig_7series_0/S_AXI(0) and /axi_smc/M00_AXI(1)
-WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /mig_7series_0/S_AXI(0) and /axi_smc/M00_AXI(1)
-Wrote  : </home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd> 
-VHDL Output written to : /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/synth/aquila_soc.v
-VHDL Output written to : /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/sim/aquila_soc.v
-VHDL Output written to : /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/hdl/aquila_soc_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
-Exporting to file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/hw_handoff/aquila_soc_smartconnect_0_0.hwh
-Generated Block Design Tcl file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/hw_handoff/aquila_soc_smartconnect_0_0_bd.tcl
-Generated Hardware Definition File /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/ip/aquila_soc_smartconnect_0_0/bd_0/synth/aquila_soc_smartconnect_0_0.hwdef
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_200M .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block aquila_0 .
-Exporting to file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/hw_handoff/aquila_soc.hwh
-Generated Block Design Tcl file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/hw_handoff/aquila_soc_bd.tcl
-Generated Hardware Definition File /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/synth/aquila_soc.hwdef
-generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 6911.867 ; gain = 89.488 ; free physical = 4013 ; free virtual = 12378
-catch { config_ip_cache -export [get_ips -all aquila_soc_aquila_0_1] }
-export_ip_user_files -of_objects [get_files /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd]
-launch_runs -jobs 12 aquila_soc_aquila_0_1_synth_1
-[Mon Sep  7 10:47:53 2020] Launched aquila_soc_aquila_0_1_synth_1...
-Run output will be captured here: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/aquila_soc_aquila_0_1_synth_1/runme.log
-export_simulation -of_objects [get_files /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd] -directory /home/hahaha/riscv/aquila_soc_0901/aquila_soc.ip_user_files/sim_scripts -ip_user_files_dir /home/hahaha/riscv/aquila_soc_0901/aquila_soc.ip_user_files -ipstatic_source_dir /home/hahaha/riscv/aquila_soc_0901/aquila_soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/modelsim} {questa=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/questa} {ies=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/ies} {xcelium=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/xcelium} {vcs=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/vcs} {riviera=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
-report_ip_status -name ip_status 
-update_ip_catalog -rebuild -scan_changes
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hahaha/riscv/aquila_soc_0901/ip_repo'.
-report_ip_status -name ip_status
-upgrade_ip -vlnv xilinx.com:user:aquila:1.0 [get_ips  aquila_soc_aquila_0_1] -log ip_upgrade.log
-Upgrading '/home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd'
-INFO: [IP_Flow 19-1972] Upgraded aquila_soc_aquila_0_1 from aquila 1.0 to aquila 1.0
+INFO: [IP_Flow 19-3422] Upgraded aquila_soc_aquila_0_1 (aquila 1.0) from revision 269 to revision 270
 Wrote  : </home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd> 
 INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/hahaha/riscv/aquila_soc_0901/ip_upgrade.log'.
 export_ip_user_files -of_objects [get_ips aquila_soc_aquila_0_1] -no_script -sync -force -quiet
@@ -203,23 +104,22 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block aquila_0 .
 Exporting to file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/hw_handoff/aquila_soc.hwh
 Generated Block Design Tcl file /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/hw_handoff/aquila_soc_bd.tcl
 Generated Hardware Definition File /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/synth/aquila_soc.hwdef
-generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 7136.465 ; gain = 0.000 ; free physical = 3850 ; free virtual = 12219
+generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 6922.738 ; gain = 89.453 ; free physical = 6049 ; free virtual = 13527
 catch { config_ip_cache -export [get_ips -all aquila_soc_aquila_0_1] }
 export_ip_user_files -of_objects [get_files /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd] -no_script -sync -force -quiet
 create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd]
-launch_runs -jobs 12 aquila_soc_aquila_0_1_synth_1
-[Mon Sep  7 10:48:25 2020] Launched aquila_soc_aquila_0_1_synth_1...
+launch_runs -jobs 11 aquila_soc_aquila_0_1_synth_1
+[Fri Sep 18 08:21:45 2020] Launched aquila_soc_aquila_0_1_synth_1...
 Run output will be captured here: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/aquila_soc_aquila_0_1_synth_1/runme.log
 export_simulation -of_objects [get_files /home/hahaha/riscv/aquila_soc_0901/aquila_soc.srcs/sources_1/bd/aquila_soc/aquila_soc.bd] -directory /home/hahaha/riscv/aquila_soc_0901/aquila_soc.ip_user_files/sim_scripts -ip_user_files_dir /home/hahaha/riscv/aquila_soc_0901/aquila_soc.ip_user_files -ipstatic_source_dir /home/hahaha/riscv/aquila_soc_0901/aquila_soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/modelsim} {questa=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/questa} {ies=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/ies} {xcelium=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/xcelium} {vcs=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/vcs} {riviera=/home/hahaha/riscv/aquila_soc_0901/aquila_soc.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
 report_ip_status -name ip_status 
-reset_run aquila_soc_aquila_0_1_synth_1
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Mon Sep  7 10:49:05 2020] Launched aquila_soc_aquila_0_1_synth_1, synth_1...
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+[Fri Sep 18 08:22:14 2020] Launched aquila_soc_aquila_0_1_synth_1, synth_1...
 Run output will be captured here:
 aquila_soc_aquila_0_1_synth_1: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/aquila_soc_aquila_0_1_synth_1/runme.log
 synth_1: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/synth_1/runme.log
-[Mon Sep  7 10:49:05 2020] Launched impl_1...
+[Fri Sep 18 08:22:14 2020] Launched impl_1...
 Run output will be captured here: /home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/runme.log
 open_hw
 connect_hw_server
@@ -243,8 +143,114 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
 set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
 program_hw_devices [get_hw_devices xc7k325t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 8037.043 ; gain = 2.445 ; free physical = 2728 ; free virtual = 11348
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7878.742 ; gain = 6.004 ; free physical = 5386 ; free virtual = 12906
 refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
 INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon Sep  7 11:02:33 2020...
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7878.742 ; gain = 0.000 ; free physical = 5371 ; free virtual = 12891
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7888.016 ; gain = 0.000 ; free physical = 5340 ; free virtual = 12882
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7888.016 ; gain = 0.000 ; free physical = 5344 ; free virtual = 12858
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7888.016 ; gain = 0.000 ; free physical = 5340 ; free virtual = 12851
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203A0274DA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A0274DA
+INFO: [Labtools 27-1435] Device xc7k325t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7928.055 ; gain = 0.000 ; free physical = 5387 ; free virtual = 12897
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7928.055 ; gain = 0.000 ; free physical = 5373 ; free virtual = 12887
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7928.055 ; gain = 0.000 ; free physical = 5370 ; free virtual = 12883
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7928.055 ; gain = 0.000 ; free physical = 5346 ; free virtual = 12859
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7928.055 ; gain = 0.000 ; free physical = 5324 ; free virtual = 12854
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7928.055 ; gain = 0.000 ; free physical = 5313 ; free virtual = 12831
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7928.055 ; gain = 0.000 ; free physical = 5354 ; free virtual = 12882
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7928.055 ; gain = 0.000 ; free physical = 5340 ; free virtual = 12879
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {/home/hahaha/riscv/aquila_soc_0901/aquila_soc.runs/impl_1/aquila_soc_wrapper.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7928.055 ; gain = 0.000 ; free physical = 5602 ; free virtual = 12826
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.

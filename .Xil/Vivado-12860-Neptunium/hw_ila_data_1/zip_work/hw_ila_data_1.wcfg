@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/hahaha/riscv/aquila_soc_0901/aquila_soc.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="5746fs"></ZoomEndTime>
+      <Cursor1Time time="571000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="312"></NameColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject type="array" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/D_Cache/S">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/D_Cache/S[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/D_Cache/S_nxt">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/D_Cache/S_nxt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_nxt[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/dcache_is_flushing">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/dcache_is_flushing</obj_property>
+      <obj_property name="ObjectShortName">dcache_is_flushing</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/allocator/FREE_ST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/allocator/FREE_ST[3:0]</obj_property>
+      <obj_property name="ObjectShortName">FREE_ST[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/allocator/MAIN_ST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/allocator/MAIN_ST[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MAIN_ST[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_addr">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmm_unit_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_datain">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_datain[255:0]</obj_property>
+      <obj_property name="ObjectShortName">dmm_unit_datain[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_dataout">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_dataout[255:0]</obj_property>
+      <obj_property name="ObjectShortName">dmm_unit_dataout[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_done">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_done</obj_property>
+      <obj_property name="ObjectShortName">dmm_unit_done</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_rw">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_rw</obj_property>
+      <obj_property name="ObjectShortName">dmm_unit_rw</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_size">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_size[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dmm_unit_size[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_strobe">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_strobe</obj_property>
+      <obj_property name="ObjectShortName">dmm_unit_strobe</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/free_request">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/free_request</obj_property>
+      <obj_property name="ObjectShortName">free_request</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/free_request_o">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/free_request_o</obj_property>
+      <obj_property name="ObjectShortName">free_request_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/read_len">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/read_len[3:3]</obj_property>
+      <obj_property name="ObjectShortName">read_len[3:3]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Sep  7 10:48:25 2020" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Sep 18 08:21:44 2020" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="kintex7" BOARD="xilinx.com:kc705:part0:1.5" DEVICE="7k325t" NAME="bd_bb3d" PACKAGE="ffg900" SPEEDGRADE="-2"/>
 

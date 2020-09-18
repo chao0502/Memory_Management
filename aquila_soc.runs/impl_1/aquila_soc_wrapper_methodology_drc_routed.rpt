@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Mon Sep  7 10:56:24 2020
+| Date         : Fri Sep 18 08:29:11 2020
 | Host         : Neptunium running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_methodology -file aquila_soc_wrapper_methodology_drc_routed.rpt -pb aquila_soc_wrapper_methodology_drc_routed.pb -rpx aquila_soc_wrapper_methodology_drc_routed.rpx
 | Design       : aquila_soc_wrapper
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 113
+             Violations found: 244
 +-----------+----------+-------------------------------------------------+------------+
 | Rule      | Severity | Description                                     | Violations |
 +-----------+----------+-------------------------------------------------+------------+
 | LUTAR-1   | Warning  | LUT drives async reset alert                    | 2          |
 | PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 12         |
 | TIMING-18 | Warning  | Missing input or output delay                   | 2          |
-| TIMING-20 | Warning  | Non-clocked latch                               | 32         |
+| TIMING-20 | Warning  | Non-clocked latch                               | 163        |
 | XDCB-5    | Warning  | Runtime inefficient way to find pin objects     | 1          |
 | REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF               | 64         |
 +-----------+----------+-------------------------------------------------+------------+
@@ -49,62 +49,62 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X75Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X65Y138 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X74Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X65Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X76Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X63Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X72Y131 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X68Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X73Y131 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X64Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X73Y134 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X62Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X70Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X63Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X69Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X67Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X71Y131 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X65Y134 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X71Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X66Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X72Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X66Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X72Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+The FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X64Y134 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell aquila_soc_i/mig_7series_0/u_aquila_soc_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-18#1 Warning
@@ -275,6 +275,661 @@ Related violations: <none>
 TIMING-20#32 Warning
 Non-clocked latch  
 The latch aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/axi_wdata_reg[9] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/axi_wdata_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[128] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[128]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[129] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[129]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[130] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[130]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[131] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[131]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[132] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[132]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[133] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[133]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[134] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[134]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[135] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[135]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[136] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[136]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[137] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[137]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[138] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[138]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[139] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[139]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[140] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[140]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[141] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[141]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[142] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[142]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[143] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[143]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[144] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[144]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[145] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[145]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[146] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[146]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[147] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[147]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[148] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[148]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[149] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[149]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[150] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[150]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[151] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[151]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[152] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[152]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[153] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[153]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[154] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[154]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[155] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[155]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[156] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[156]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[157] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[157]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[158] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[158]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[159] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[159]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[160] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[160]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[161] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[161]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[162] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[162]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[163] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[163]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[164] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[164]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[165] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[165]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[166] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[166]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[167] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[167]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[168] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[168]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[169] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[169]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[170] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[170]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[171] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[171]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[172] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[172]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[173] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[173]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[174] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[174]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[175] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[175]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[176] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[176]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[177] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[177]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[178] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[178]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[179] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[179]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[180] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[180]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[181] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[181]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[182] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[182]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[183] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[183]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[184] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[184]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[185] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[185]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[186] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[186]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[187] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[187]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[188] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[188]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[189] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[189]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[190] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[190]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[191] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[191]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[192] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[192]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[193] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[193]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[194] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[194]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[195] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[195]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[196] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[196]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[197] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[197]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[198] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[198]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[199] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[199]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[200] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[200]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[201] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[201]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[202] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[202]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#108 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[203] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[203]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#109 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[204] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[204]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#110 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[205] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[205]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#111 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[206] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[206]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#112 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[207] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[207]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#113 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[208] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[208]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#114 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[209] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[209]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#115 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[210] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[210]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#116 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[211] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[211]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#117 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[212] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[212]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#118 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[213] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[213]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#119 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[214] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[214]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#120 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[215] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[215]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#121 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[216] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[216]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#122 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[217] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[217]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#123 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[218] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[218]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#124 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[219] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[219]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#125 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[220] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[220]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#126 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[221] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[221]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#127 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[222] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[222]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#128 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[223] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[223]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#129 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[224] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[224]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#130 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[225] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[225]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#131 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[226] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[226]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#132 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[227] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[227]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#133 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[228] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[228]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#134 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[229] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[229]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#135 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[230] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[230]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#136 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[231] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[231]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#137 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[232] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[232]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#138 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[233] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[233]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#139 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[234] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[234]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#140 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[235] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[235]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#141 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[236] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[236]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#142 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[237] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[237]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#143 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[238] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[238]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#144 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[239] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[239]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#145 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[240] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[240]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#146 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[241] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[241]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#147 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[242] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[242]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#148 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[243] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[243]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#149 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[244] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[244]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#150 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[245] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[245]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#151 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[246] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[246]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#152 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[247] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[247]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#153 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[248] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[248]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#154 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[249] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[249]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#155 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[250] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[250]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#156 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[251] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[251]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#157 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[252] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[252]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#158 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[253] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[253]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#159 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[254] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[254]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#160 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[255] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_dataout_reg[255]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#161 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_size_reg[0] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_size_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#162 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_size_reg[1] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_size_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#163 Warning
+Non-clocked latch  
+The latch aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_size_reg[2] cannot be properly analyzed as its control pin aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_size_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 XDCB-5#1 Warning

@@ -1,0 +1,481 @@
+$date
+        2020-Sep-17 23:13:18
+$end
+$version
+        Vivado v2018.3 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 8 " aquila_soc_i/aquila_0_M_DCACHE_PORT_AWLEN [7:0] $end
+$var reg 256 * aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_dataout [255:0] $end
+$var reg 256 n# aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_datain [255:0] $end
+$var reg 4 T& aquila_soc_i/aquila_0_M_DCACHE_PORT_AWQOS [3:0] $end
+$var reg 32 X& aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_addr [31:0] $end
+$var reg 4 x& aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/allocator/MAIN_ST [3:0] $end
+$var reg 4 |& aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/allocator/FREE_ST [3:0] $end
+$var reg 32 "' aquila_soc_i/aquila_0_M_DCACHE_PORT_WDATA [31:0] $end
+$var reg 2 B' aquila_soc_i/aquila_0_M_DCACHE_PORT_ARBURST [1:0] $end
+$var reg 4 D' aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/read_len [3:0] $end
+$var reg 4 H' aquila_soc_i/aquila_0/inst/aquila_core/D_Cache/S [3:0] $end
+$var reg 4 L' aquila_soc_i/aquila_0/inst/aquila_core/D_Cache/S_nxt [3:0] $end
+$var reg 2 P' aquila_soc_i/aquila_0_M_DCACHE_PORT_BRESP [1:0] $end
+$var reg 3 R' aquila_soc_i/aquila_0_M_DCACHE_PORT_ARPROT [2:0] $end
+$var reg 2 U' aquila_soc_i/aquila_0_M_DCACHE_PORT_RRESP [1:0] $end
+$var reg 8 W' aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/write_burst_counter [7:0] $end
+$var reg 8 _' aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/read_burst_counter [7:0] $end
+$var reg 4 g' aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/write_index [3:0] $end
+$var reg 8 k' aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/my_burst_size [7:0] $end
+$var reg 32 s' aquila_soc_i/aquila_0_M_DCACHE_PORT_AWADDR [31:0] $end
+$var reg 3 5( aquila_soc_i/aquila_0_M_DCACHE_PORT_AWPROT [2:0] $end
+$var reg 4 8( aquila_soc_i/aquila_0_M_DCACHE_PORT_ARQOS [3:0] $end
+$var reg 32 <( aquila_soc_i/aquila_0_M_DCACHE_PORT_RDATA [31:0] $end
+$var reg 4 \( aquila_soc_i/aquila_0_M_DCACHE_PORT_ARCACHE [3:0] $end
+$var reg 3 `( aquila_soc_i/aquila_0_M_DCACHE_PORT_AWSIZE [2:0] $end
+$var reg 2 c( aquila_soc_i/aquila_0_M_DCACHE_PORT_AWBURST [1:0] $end
+$var reg 4 e( aquila_soc_i/aquila_0_M_DCACHE_PORT_WSTRB [3:0] $end
+$var reg 4 i( aquila_soc_i/aquila_0_M_DCACHE_PORT_AWCACHE [3:0] $end
+$var reg 3 m( aquila_soc_i/aquila_0_M_DCACHE_PORT_ARSIZE [2:0] $end
+$var reg 8 p( aquila_soc_i/aquila_0_M_DCACHE_PORT_ARLEN [7:0] $end
+$var reg 8 x( aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_size [7:0] $end
+$var reg 32 ") aquila_soc_i/aquila_0_M_DCACHE_PORT_ARADDR [31:0] $end
+$var reg 1 B) aquila_soc_i/aquila_0_M_DCACHE_PORT_ARID $end
+$var reg 1 C) aquila_soc_i/aquila_0_M_DCACHE_PORT_ARLOCK $end
+$var reg 1 D) aquila_soc_i/aquila_0_M_DCACHE_PORT_ARREADY $end
+$var reg 1 E) aquila_soc_i/aquila_0_M_DCACHE_PORT_ARUSER $end
+$var reg 1 F) aquila_soc_i/aquila_0_M_DCACHE_PORT_ARVALID $end
+$var reg 1 G) aquila_soc_i/aquila_0_M_DCACHE_PORT_AWID $end
+$var reg 1 H) aquila_soc_i/aquila_0_M_DCACHE_PORT_AWREADY $end
+$var reg 1 I) aquila_soc_i/aquila_0_M_DCACHE_PORT_AWVALID $end
+$var reg 1 J) aquila_soc_i/aquila_0_M_DCACHE_PORT_BID $end
+$var reg 1 K) aquila_soc_i/aquila_0_M_DCACHE_PORT_BREADY $end
+$var reg 1 L) aquila_soc_i/aquila_0_M_DCACHE_PORT_BUSER $end
+$var reg 1 M) aquila_soc_i/aquila_0_M_DCACHE_PORT_BVALID $end
+$var reg 1 N) aquila_soc_i/aquila_0_M_DCACHE_PORT_RID $end
+$var reg 1 O) aquila_soc_i/aquila_0_M_DCACHE_PORT_RLAST $end
+$var reg 1 P) aquila_soc_i/aquila_0_M_DCACHE_PORT_RREADY $end
+$var reg 1 Q) aquila_soc_i/aquila_0_M_DCACHE_PORT_RVALID $end
+$var reg 1 R) aquila_soc_i/aquila_0_M_DCACHE_PORT_WLAST $end
+$var reg 1 S) aquila_soc_i/aquila_0_M_DCACHE_PORT_WREADY $end
+$var reg 1 T) aquila_soc_i/aquila_0_M_DCACHE_PORT_WVALID $end
+$var reg 1 U) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/burst_read_active $end
+$var reg 1 V) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/burst_write_active $end
+$var reg 1 W) aquila_soc_i/aquila_0/inst/aquila_core/dcache_is_flushing $end
+$var reg 1 X) aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_done $end
+$var reg 1 Y) aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_rw $end
+$var reg 1 Z) aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/dmm_unit_strobe $end
+$var reg 1 [) aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/free_request $end
+$var reg 1 \) aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/free_request_o $end
+$var reg 1 ]) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/read_resp_error $end
+$var reg 1 ^) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/reads_done $end
+$var reg 1 _) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/RISCV_rst $end
+$var reg 1 `) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/rnext $end
+$var reg 1 a) aquila_soc_i/rst_mig_7series_0_200M_peripheral_aresetn $end
+$var reg 1 b) aquila_soc_i/aquila_0/inst/aquila_core/Memory_Management/stall_i $end
+$var reg 1 c) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/start_single_burst_read $end
+$var reg 1 d) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/start_single_burst_write $end
+$var reg 1 e) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/wnext $end
+$var reg 1 f) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/write_resp_error $end
+$var reg 1 g) aquila_soc_i/aquila_0/inst/aquila_M_DMEM_PORT_inst/writes_done $end
+$var reg 1 h) _TRIGGER $end
+$var reg 1 i) _WINDOW $end
+$var reg 1 j) _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111 "
+b0 *
+b0 n#
+b0 T&
+b0 X&
+b1 x&
+b0 |&
+b1000001001 "'
+b1 B'
+b0 D'
+b0 H'
+b0 L'
+b0 P'
+b0 R'
+b0 U'
+b10000000 W'
+b10000000 _'
+b0 g'
+b1000 k'
+b10010000000100010000100000100100 s'
+b0 5(
+b0 8(
+b1111000100100110110011010011 <(
+b10 \(
+b10 `(
+b1 c(
+b1111 e(
+b10 i(
+b10 m(
+b111 p(
+b1000 x(
+b0 ")
+0B)
+0C)
+1D)
+1E)
+0F)
+0G)
+1H)
+0I)
+0J)
+0K)
+0L)
+0M)
+0N)
+0O)
+0P)
+0Q)
+1R)
+1S)
+0T)
+0U)
+0V)
+0W)
+0X)
+0Y)
+0Z)
+0[)
+0\)
+0])
+0^)
+0_)
+0`)
+1a)
+0b)
+0c)
+0d)
+0e)
+0f)
+0g)
+0h)
+1i)
+0j)
+$end
+#3
+1b)
+#9
+0b)
+#15
+1b)
+#21
+0b)
+#27
+1b)
+#33
+0b)
+#39
+1b)
+#45
+0b)
+#51
+1b)
+#57
+0b)
+#63
+1b)
+#69
+0b)
+#75
+1b)
+#81
+0b)
+#87
+1b)
+#93
+0b)
+#99
+1b)
+#105
+0b)
+#111
+1b)
+#117
+0b)
+#123
+1b)
+#129
+0b)
+#135
+1b)
+#141
+0b)
+#147
+1b)
+#153
+0b)
+#159
+1b)
+#165
+0b)
+#171
+1b)
+#177
+0b)
+#183
+1b)
+#189
+0b)
+#195
+1b)
+#201
+0b)
+#207
+1b)
+#213
+0b)
+#219
+1b)
+#225
+0b)
+#231
+1b)
+#237
+0b)
+#243
+1b)
+#249
+0b)
+#255
+1b)
+#261
+0b)
+#267
+1b)
+#273
+0b)
+#279
+1b)
+#285
+0b)
+#291
+1b)
+#297
+0b)
+#303
+1b)
+#309
+0b)
+#315
+1b)
+#321
+0b)
+#327
+1b)
+#333
+0b)
+#339
+1b)
+#345
+0b)
+#351
+1b)
+#357
+0b)
+#363
+1b)
+#369
+0b)
+#375
+1b)
+#381
+0b)
+#387
+1b)
+#393
+0b)
+#399
+1b)
+#405
+0b)
+#411
+1b)
+#417
+0b)
+#421
+1b)
+#422
+0b)
+#426
+b1 L'
+1b)
+#427
+b1 H'
+b0 L'
+#428
+b0 H'
+0b)
+#430
+1b)
+#436
+0b)
+#439
+1b)
+#440
+0b)
+#443
+b1 L'
+1b)
+#444
+b1 H'
+b0 L'
+#445
+b0 H'
+0b)
+#448
+b1 L'
+1b)
+#449
+b1 H'
+b0 L'
+#450
+b0 H'
+0b)
+#452
+1b)
+#453
+0b)
+#456
+b1 L'
+1b)
+#457
+b1 H'
+b0 L'
+#458
+b0 H'
+0b)
+#460
+1b)
+#461
+0b)
+#462
+b1 L'
+1b)
+#463
+b1 H'
+b0 L'
+#464
+b0 H'
+0b)
+#465
+b1 L'
+1b)
+#466
+b1 H'
+b0 L'
+#467
+b0 H'
+0b)
+#468
+1b)
+#469
+0b)
+#470
+b1 L'
+1b)
+#471
+b1 H'
+b0 L'
+#472
+b0 H'
+0b)
+#474
+1b)
+#475
+0b)
+#480
+b1 L'
+1b)
+#481
+b1 H'
+b0 L'
+#482
+b0 H'
+0b)
+#483
+1b)
+#484
+0b)
+#485
+1b)
+#486
+0b)
+#489
+b1 L'
+1b)
+#490
+b1 H'
+b0 L'
+#491
+b0 H'
+0b)
+#495
+1b)
+#496
+0b)
+#497
+b1 L'
+1b)
+#498
+b1 H'
+b0 L'
+#499
+b0 H'
+0b)
+#502
+1b)
+#503
+0b)
+#507
+b1 L'
+1b)
+#508
+b1 H'
+b0 L'
+#509
+b0 H'
+0b)
+#511
+b1 L'
+1b)
+#512
+b1 H'
+b110 L'
+1W)
+1h)
+#513
+b110 H'
+#514
+b110001101100101011010000100001101101000011101110010000001101011011010110010000001110100011000010010000001100100011011100110100101010100001000000110011001101111001000000111000001100001011100100000000000000000000010100000101001100101011101000110111001001001 *
+b10000000000000011100000000000000 X&
+1Y)
+1Z)
+#515
+b1100011011001010110100001000011 "'
+b10000000000000011100000000000000 s'
+b10000000000000011100000000000000 ")
+1d)
+#516
+1I)
+1T)
+1V)
+0d)
+1e)
+#517
+b1101000011101110010000001101011 "'
+b1 g'
+0I)
+0R)
+0T)
+0e)
+#556
+0b)
+#557
+1b)

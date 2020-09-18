@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:aquila:1.0
-// IP Revision: 210
+// IP Revision: 270
 
 `timescale 1ns/1ps
 
@@ -396,17 +396,7 @@ input wire mem_aresetn;
     .C_M_IMEM_PORT_ARUSER_WIDTH(1),
     .C_M_IMEM_PORT_WUSER_WIDTH(0),
     .C_M_IMEM_PORT_RUSER_WIDTH(0),
-    .C_M_IMEM_PORT_BUSER_WIDTH(1),
-    .C_M_DMM_PORT_SLAVE_BASE_ADDR('H60000000),
-    .C_M_DMM_PORT_BURST_LEN(16),
-    .C_M_DMM_PORT_ID_WIDTH(1),
-    .C_M_DMM_PORT_ADDR_WIDTH(32),
-    .C_M_DMM_PORT_DATA_WIDTH(32),
-    .C_M_DMM_PORT_AWUSER_WIDTH(0),
-    .C_M_DMM_PORT_ARUSER_WIDTH(0),
-    .C_M_DMM_PORT_WUSER_WIDTH(0),
-    .C_M_DMM_PORT_RUSER_WIDTH(0),
-    .C_M_DMM_PORT_BUSER_WIDTH(0)
+    .C_M_IMEM_PORT_BUSER_WIDTH(1)
   ) inst (
     .m_dmem_port_awid(m_dmem_port_awid),
     .m_dmem_port_awaddr(m_dmem_port_awaddr),
